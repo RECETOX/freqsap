@@ -1,5 +1,4 @@
 from typing import Iterable
-
 from freqsap.accession import Accession
 from freqsap.variation import Variation
 

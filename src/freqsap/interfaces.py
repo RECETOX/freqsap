@@ -1,5 +1,5 @@
-from abc import ABC, abstractmethod
-
+from abc import ABC
+from abc import abstractmethod
 from freqsap.accession import Accession
 from freqsap.frequencies import Frequencies
 from freqsap.protein import Protein

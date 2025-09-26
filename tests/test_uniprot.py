@@ -1,8 +1,6 @@
 import json
-
 import pytest
 import requests
-
 from freqsap.uniprot import UniProt
 
 

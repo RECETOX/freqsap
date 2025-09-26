@@ -1,5 +1,4 @@
 import pytest
-
 from freqsap.variation import Variation
 
 

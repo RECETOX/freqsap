@@ -1,10 +1,8 @@
 from __future__ import annotations
-
 import sys
-from typing import Any, Optional
-
+from typing import Any
+from typing import Optional
 import requests
-
 from freqsap.accession import Accession
 from freqsap.interfaces import ProteinVariantAPI
 from freqsap.protein import Protein
@@ -46,8 +44,7 @@ class UniProt(ProteinVariantAPI):
 
         return None
 
-
-    def request(self, url:str) -> requests.Response:
+    def request(self, url: str) -> requests.Response:
         return requests.get(url, headers=self._headers, params=self._params, timeout=self._timeout)
 
     def is_dbsnp(self, xref: dict) -> bool:

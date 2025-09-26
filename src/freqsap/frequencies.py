@@ -1,2 +1,2 @@
-class Frequencies():
+class Frequencies:
     pass

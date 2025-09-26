@@ -1,4 +1,3 @@
-
 from freqsap.frequencies import Frequencies
 from freqsap.interfaces import VariantFrequencyAPI
 from freqsap.variation import Variation

@@ -2,20 +2,25 @@ import pytest
 
 from freqsap.variation import Variation
 
+
 def test_init():
-    sut = Variation('')
+    sut = Variation("")
     assert sut is not None
 
-@pytest.mark.parametrize("id, expected", [
-["test", False],
-["rs1234", True],
-])
+
+@pytest.mark.parametrize(
+    "id, expected",
+    [
+        ["test", False],
+        ["rs1234", True],
+    ],
+)
 def test_valid(id, expected):
-    sut = Variation(id)         # arrange
-    actual = sut.valid()        # act
-    assert actual == expected   # assert
+    sut = Variation(id)  # arrange
+    actual = sut.valid()  # act
+    assert actual == expected  # assert
 
 
 def test_to_string():
-    sut = Variation('rs1234')
-    assert str(sut) == 'rs1234'
+    sut = Variation("rs1234")
+    assert str(sut) == "rs1234"

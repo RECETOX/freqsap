@@ -4,7 +4,7 @@ class Variation:
 
     def valid(self) -> bool:
         # Placeholder implementation
-        return self._id.startswith('rs')
-    
+        return self._id.startswith("rs")
+
     def __str__(self) -> str:
         return self._id

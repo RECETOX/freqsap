@@ -3,7 +3,7 @@ from freqsap.accession import Accession
 from freqsap.variation import Variation
 
 
-class Protein():
+class Protein:
     def __init__(self, accession: Accession, variations: Iterable[Variation]):
         self._accession = accession
         self._variations = variations

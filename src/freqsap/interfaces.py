@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 from freqsap.accession import Accession
+from freqsap.frequencies import Frequencies
 from freqsap.protein import Protein
 from freqsap.variation import Variation
 
@@ -15,11 +16,11 @@ class ProteinVariantAPI(ABC):
         pass
 
 # Interface for variant frequency data sources
-# class VariantFrequencyAPI(ABC):
-#     @abstractmethod
-#     def get(self, variation: Variation) -> FrequencyData:
-#         pass
+class VariantFrequencyAPI(ABC):
+    @abstractmethod
+    def get(self, variation: Variation) -> Frequencies:
+        pass
 
-#     @abstractmethod
-#     def available(self) -> bool:
-#         pass
+    @abstractmethod
+    def available(self) -> bool:
+        pass

@@ -44,6 +44,7 @@ dev = [
     "sphinx-autoapi",
     "tox",
     "myst_parser",
+    "isort",
 ]
 docs = [
     "sphinx",

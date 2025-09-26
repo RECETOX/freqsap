@@ -1,6 +1,9 @@
-from typing import Optional
-import requests, sys, json
+from __future__ import annotations
 
+import sys
+from typing import Any, Optional
+
+import requests
 
 from freqsap.accession import Accession
 from freqsap.interfaces import ProteinVariantAPI
@@ -11,8 +14,8 @@ from freqsap.variation import Variation
 class UniProt(ProteinVariantAPI):
     def __init__(self):
         self._params = {"fields": ["accession", "xref_dbsnp"]}
-
         self._headers = {"accept": "application/json"}
+        self._timeout = 3
 
     def get(self, accession: Accession) -> Protein:
         # Placeholder implementation
@@ -22,9 +25,9 @@ class UniProt(ProteinVariantAPI):
         protein = Protein(accession, variations)
         return protein
 
-    def query(self, accession: str):
+    def query(self, accession: str) -> Any:
         base_url = f"https://rest.uniprot.org/uniprotkb/{accession}"
-        response = requests.get(base_url, headers=self._headers, params=self._params)
+        response = self.request(base_url)
 
         if not response.ok:
             response.raise_for_status()
@@ -32,7 +35,7 @@ class UniProt(ProteinVariantAPI):
 
         return response.json()
 
-    def parse(self, feature: dict) -> Optional[Variation]:
+    def parse(self, feature: dict) -> Variation | None:
         if feature["type"] != "Natural variant":
             return None
 
@@ -41,10 +44,14 @@ class UniProt(ProteinVariantAPI):
             if self.is_dbsnp(ref):
                 return Variation(ref["id"])
 
-        pass
+        return None
+
+
+    def request(self, url:str) -> requests.Response:
+        return requests.get(url, headers=self._headers, params=self._params, timeout=self._timeout)
 
     def is_dbsnp(self, xref: dict) -> bool:
         return xref.get("database") == "dbSNP" and xref.get("id", "").startswith("rs")
 
     def available(self) -> bool:
-        return requests.get("https://rest.uniprot.org/uniprotkb/P68871", headers=self._headers, params=self._params).ok
+        return self.request("https://rest.uniprot.org/uniprotkb/P68871").ok

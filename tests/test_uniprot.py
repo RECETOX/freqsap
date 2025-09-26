@@ -1,7 +1,8 @@
 import json
-import requests
 
 import pytest
+import requests
+
 from freqsap.uniprot import UniProt
 
 
@@ -17,7 +18,7 @@ def accession():
 
 @pytest.fixture
 def feature() -> dict:
-    with open("tests/feature.json", "r") as file:
+    with open("tests/feature.json") as file:
         return json.load(file)
 
 

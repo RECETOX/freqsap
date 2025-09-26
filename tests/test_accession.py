@@ -1,4 +1,5 @@
 import pytest
+
 from freqsap.accession import Accession
 
 
@@ -8,7 +9,7 @@ def test_init():
 
 
 @pytest.mark.parametrize("accession, expected", [["test", False], ["P02788", True], ["PAB", False]])
-def test_valid(accession, expected):
+def test_valid(accession: str, expected: bool):
     sut = Accession(accession)  # arrange
     actual = sut.valid()  # act
     assert actual == expected  # assert

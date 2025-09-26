@@ -1,6 +1,7 @@
 """Tests for the freqsap.my_module module."""
 
 import pytest
+
 from freqsap.my_module import hello
 
 

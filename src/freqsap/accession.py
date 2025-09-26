@@ -8,3 +8,6 @@ class Accession():
     
     def valid(self) -> bool:
         return re.fullmatch(self._pattern, self._id) is not None
+    
+    def __str__(self) -> str:
+        return self._id

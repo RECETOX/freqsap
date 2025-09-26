@@ -7,13 +7,12 @@ def test_init():
     assert sut is not None
 
 
-@pytest.mark.parametrize((
-    "id, expected",
+@pytest.mark.parametrize("ref, expected",
     [
-        ["test", False],
-        ["rs1234", True],
+        ("test", False),
+        ("rs1234", True),
     ],
-))
+)
 def test_valid(ref: str, expected: bool):
     sut = Variation(ref)  # arrange
     actual = sut.valid()  # act

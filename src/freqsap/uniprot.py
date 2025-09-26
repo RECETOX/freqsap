@@ -1,7 +1,5 @@
 from __future__ import annotations
 import sys
-from typing import Any
-from typing import Optional
 import requests
 from freqsap.accession import Accession
 from freqsap.interfaces import ProteinVariantAPI
@@ -16,14 +14,12 @@ class UniProt(ProteinVariantAPI):
         self._timeout = 3
 
     def get(self, accession: Accession) -> Protein:
-        # Placeholder implementation
         response = self.query(accession)
         variations = [self.parse(feature) for feature in response["features"]]
 
-        protein = Protein(accession, variations)
-        return protein
+        return Protein(accession, variations)
 
-    def query(self, accession: str) -> Any:
+    def query(self, accession: str) -> dict:
         base_url = f"https://rest.uniprot.org/uniprotkb/{accession}"
         response = self.request(base_url)
 

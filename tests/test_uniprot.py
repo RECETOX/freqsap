@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 import pytest
 import requests
 from freqsap.uniprot import UniProt
@@ -16,7 +17,7 @@ def accession():
 
 @pytest.fixture
 def feature() -> dict:
-    with open("tests/feature.json") as file:
+    with Path.open("tests/feature.json") as file:
         return json.load(file)
 
 
@@ -28,16 +29,18 @@ def test_available():
 
 def test_query(api: UniProt, accession: str):
     sut = api.query(accession)
+    expected = 6
     assert sut["primaryAccession"] == accession
-    assert len(sut["features"]) == 6
+    assert len(sut["features"]) == expected
 
 
 def test_is_dbsnp(api: UniProt):
     xref = {"database": "dbSNP", "id": "rs121913547"}
 
-    assert api.is_dbsnp(xref) == True
+    assert api.is_dbsnp(xref)
 
 
 def test_get(api: UniProt, accession: str):
     actual = api.get(accession)
-    assert len(actual.variations) == 6
+    expected = 6
+    assert len(actual.variations) == expected

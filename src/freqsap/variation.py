@@ -1,6 +1,6 @@
 class Variation:
-    def __init__(self, id: str):
-        self._id = id
+    def __init__(self, ref: str):
+        self._id = ref
 
     def valid(self) -> bool:
         # Placeholder implementation

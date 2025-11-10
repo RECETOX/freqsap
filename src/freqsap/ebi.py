@@ -15,10 +15,10 @@ class EBI(ProteinVariantAPI):
         return requests.get(url, headers=self._headers, timeout=self._timeout)
 
     def available(self) -> bool:
-        r = self._request("https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100")
-        responseBody = r.text
         expected_response = '{"requestedURL":"https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100","errorMessage":["At least one of these request parameters is required: accession, disease, omim, evidence, taxid, dbtype or dbid"]}'
-        return responseBody == expected_response
+        reponse = self._request("https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100").text
+
+        return reponse == expected_response
     
     def get(self, accession: Accession) -> Protein:
         response = self._request(f"https://www.ebi.ac.uk/proteins/api/proteins/{accession}")

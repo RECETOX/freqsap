@@ -1,7 +1,7 @@
 import pytest
 import requests
 from freqsap.accession import Accession
-from freqsap.ebi import EBI
+from freqsap.ebi import EBI, _get_variants
 from freqsap.exceptions import AccessionNotFound
 from freqsap.interfaces import ProteinVariantAPI
 
@@ -41,3 +41,16 @@ def test_get_non_existing_accession(api: EBI):
     with pytest.raises(AccessionNotFound) as e:
         EBI().get(non_existing_accession)
         assert e.message == "Accession P54321 not found."
+
+def test__get_variants():
+    response = {
+        'features': [
+            {'type': 'VARIANT', 'position': 15},
+            {'type': 'MUTAGENESIS', 'description': 'Hier koennte ihre Werbung stehen!'}
+        ]
+    }
+
+    actual = _get_variants(response)
+    expected = [{'type': 'VARIANT', 'position': 15}]
+
+    assert actual == expected

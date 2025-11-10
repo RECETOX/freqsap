@@ -18,6 +18,7 @@ class EBI(ProteinVariantAPI):
     def get(self, accession: Accession) -> Protein:
         requestURL = f"https://www.ebi.ac.uk/proteins/api/proteins/{accession}"
         r = requests.get(requestURL, headers={ "Accept" : "application/xml"})
+        
         if not r.ok:
             if r.reason == 'Not Found' and r.status_code == 404:
                 raise AccessionNotFound(message=f"Accession {accession} not found.")

@@ -1,4 +1,4 @@
-from freqsap.dpsnp import DBSNP
+from freqsap.dbsnp import DBSNP
 
 
 def test_init():

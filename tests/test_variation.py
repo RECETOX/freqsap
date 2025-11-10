@@ -3,22 +3,23 @@ from freqsap.variation import Variation
 
 
 def test_init():
-    sut = Variation("")
+    sut = Variation("", 0)
     assert sut is not None
 
 
-@pytest.mark.parametrize(("ref, expected"),
+@pytest.mark.parametrize(("ref, pos, expected"),
     [
-        ("test", False),
-        ("rs1234", True),
+        ("test", 100, False),
+        ("rs1234", 10, True),
+        ("rs1234", -10, False),
     ],
 )
-def test_valid(ref: str, expected: bool):
-    sut = Variation(ref)  # arrange
+def test_valid(ref: str, pos: int, expected: bool):
+    sut = Variation(ref, pos)  # arrange
     actual = sut.valid()  # act
     assert actual == expected  # assert
 
 
 def test_to_string():
-    sut = Variation("rs1234")
+    sut = Variation("rs1234", 0)
     assert str(sut) == "rs1234"

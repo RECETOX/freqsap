@@ -3,6 +3,7 @@ from freqsap.accession import Accession
 from freqsap.exceptions import AccessionNotFound
 from freqsap.interfaces import ProteinVariantAPI
 from freqsap.protein import Protein
+from freqsap.variation import Variation
 
 
 class EBI(ProteinVariantAPI):
@@ -24,8 +25,15 @@ class EBI(ProteinVariantAPI):
         response = self._request(f"https://www.ebi.ac.uk/proteins/api/proteins/{accession}")
         _check_response(accession, response)
         variants = _get_variants(response.json())
+        variations = [Variation(_get_dbsnp_id(var['description']), var['begin']) for var in variants]
+        return Protein(accession, variations)
 
-        return Protein(accession, [])
+def _get_dbsnp_id(description: str):
+    tokens = description.split()
+    dbsnp_tokens = list(filter(lambda x: x.startswith('dbSNP:rs'), tokens))
+    if len(dbsnp_tokens) >= 1:
+        first = dbsnp_tokens[0]
+        return first[6:]
 
 def _check_response(accession: Accession, response: requests.Response):
     if not response.ok:

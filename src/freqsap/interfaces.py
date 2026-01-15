@@ -1,7 +1,7 @@
 from abc import ABC
 from abc import abstractmethod
 from freqsap.accession import Accession
-from freqsap.frequencies import Frequencies
+from freqsap.report import ReferenceSNPReport
 from freqsap.protein import Protein
 from freqsap.variation import Variation
 
@@ -20,7 +20,7 @@ class ProteinVariantAPI(ABC):
 # Interface for variant frequency data sources
 class VariantFrequencyAPI(ABC):
     @abstractmethod
-    def get(self, variation: Variation) -> Frequencies:
+    def get(self, variation: Variation) -> ReferenceSNPReport:
         pass
 
     @abstractmethod

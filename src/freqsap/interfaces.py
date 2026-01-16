@@ -1,8 +1,8 @@
 from abc import ABC
 from abc import abstractmethod
 from freqsap.accession import Accession
-from freqsap.report import ReferenceSNPReport
 from freqsap.protein import Protein
+from freqsap.report import ReferenceSNPReport
 from freqsap.variation import Variation
 
 

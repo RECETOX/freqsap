@@ -34,8 +34,8 @@ class UniProt(ProteinVariantAPI):
             return None
 
         xrefs = feature["featureCrossReferences"]
-        position = int(feature['location']['start']['value'])
-        
+        position = int(feature["location"]["start"]["value"])
+
         for ref in xrefs:
             if self.is_dbsnp(ref):
                 return Variation(ref["id"], position=position)

@@ -7,7 +7,8 @@ def test_init():
     assert sut is not None
 
 
-@pytest.mark.parametrize(("ref, pos, expected"),
+@pytest.mark.parametrize(
+    ("ref", "pos", "expected"),
     [
         ("test", 100, False),
         ("rs1234", 10, True),

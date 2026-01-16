@@ -1,4 +1,3 @@
 class AccessionNotFound(Exception):
     def __init__(self, message: str):
-         super().__init__(message)
-         pass
+        super().__init__(message)

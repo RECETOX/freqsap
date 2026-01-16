@@ -43,6 +43,13 @@ def parse_args():
         help='Variant frequency API to use (default: dbsnp)'
     )
     
+    parser.add_argument(
+        '--delimiter',
+        type=str,
+        default='\t',
+        help='Delimiter for output file (default: tab)'
+    )
+    
     return parser.parse_args()
 
 
@@ -63,7 +70,7 @@ def get_frequency_api(api_name: str) -> VariantFrequencyAPI:
     return apis[api_name]()
 
 
-def write_reports(reports: list[ReferenceSNPReport], output_path: str):
+def write_reports(reports: list[ReferenceSNPReport], output_path: str, delimiter: str):
     """Write all reports to the output file."""
 
     header = reports[0].header()
@@ -73,7 +80,7 @@ def write_reports(reports: list[ReferenceSNPReport], output_path: str):
             header.extend(other[len(header):])
 
     with open(output_path, 'w') as file:
-        writer = csv.DictWriter(file, fieldnames=header, delimiter='\t', extrasaction='ignore')
+        writer = csv.DictWriter(file, fieldnames=header, delimiter=delimiter, extrasaction='ignore')
         writer.writeheader()
 
         for report in reports:
@@ -109,7 +116,7 @@ def main():
 
     
     # Write reports to output file
-    write_reports(reports, args.output)
+    write_reports(reports, args.output, args.delimiter)
     
     print(f"Successfully processed {len(reports)} variants and wrote results to {args.output}")
 

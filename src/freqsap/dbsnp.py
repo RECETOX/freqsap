@@ -8,10 +8,18 @@ from freqsap.variation import Variation
 
 
 class DBSNP(VariantFrequencyAPI):
-    def get(self, variation: Variation) -> ReferenceSNPReport:
+    def get(self, variation: Variation) -> ReferenceSNPReport | None:
         freq_url = f"https://www.ncbi.nlm.nih.gov/snp/{variation}/download/frequency"
         r = requests.get(freq_url, headers={"Accept": "application/json"})
-        metadata_section, studies_section = [re.split(r'\n+', x.strip()) for x in re.split(r'#Frequency Data Table', r.text)]
+
+        sections = [re.split(r'\n+', x.strip()) for x in re.split(r'#Frequency Data Table', r.text)]
+        
+        if len(sections) < 2:
+            print(variation)
+            return None
+
+        metadata_section = sections[0]
+        studies_section = sections[1]
 
         metadata_section.pop()
         studies_section.pop(0)
@@ -25,7 +33,19 @@ class DBSNP(VariantFrequencyAPI):
         header = studies_section.pop(0).strip('#').split('\t')
         
         for entry in studies_section:
-            source, population, group, size, ref, alts, bioproject, biosample = entry.split('\t')
+            tokens = entry.split('\t')
+
+            if len(tokens) < 6:
+                print(variation)
+                return None
+
+            source = tokens[0]
+            population = tokens[1]
+            group = tokens[2]
+            size = tokens[3]
+            ref = tokens[4]
+            alts = tokens[5]
+
             ref_nucelotide, ref_frequency = ref.split('=')
             reference = Allele(ref_nucelotide, ref_frequency)
             alternatives: list[Allele] = []
@@ -33,10 +53,10 @@ class DBSNP(VariantFrequencyAPI):
                 alt_nucleotide, alt_frequency = alt.split('=')
                 alternatives.append(Allele(alt_nucleotide, alt_frequency))
 
-            study = Study(source, population, group, size, reference, alternatives, bioproject, biosample)
+            study = Study(source, population, group, size, reference, alternatives)
             studies.append(study)
 
-        return ReferenceSNPReport(metadata, studies)
+        return ReferenceSNPReport(variation, metadata, studies)
 
     def available(self) -> bool:
         # Placeholder implementation

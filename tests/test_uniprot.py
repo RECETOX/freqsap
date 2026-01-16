@@ -48,3 +48,7 @@ def test_get(api: UniProt, accession: str):
     actual = api.get(accession)
     expected = 6
     assert len(actual.variations) == expected
+
+def test_has_all_variants(api: UniProt):
+    variants = api.get('P02792').variations
+    assert len(variants) == 2

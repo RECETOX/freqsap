@@ -42,15 +42,9 @@ def test_get_non_existing_accession(api: EBI):
         EBI().get(non_existing_accession)
         assert e.message == "Accession P54321 not found."
 
-def test__get_variants():
-    response = {
-        'features': [
-            {'type': 'VARIANT', 'position': 15},
-            {'type': 'MUTAGENESIS', 'description': 'Hier koennte ihre Werbung stehen!'}
-        ]
-    }
-
-    actual = _get_variants(response)
-    expected = [{'type': 'VARIANT', 'position': 15}]
-
-    assert actual == expected
+def test_has_all_variants(api: EBI):
+    variants = api.get('P02792').variations
+    refs = [var.ref for var in variants]
+    assert all(refs)
+    assert len(variants) >= 200
+    

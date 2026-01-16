@@ -1,3 +1,4 @@
+from typing import Generator
 import requests
 from freqsap.accession import Accession
 from freqsap.exceptions import AccessionNotFound
@@ -22,18 +23,16 @@ class EBI(ProteinVariantAPI):
         return reponse == expected_response
     
     def get(self, accession: Accession) -> Protein:
-        response = self._request(f"https://www.ebi.ac.uk/proteins/api/proteins/{accession}")
+        response = self._request(f"https://www.ebi.ac.uk/proteins/api/variation/{accession}")
         _check_response(accession, response)
-        variants = _get_variants(response.json())
-        variations = [Variation(_get_dbsnp_id(var['description']), var['begin']) for var in variants]
+        variations = list(_get_variants(response.json()))
         return Protein(accession, variations)
 
-def _get_dbsnp_id(description: str):
-    tokens = description.split()
-    dbsnp_tokens = list(filter(lambda x: x.startswith('dbSNP:rs'), tokens))
-    if len(dbsnp_tokens) >= 1:
-        first = dbsnp_tokens[0]
-        return first[6:]
+def _get_dbsnp_id(xrefs: list[dict]) -> str | None:
+    for xref in xrefs:
+        if xref.get('name') in ['dbSNP', 'gnomAD', 'TOPMed'] and xref.get('id', '').startswith('rs'):
+            return xref['id']
+
 
 def _check_response(accession: Accession, response: requests.Response):
     if not response.ok:
@@ -41,5 +40,9 @@ def _check_response(accession: Accession, response: requests.Response):
             raise AccessionNotFound(message=f"Accession {accession} not found.")
         response.raise_for_status()
 
-def _get_variants(response: dict) -> list[dict]:
-    return list(filter(lambda x: x.get('type') == 'VARIANT', response['features']))
+def _get_variants(response: dict) -> Generator[Variation]:
+    variants = list(filter(lambda x: x.get('type') == 'VARIANT', response['features']))
+    for var in variants:
+        if ref := _get_dbsnp_id(var['xrefs']):
+            yield Variation(ref, var['begin'])
+    

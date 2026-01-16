@@ -1,11 +1,14 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Variation:
-    def __init__(self, ref: str, position: int):
-        self._id = ref
-        self._position = position
+    ref: str
+    position: int
 
     def valid(self) -> bool:
         # Placeholder implementation
-        return self._id.startswith("rs") and self._position > 0
+        return self.ref.startswith("rs") and self.position > 0
 
     def __str__(self) -> str:
-        return self._id
+        return self.ref

@@ -1,18 +1,21 @@
+# ruff: noqa: PLR2004
 import pytest
 import requests
 from freqsap.accession import Accession
 from freqsap.ebi import EBI
-from freqsap.exceptions import AccessionNotFound
+from freqsap.exceptions import AccessionNotFoundError
 from freqsap.interfaces import ProteinVariantAPI
 
 
 def ebi_is_available() -> bool:
     r = requests.get(
-        "https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100", headers={"Accept": "application/json"},
+        "https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100",
+        headers={"Accept": "application/json"},
+        timeout = 3,
     )
-    responseBody = r.text
+    body = r.text
     expected_response = '{"requestedURL":"https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100","errorMessage":["At least one of these request parameters is required: accession, disease, omim, evidence, taxid, dbtype or dbid"]}'
-    return responseBody == expected_response
+    return body == expected_response
 
 
 @pytest.fixture
@@ -47,8 +50,8 @@ def test_get(api: EBI, accession: str):
 
 def test_get_non_existing_accession(api: EBI):
     non_existing_accession = Accession("P54321")
-    with pytest.raises(AccessionNotFound) as e:
-        EBI().get(non_existing_accession)
+    with pytest.raises(AccessionNotFoundError) as e:
+        api.get(non_existing_accession)
         assert e.message == "Accession P54321 not found."
 
 

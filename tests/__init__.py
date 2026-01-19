@@ -1,8 +1,9 @@
 import socket
 
 
-def internet(host="8.8.8.8", port=53, timeout=3):
-    """Host: 8.8.8.8 (google-public-dns-a.google.com)
+def internet(host: str = "8.8.8.8", port: int = 53, timeout: int = 3):
+    """Host: 8.8.8.8 (google-public-dns-a.google.com).
+
     OpenPort: 53/tcp
     Service: domain (DNS/TCP).
     """

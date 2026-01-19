@@ -1,6 +1,6 @@
-from freqsap.exceptions import AccessionNotFound
+from freqsap.exceptions import AccessionNotFoundError
 
 
 def test_can_create():
-    actual = AccessionNotFound("")
+    actual = AccessionNotFoundError("")
     assert actual is not None

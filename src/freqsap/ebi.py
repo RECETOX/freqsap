@@ -2,27 +2,49 @@ from __future__ import annotations
 from typing import Generator
 import requests
 from freqsap.accession import Accession
-from freqsap.exceptions import AccessionNotFound
+from freqsap.exceptions import AccessionNotFoundError
 from freqsap.interfaces import ProteinVariantAPI
 from freqsap.protein import Protein
 from freqsap.variation import Variation
 
 
 class EBI(ProteinVariantAPI):
+    """Class to access the EBI protein API."""
     def __init__(self):
         self._headers = {"Accept": "application/json"}
         self._timeout = 3
 
     def _request(self, url: str) -> requests.Response:
+        """Private function to submit requests.
+
+        Args:
+            url (str): Base URL to query.
+
+        Returns:
+            requests.Response: Response returned by the server.
+        """
         return requests.get(url, headers=self._headers, timeout=self._timeout)
 
     def available(self) -> bool:
+        """Check whether the service is available.
+
+        Returns:
+            bool: True if service is available, False otherwise.
+        """
         expected_response = '{"requestedURL":"https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100","errorMessage":["At least one of these request parameters is required: accession, disease, omim, evidence, taxid, dbtype or dbid"]}'
         reponse = self._request("https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100").text
 
         return reponse == expected_response
 
     def get(self, accession: Accession) -> Protein:
+        """Get the protein represented by the Accession.
+
+        Args:
+            accession (Accession): Accession of the Protein.
+
+        Returns:
+            Protein: Protein specified by the accession.
+        """
         response = self._request(f"https://www.ebi.ac.uk/proteins/api/variation/{accession}")
         _check_response(accession, response)
         variations = list(_get_variants(response.json()))
@@ -30,6 +52,14 @@ class EBI(ProteinVariantAPI):
 
 
 def _get_dbsnp_id(xrefs: list[dict]) -> str | None:
+    """Parse dbSNP id from the xrefs entry. Private function.
+
+    Args:
+        xrefs (list[dict]): List of xrefs specified in the protein.
+
+    Returns:
+        str | None: dbSNP id, if found, otherwise None.
+    """
     for xref in xrefs:
         if xref.get("name") in ["dbSNP", "gnomAD", "TOPMed"] and xref.get("id", "").startswith("rs"):
             return xref["id"]
@@ -37,9 +67,20 @@ def _get_dbsnp_id(xrefs: list[dict]) -> str | None:
 
 
 def _check_response(accession: Accession, response: requests.Response) -> None:
+    """Check the response for the accession for errors.
+
+    Args:
+        accession (Accession): Accession which was searched.
+        response (requests.Response): Response obtained from the server.
+
+    Raises:
+        AccessionNotFound: Raises exception if the accession wasn't found.
+        Raises all other exceptions raised by the requests module.
+    """
     if not response.ok:
-        if response.reason == "Not Found" and response.status_code == 404:
-            raise AccessionNotFound(message=f"Accession {accession} not found.")
+        http_not_found_error = 404
+        if response.reason == "Not Found" and response.status_code == http_not_found_error:
+            raise AccessionNotFoundError(message=f"Accession {accession} not found.")
         response.raise_for_status()
 
 

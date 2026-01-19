@@ -9,13 +9,27 @@ from freqsap.variation import Variation
 
 
 class DBSNP(VariantFrequencyAPI):
+    """Interface to interact with the dbSNP database to obtain frequency information for specific variants."""
+    def __init__(self):
+        self._timeout = 10
+        self._num_required_sections = 2
+        self._num_required_columns = 6
+
     def get(self, variation: Variation) -> ReferenceSNPReport | None:
+        """Get the ReferenceSNPReport for the given single amino-acid polymorphism.
+
+        Args:
+            variation (Variation): Variation for which to get the report.
+
+        Returns:
+            ReferenceSNPReport | None: Report if it is found on dbSNP, otherwise None.
+        """
         freq_url = f"https://www.ncbi.nlm.nih.gov/snp/{variation}/download/frequency"
-        r = requests.get(freq_url, headers={"Accept": "application/json"})
+        r = requests.get(freq_url, headers={"Accept": "application/json"}, timeout=self._timeout)
 
         sections = [re.split(r"\n+", x.strip()) for x in re.split(r"#Frequency Data Table", r.text)]
 
-        if len(sections) < 2:
+        if len(sections) < self._num_required_sections:
             return None
 
         metadata_section = sections[0]
@@ -35,7 +49,7 @@ class DBSNP(VariantFrequencyAPI):
         for entry in studies_section:
             tokens = entry.split("\t")
 
-            if len(tokens) < 6:
+            if len(tokens) < self._num_required_columns:
                 return None
 
             source = tokens[0]
@@ -58,5 +72,10 @@ class DBSNP(VariantFrequencyAPI):
         return ReferenceSNPReport(variation, metadata, studies)
 
     def available(self) -> bool:
+        """Check whether the service is available.
+
+        Returns:
+            bool: True if the service is available, False otherwise.
+        """
         # Placeholder implementation
         return True

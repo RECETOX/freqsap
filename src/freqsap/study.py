@@ -1,3 +1,5 @@
+"""Module for representing population study data."""
+
 from __future__ import annotations
 from dataclasses import dataclass
 from freqsap.allele import Allele
@@ -5,6 +7,16 @@ from freqsap.allele import Allele
 
 @dataclass
 class Study:
+    """Represents a population genetics study with allele frequency data.
+
+    Attributes:
+        source (str): The data source or database name.
+        population (str): The population identifier.
+        group (str): The population group or ethnicity.
+        size (int): The sample size of the study.
+        reference (Allele): The reference allele with its frequency.
+        alternatives (list[Allele]): List of alternative alleles with their frequencies.
+    """
     source: str
     population: str
     group: str
@@ -13,9 +25,22 @@ class Study:
     alternatives: list[Allele]
 
     def header(self) -> list[str]:
+        """Get the column headers for this study's data.
+
+        Returns:
+            list[str]: List of column header names.
+        """
         return self.row().keys()
 
     def row(self) -> dict:
+        """Convert study data to a dictionary row format.
+
+        Creates a dictionary with study metadata, reference allele data,
+        and all alternative allele data with dynamically numbered columns.
+
+        Returns:
+            dict: Dictionary containing all study data in row format.
+        """
         base = {
             "study": self.source,
             "population": self.population,

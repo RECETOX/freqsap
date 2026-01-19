@@ -1,3 +1,5 @@
+"""Module for interacting with the EBI Proteins API."""
+
 from __future__ import annotations
 from typing import Generator
 import requests
@@ -11,6 +13,10 @@ from freqsap.variation import Variation
 class EBI(ProteinVariantAPI):
     """Class to access the EBI protein API."""
     def __init__(self):
+        """Initialize the EBI API interface.
+
+        Sets up HTTP headers and connection timeout.
+        """
         self._headers = {"Accept": "application/json"}
         self._timeout = 3
 
@@ -85,6 +91,14 @@ def _check_response(accession: Accession, response: requests.Response) -> None:
 
 
 def _get_variants(response: dict) -> Generator[Variation]:
+    """Extract variations from EBI API response.
+
+    Args:
+        response (dict): JSON response from EBI API containing protein features.
+
+    Yields:
+        Variation: Each variation found with a valid dbSNP reference ID.
+    """
     variants = list(filter(lambda x: x.get("type") == "VARIANT", response["features"]))
     for var in variants:
         if ref := _get_dbsnp_id(var["xrefs"]):

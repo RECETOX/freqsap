@@ -1,3 +1,5 @@
+"""Module for interacting with the dbSNP database API."""
+
 from __future__ import annotations
 import re
 import requests
@@ -11,6 +13,10 @@ from freqsap.variation import Variation
 class DBSNP(VariantFrequencyAPI):
     """Interface to interact with the dbSNP database to obtain frequency information for specific variants."""
     def __init__(self):
+        """Initialize the DBSNP API interface.
+
+        Sets up connection parameters and data parsing requirements.
+        """
         self._timeout = 10
         self._num_required_sections = 2
         self._num_required_columns = 6

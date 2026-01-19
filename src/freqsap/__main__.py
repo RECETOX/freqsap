@@ -1,3 +1,9 @@
+"""Command-line interface for the freqsap package.
+
+This module provides the main entry point for querying protein variants
+and their population frequencies from various databases.
+"""
+
 from __future__ import annotations
 import argparse
 import csv

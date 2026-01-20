@@ -21,7 +21,7 @@ def accession():
 def test_available():
     """Test if UniProt endpoint is available."""
     sut = UniProt()
-    expected = requests.get(url="https://google.com", timeout=1).ok
+    expected = requests.get(url="https://google.com", timeout=3).ok
     assert sut.available() == expected
 
 

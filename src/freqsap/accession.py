@@ -9,6 +9,7 @@ class Accession:
     Validates and stores UniProt accession identifiers according to the
     UniProt accession number format.
     """
+
     def __init__(self, accession: str):
         """Initialize the Accession object.
 

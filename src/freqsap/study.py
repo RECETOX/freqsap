@@ -17,6 +17,7 @@ class Study:
         reference (Allele): The reference allele with its frequency.
         alternatives (list[Allele]): List of alternative alleles with their frequencies.
     """
+
     source: str
     population: str
     group: str

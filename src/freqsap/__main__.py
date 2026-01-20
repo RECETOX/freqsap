@@ -176,6 +176,5 @@ def main() -> None:
     write_reports(reports, args.output, args.delimiter)
 
 
-
 if __name__ == "__main__":
     main()

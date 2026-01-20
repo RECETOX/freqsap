@@ -12,6 +12,7 @@ from freqsap.variation import Variation
 
 class EBI(ProteinVariantAPI):
     """Class to access the EBI protein API."""
+
     def __init__(self):
         """Initialize the EBI API interface.
 

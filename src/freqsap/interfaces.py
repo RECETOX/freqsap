@@ -14,6 +14,7 @@ class ProteinVariantAPI(ABC):
 
     Defines the interface that all protein variant API implementations must follow.
     """
+
     @abstractmethod
     def get(self, accession: Accession) -> Protein:
         """Retrieve protein information for the given accession.
@@ -40,6 +41,7 @@ class VariantFrequencyAPI(ABC):
 
     Defines the interface that all variant frequency API implementations must follow.
     """
+
     @abstractmethod
     def get(self, variation: Variation) -> ReferenceSNPReport:
         """Retrieve frequency information for the given variation.

@@ -15,6 +15,7 @@ class ReferenceSNPReport:
         _metadata (dict): Metadata about the variation.
         _studies (list[Study]): List of population studies with frequency data.
     """
+
     def __init__(self, variation: Variation, metadata: dict, studies: list[Study]):
         """Initialize a ReferenceSNPReport.
 

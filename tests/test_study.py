@@ -13,13 +13,13 @@ def test_header(study: Study):
     """Test whether study header has all required fields."""
     actual = study.header()
     expected = {
-            "study",
-            "population",
-            "group",
-            "size",
-            "ref_allele_na",
-            "ref_allele_freq",
-            "alt_allele_1_na",
-            "alt_allele_1_freq",
-        }
+        "study",
+        "population",
+        "group",
+        "size",
+        "ref_allele_na",
+        "ref_allele_freq",
+        "alt_allele_1_na",
+        "alt_allele_1_freq",
+    }
     assert actual == expected

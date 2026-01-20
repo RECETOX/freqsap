@@ -7,6 +7,7 @@ class AccessionNotFoundError(Exception):
     Attributes:
         message (str): Explanation of the error.
     """
+
     def __init__(self, message: str):
         """Initialize the AccessionNotFoundError.
 

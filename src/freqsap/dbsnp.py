@@ -12,6 +12,7 @@ from freqsap.variation import Variation
 
 class DBSNP(VariantFrequencyAPI):
     """Interface to interact with the dbSNP database to obtain frequency information for specific variants."""
+
     def __init__(self):
         """Initialize the DBSNP API interface.
 

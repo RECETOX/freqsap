@@ -11,6 +11,7 @@ class Variation:
         ref (str): The reference SNP identifier (e.g., 'rs123456').
         position (int): The position of the variation in the protein sequence.
     """
+
     ref: str
     position: int
 

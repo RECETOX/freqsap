@@ -12,7 +12,7 @@ def ebi_is_available() -> bool:
     r = requests.get(
         "https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100",
         headers={"Accept": "application/json"},
-        timeout = 3,
+        timeout=3,
     )
     body = r.text
     expected_response = '{"requestedURL":"https://www.ebi.ac.uk/proteins/api/variation?offset=0&size=100","errorMessage":["At least one of these request parameters is required: accession, disease, omim, evidence, taxid, dbtype or dbid"]}'

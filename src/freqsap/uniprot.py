@@ -14,6 +14,7 @@ class UniProt(ProteinVariantAPI):
 
     Provides methods to query protein information and variations from UniProt.
     """
+
     def __init__(self):
         """Initialize the UniProt API interface.
 

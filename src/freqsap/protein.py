@@ -12,6 +12,7 @@ class Protein:
         _accession (Accession): The protein accession identifier.
         _variations (Iterable[Variation]): Collection of genetic variations in this protein.
     """
+
     def __init__(self, accession: Accession, variations: Iterable[Variation]):
         """Initialize a Protein object.
 

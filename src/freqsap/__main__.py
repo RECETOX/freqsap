@@ -79,7 +79,7 @@ def parse_args() -> argparse.Namespace:
 
     args = parser.parse_args()
     # Convert escape sequences in delimiter
-    args.delimiter = args.delimiter.encode().decode('unicode_escape')
+    args.delimiter = args.delimiter.encode().decode("unicode_escape")
     return args
 
 
@@ -260,7 +260,7 @@ def main() -> None:
     )
 
     # Write reports to output file
-    write_reports(reports, args.regions.split(','), args.output_file, args.delimiter)
+    write_reports(reports, args.regions.split(","), args.output_file, args.delimiter)
 
 
 if __name__ == "__main__":

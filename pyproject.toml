@@ -65,6 +65,9 @@ Issues = "https://github.com/RECETOX/freqsap/issues"
 Changelog = "https://github.com/RECETOX/freqsap/CHANGELOG.md"
 ReadTheDocs = "https://freqsap.readthedocs.io"
 
+[project.scripts]
+freqsap = "freqsap.__main__:main"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 

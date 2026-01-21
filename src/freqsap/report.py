@@ -111,4 +111,4 @@ class PopulationFilter:
             list[dict]: Rows from only the specified regions.
         """
         populations = set.union(*[PopulationFilter._mapping.get(group, set()) for group in regions])
-        return filter(lambda x: x.get("population") in populations, report.rows())
+        return list(filter(lambda x: x.get("population") in populations, report.rows()))

@@ -22,7 +22,8 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    'requests'
+    'requests',
+    'openpyxl'
 ]
 description = "freqsap can be used to query the frequency of single amino-acid polymorphisms"
 keywords = ["proteomics","dbsnp","amino-acid","polymorphism"]

@@ -10,12 +10,12 @@ import csv
 import sys
 from pathlib import Path
 from openpyxl import Workbook
-
 from freqsap.accession import Accession
 from freqsap.dbsnp import DBSNP
 from freqsap.ebi import EBI
 from freqsap.interfaces import ProteinVariantAPI
 from freqsap.interfaces import VariantFrequencyAPI
+from freqsap.report import PopulationFilter
 from freqsap.report import ReferenceSNPReport
 from freqsap.uniprot import UniProt
 
@@ -33,10 +33,26 @@ def parse_args() -> argparse.Namespace:
     """
     parser = argparse.ArgumentParser(description="Query protein variants and their frequencies from various databases.")
 
-    parser.add_argument("accession", type=str, help="Protein accession identifier to query")
-
-    parser.add_argument("output", type=str, help="Path to output file for results")
-
+    parser.add_argument(
+        "-a",
+        "--accession",
+        type=str,
+        required=True,
+        help="Protein accession number.",
+    )
+    parser.add_argument(
+        "-o",
+        "--output-file",
+        type=str,
+        help="Output file name.",
+    )
+    parser.add_argument(
+        "-p",
+        "--populations",
+        type=str,
+        required=True,
+        help="Comma-separated list of populations.",
+    )
     parser.add_argument(
         "--protein-api",
         type=str,
@@ -95,11 +111,12 @@ def get_frequency_api(api_name: str) -> VariantFrequencyAPI:
     return apis[api_name]()
 
 
-def write_reports(reports: list[ReferenceSNPReport], output_path: str, delimiter: str) -> None:
+def write_reports(reports: list[ReferenceSNPReport], populations: list[str], output_path: str, delimiter: str) -> None:
     r"""Write all reports to the output file in delimited format.
 
     Args:
         reports: List of ReferenceSNPReport objects to write
+        populations: List of populations to report.
         output_path: Path to the output file
         delimiter: Character to use as field delimiter (e.g., '\t' or ','). Use 'xlsx' for Excel format.
 
@@ -117,16 +134,23 @@ def write_reports(reports: list[ReferenceSNPReport], output_path: str, delimiter
             header.extend(other[len(header) :])
 
     if delimiter.lower() == "xlsx":
-        _write_xlsx(reports, output_path, header)
+        _write_xlsx(reports, populations, output_path, header)
     else:
-        _write_csv(reports, output_path, header, delimiter)
+        _write_csv(reports, populations, output_path, header, delimiter)
 
 
-def _write_csv(reports: list[ReferenceSNPReport], output_path: str, header: list[str], delimiter: str) -> None:
+def _write_csv(
+    reports: list[ReferenceSNPReport],
+    populations: list[str],
+    output_path: str,
+    header: list[str],
+    delimiter: str,
+) -> None:
     """Write reports to a delimited text file (CSV/TSV).
 
     Args:
         reports: List of ReferenceSNPReport objects to write
+        populations: List of populations to report.
         output_path: Path to the output file
         header: List of column headers
         delimiter: Character to use as field delimiter
@@ -139,14 +163,16 @@ def _write_csv(reports: list[ReferenceSNPReport], output_path: str, header: list
         writer.writeheader()
 
         for report in reports:
-            writer.writerows(report.rows())
+            rows = PopulationFilter.apply(populations, report)
+            writer.writerows(rows)
 
 
-def _write_xlsx(reports: list[ReferenceSNPReport], output_path: str, header: list[str]) -> None:
+def _write_xlsx(reports: list[ReferenceSNPReport], populations: list[str], output_path: str, header: list[str]) -> None:
     """Write reports to an Excel file (XLSX format).
 
     Args:
         reports: List of ReferenceSNPReport objects to write
+        populations: List of populations to report.
         output_path: Path to the output file
         header: List of column headers
 
@@ -156,7 +182,6 @@ def _write_xlsx(reports: list[ReferenceSNPReport], output_path: str, header: lis
     Raises:
         ImportError: If openpyxl is not installed
     """
-
     wb = Workbook()
     ws = wb.active
     ws.title = "Variants"
@@ -166,7 +191,8 @@ def _write_xlsx(reports: list[ReferenceSNPReport], output_path: str, header: lis
 
     # Write data rows
     for report in reports:
-        for row_dict in report.rows():
+        rows = PopulationFilter.apply(populations, report)
+        for row_dict in rows:
             # Create row with values in the correct order according to header
             row = [row_dict.get(col, "") for col in header]
             ws.append(row)
@@ -230,7 +256,7 @@ def main() -> None:
     )
 
     # Write reports to output file
-    write_reports(reports, args.output, args.delimiter)
+    write_reports(reports, args.populations, args.output, args.delimiter)
 
 
 if __name__ == "__main__":

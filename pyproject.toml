@@ -31,7 +31,7 @@ license = {file = "LICENSE"}
 name = "freqsap"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.8"
-version = "1.0.0"
+version = "1.1.0"
 
 [project.optional-dependencies]
 dev = [
@@ -128,7 +128,7 @@ force-single-line = true
 no-lines-before = ["future","standard-library","third-party","first-party","local-folder"]
 
 [tool.bumpversion]
-current_version = "1.0.0"
+current_version = "1.1.0"
 
 [[tool.bumpversion.files]]
 filename = "src/freqsap/__init__.py"

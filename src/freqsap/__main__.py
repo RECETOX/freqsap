@@ -9,6 +9,8 @@ import argparse
 import csv
 import sys
 from pathlib import Path
+from openpyxl import Workbook
+
 from freqsap.accession import Accession
 from freqsap.dbsnp import DBSNP
 from freqsap.ebi import EBI
@@ -51,7 +53,12 @@ def parse_args() -> argparse.Namespace:
         help="Variant frequency API to use (default: dbsnp)",
     )
 
-    parser.add_argument("--delimiter", type=str, default="\t", help="Delimiter for output file (default: tab)")
+    parser.add_argument(
+        "--delimiter",
+        type=str,
+        default="\t",
+        help="Delimiter for output file (default: tab). Use 'xlsx' to output Excel format.",
+    )
 
     return parser.parse_args()
 
@@ -94,7 +101,7 @@ def write_reports(reports: list[ReferenceSNPReport], output_path: str, delimiter
     Args:
         reports: List of ReferenceSNPReport objects to write
         output_path: Path to the output file
-        delimiter: Character to use as field delimiter (e.g., '\t' or ',')
+        delimiter: Character to use as field delimiter (e.g., '\t' or ','). Use 'xlsx' for Excel format.
 
     Returns:
         None
@@ -109,12 +116,62 @@ def write_reports(reports: list[ReferenceSNPReport], output_path: str, delimiter
         if header < other:
             header.extend(other[len(header) :])
 
+    if delimiter.lower() == "xlsx":
+        _write_xlsx(reports, output_path, header)
+    else:
+        _write_csv(reports, output_path, header, delimiter)
+
+
+def _write_csv(reports: list[ReferenceSNPReport], output_path: str, header: list[str], delimiter: str) -> None:
+    """Write reports to a delimited text file (CSV/TSV).
+
+    Args:
+        reports: List of ReferenceSNPReport objects to write
+        output_path: Path to the output file
+        header: List of column headers
+        delimiter: Character to use as field delimiter
+
+    Returns:
+        None
+    """
     with Path.open(output_path, "w") as file:
         writer = csv.DictWriter(file, fieldnames=header, delimiter=delimiter, extrasaction="ignore")
         writer.writeheader()
 
         for report in reports:
             writer.writerows(report.rows())
+
+
+def _write_xlsx(reports: list[ReferenceSNPReport], output_path: str, header: list[str]) -> None:
+    """Write reports to an Excel file (XLSX format).
+
+    Args:
+        reports: List of ReferenceSNPReport objects to write
+        output_path: Path to the output file
+        header: List of column headers
+
+    Returns:
+        None
+
+    Raises:
+        ImportError: If openpyxl is not installed
+    """
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Variants"
+
+    # Write header
+    ws.append(header)
+
+    # Write data rows
+    for report in reports:
+        for row_dict in report.rows():
+            # Create row with values in the correct order according to header
+            row = [row_dict.get(col, "") for col in header]
+            ws.append(row)
+
+    wb.save(output_path)
 
 
 def check_apis(protein_api: ProteinVariantAPI, frequency_api: VariantFrequencyAPI) -> None:

@@ -54,3 +54,57 @@ class ReferenceSNPReport:
         """
         _base = {"id": self._variation.ref, "position": self._variation.position}
         return [_base | study.row() for study in self._studies]
+
+
+class PopulationFilter:
+    _mapping: dict[str, set[str]] = {
+        "Africa": set(["African"]),
+        "North America": set(
+            [
+                "American",
+                "African American",
+                "Mexican",
+                "Cuban",
+                "European American",
+                "NativeAmerican",
+                "NativeHawaiian",
+            ]
+        ),
+        "Asia": set(
+            [
+                "Asian",
+                "East Asian",
+                "Central Asia",
+                "JAPANESE",
+                "KOREAN",
+                "South Asian",
+                "SouthAsian",
+            ]
+        ),
+        "Europe": set(
+            [
+                "Europe",
+                "European",
+                "Finnish from FINRISK project",
+                "Spanish controls",
+                "TWIN COHORT",
+            ]
+        ),
+        "Global": set(["Global", "Total"]),
+        "South America": set(
+            [
+                "Latin American 1",
+                "Latin American 2",
+                "Dominican",
+                "PuertoRican",
+                "SouthAmerican",
+            ]
+        ),
+        "Middle East": set(["Middle Eastern", "Near_East"]),
+        "Other": set(["Other"]),
+    }
+
+    @staticmethod
+    def apply(regions: list[str], report: ReferenceSNPReport) -> list[dict]:
+        populations = set.union(*[PopulationFilter._mapping.get(group, set()) for group in regions])
+        return filter(lambda x: x.get("population") in populations, report.rows())

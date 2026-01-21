@@ -21,7 +21,9 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-dependencies = []
+dependencies = [
+    'requests'
+]
 description = "freqsap can be used to query the frequency of single amino-acid polymorphisms"
 keywords = ["proteomics","dbsnp","amino-acid","polymorphism"]
 license = {file = "LICENSE"}

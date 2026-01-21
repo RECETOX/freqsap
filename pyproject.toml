@@ -21,14 +21,17 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-dependencies = []
+dependencies = [
+    'requests',
+    'openpyxl'
+]
 description = "freqsap can be used to query the frequency of single amino-acid polymorphisms"
 keywords = ["proteomics","dbsnp","amino-acid","polymorphism"]
 license = {file = "LICENSE"}
 name = "freqsap"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.8"
-version = "0.1.0"
+version = "1.1.0"
 
 [project.optional-dependencies]
 dev = [
@@ -61,6 +64,9 @@ Repository = "https://github.com/RECETOX/freqsap"
 Issues = "https://github.com/RECETOX/freqsap/issues"
 Changelog = "https://github.com/RECETOX/freqsap/CHANGELOG.md"
 ReadTheDocs = "https://freqsap.readthedocs.io"
+
+[project.scripts]
+freqsap = "freqsap.__main__:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -125,7 +131,7 @@ force-single-line = true
 no-lines-before = ["future","standard-library","third-party","first-party","local-folder"]
 
 [tool.bumpversion]
-current_version = "0.1.0"
+current_version = "1.1.0"
 
 [[tool.bumpversion.files]]
 filename = "src/freqsap/__init__.py"

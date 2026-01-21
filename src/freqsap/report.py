@@ -1,6 +1,7 @@
 """Module for generating reports from variant frequency data."""
 
 from __future__ import annotations
+from typing import ClassVar
 from freqsap.study import Study
 from freqsap.variation import Variation
 
@@ -54,3 +55,60 @@ class ReferenceSNPReport:
         """
         _base = {"id": self._variation.ref, "position": self._variation.position}
         return [_base | study.row() for study in self._studies]
+
+
+class PopulationFilter:
+    """Class to filter reports for only certain populations."""
+
+    _mapping: ClassVar[dict[str, set[str]]] = {
+        "Africa": {"African"},
+        "North America": {
+            "American",
+            "African American",
+            "Mexican",
+            "Cuban",
+            "European American",
+            "NativeAmerican",
+            "NativeHawaiian",
+        },
+        "Asia": {
+            "Asian",
+            "East Asian",
+            "Central Asia",
+            "JAPANESE",
+            "KOREAN",
+            "South Asian",
+            "SouthAsian",
+        },
+        "Europe": {
+            "Europe",
+            "European",
+            "Finnish from FINRISK project",
+            "Spanish controls",
+            "TWIN COHORT",
+        },
+        "Global": {"Global", "Total"},
+        "South America": {
+            "Latin American 1",
+            "Latin American 2",
+            "Dominican",
+            "PuertoRican",
+            "SouthAmerican",
+        },
+        "Middle East": {"Middle Eastern", "Near_East"},
+        "Other": {"Other"},
+    }
+
+    @staticmethod
+    def apply(regions: list[str], report: ReferenceSNPReport) -> list[dict]:
+        """Filter reports for certain regions.
+
+        Args:
+            regions (list[str]): List of regions to include.
+            report (ReferenceSNPReport): Report from which to filter rows.
+
+        Returns:
+            list[dict]: Rows from only the specified regions.
+        """
+        populations = set.union(*[PopulationFilter._mapping.get(group, set()) for group in regions])
+        return list(filter(lambda x: x.get("population") in populations, report.rows()))

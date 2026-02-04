@@ -15,14 +15,14 @@ class UniProt(ProteinVariantAPI):
     Provides methods to query protein information and variations from UniProt.
     """
 
-    def __init__(self):
+    def __init__(self, timeout: int = 3):
         """Initialize the UniProt API interface.
 
         Sets up default query parameters, HTTP headers, and connection timeout.
         """
         self._params = {"fields": ["accession", "xref_dbsnp"]}
         self._headers = {"accept": "application/json"}
-        self._timeout = 3
+        self._timeout = timeout
 
     def get(self, accession: Accession) -> Protein:
         """Retrieve protein and its variations from UniProt.

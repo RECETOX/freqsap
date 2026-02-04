@@ -13,13 +13,13 @@ from freqsap.variation import Variation
 class EBI(ProteinVariantAPI):
     """Class to access the EBI protein API."""
 
-    def __init__(self):
+    def __init__(self, timeout: int = 3):
         """Initialize the EBI API interface.
 
         Sets up HTTP headers and connection timeout.
         """
         self._headers = {"Accept": "application/json"}
-        self._timeout = 3
+        self._timeout = timeout
 
     def _request(self, url: str) -> requests.Response:
         """Private function to submit requests.

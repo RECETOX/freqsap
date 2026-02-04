@@ -60,59 +60,20 @@ def parse_args() -> argparse.Namespace:
         type=str,
         help="Output file name.",
     )
-
     parser.add_argument(
-        "--protein-api",
-        type=str,
-        choices=["uniprot", "ebi"],
-        default="ebi",
-        help="Protein variant API to use (default: ebi)",
+        "-t",
+        "--timeout",
+        type=int,
+        default=30,
+        help="Timeout parameter for the REST APIs."
     )
 
-    parser.add_argument(
-        "--frequency-api",
-        type=str,
-        choices=["dbsnp"],
-        default="dbsnp",
-        help="Variant frequency API to use (default: dbsnp)",
-    )
 
     args = parser.parse_args()
     # Convert escape sequences in delimiter
     args.delimiter = args.delimiter.encode().decode("unicode_escape")
     return args
 
-
-def get_protein_api(api_name: str) -> ProteinVariantAPI:
-    """Instantiate the chosen protein API.
-
-    Args:
-        api_name: Name of the protein API to instantiate ('uniprot' or 'ebi')
-
-    Returns:
-        ProteinVariantAPI: An instance of the requested protein variant API
-
-    Raises:
-        KeyError: If the api_name is not recognized
-    """
-    apis = {"uniprot": UniProt, "ebi": EBI}
-    return apis[api_name]()
-
-
-def get_frequency_api(api_name: str) -> VariantFrequencyAPI:
-    """Instantiate the chosen frequency API.
-
-    Args:
-        api_name: Name of the frequency API to instantiate ('dbsnp')
-
-    Returns:
-        VariantFrequencyAPI: An instance of the requested variant frequency API
-
-    Raises:
-        KeyError: If the api_name is not recognized
-    """
-    apis = {"dbsnp": DBSNP}
-    return apis[api_name]()
 
 
 def write_reports(reports: list[ReferenceSNPReport], regions: list[str], output_path: str, delimiter: str) -> None:
@@ -244,8 +205,8 @@ def main() -> None:
     args = parse_args()
 
     # Instantiate chosen APIs
-    protein_api = get_protein_api(args.protein_api)
-    frequency_api = get_frequency_api(args.frequency_api)
+    protein_api = EBI(timeout = args.timeout)
+    frequency_api = DBSNP(timeout = args.timeout)
 
     # Check if APIs are available
     check_apis(protein_api, frequency_api)

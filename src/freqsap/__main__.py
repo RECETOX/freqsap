@@ -10,6 +10,7 @@ import csv
 import sys
 from pathlib import Path
 from openpyxl import Workbook
+from freqsap import __version__
 from freqsap.accession import Accession
 from freqsap.dbsnp import DBSNP
 from freqsap.ebi import EBI
@@ -66,6 +67,13 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=30,
         help="Timeout parameter for the REST APIs."
+    )
+    parser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
+        help="Show CLI version and exit.",
     )
 
 

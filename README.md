@@ -13,20 +13,74 @@
 | **Other best practices**           | &nbsp; |
 | Documentation                      | [![Documentation Status](https://readthedocs.org/projects/freqsap/badge/?version=latest)](https://freqsap.readthedocs.io/en/latest/?badge=latest) || **GitHub Actions**                 | &nbsp; |
 | Build                              | [![build](https://github.com/RECETOX/freqsap/actions/workflows/build.yml/badge.svg)](https://github.com/RECETOX/freqsap/actions/workflows/build.yml) |
-| Link checker              | [![link-check](https://github.com/RECETOX/freqsap/actions/workflows/link-check.yml/badge.svg)](https://github.com/RECETOX/freqsap/actions/workflows/link-check.yml) |## How to use freqsap
+| Link checker              | [![link-check](https://github.com/RECETOX/freqsap/actions/workflows/link-check.yml/badge.svg)](https://github.com/RECETOX/freqsap/actions/workflows/link-check.yml) |
 
-freqsap can be used to query the frequency of single amino-acid polymorphisms
+## How to use freqsap
+
+freqsap can be used to query the frequency of single amino-acid polymorphisms.
 
 The project setup is documented in [project_setup.md](project_setup.md). Feel free to remove this document (and/or the link to this document) if you don't need it.
 
 ## Installation
 
-To install freqsap from GitHub repository, do:
+Install from PyPI:
+
+```console
+python -m pip install freqsap
+```
+
+Install from GitHub repository:
 
 ```console
 git clone git@github.com:RECETOX/freqsap.git
 cd freqsap
 python -m pip install .
+```
+
+## Command line usage
+
+Display CLI help:
+
+```console
+freqsap --help
+```
+
+Run a query:
+
+```console
+freqsap \
+	--accession P02792 \
+	--regions European,East Asian \
+	--output-file P02792_frequency.tsv
+```
+
+Common options:
+
+- `--delimiter`: output delimiter (default is tab). Use `xlsx` for Excel output.
+- `--timeout`: timeout for REST API calls in seconds (default: `30`).
+
+Example with Excel output:
+
+```console
+freqsap \
+	--accession P02792 \
+	--regions European,East Asian \
+	--delimiter xlsx \
+	--output-file P02792_frequency.xlsx
+```
+
+## Version information
+
+Show the CLI version:
+
+```console
+freqsap --version
+```
+
+Show the Python package version:
+
+```console
+python -c "import freqsap; print(freqsap.__version__)"
 ```
 
 ## Documentation

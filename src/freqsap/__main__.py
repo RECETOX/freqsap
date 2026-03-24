@@ -18,7 +18,6 @@ from freqsap.interfaces import ProteinVariantAPI
 from freqsap.interfaces import VariantFrequencyAPI
 from freqsap.report import PopulationFilter
 from freqsap.report import ReferenceSNPReport
-from freqsap.uniprot import UniProt
 
 
 def parse_args() -> argparse.Namespace:
@@ -66,7 +65,7 @@ def parse_args() -> argparse.Namespace:
         "--timeout",
         type=int,
         default=30,
-        help="Timeout parameter for the REST APIs."
+        help="Timeout parameter for the REST APIs.",
     )
     parser.add_argument(
         "-v",
@@ -76,12 +75,10 @@ def parse_args() -> argparse.Namespace:
         help="Show CLI version and exit.",
     )
 
-
     args = parser.parse_args()
     # Convert escape sequences in delimiter
     args.delimiter = args.delimiter.encode().decode("unicode_escape")
     return args
-
 
 
 def write_reports(reports: list[ReferenceSNPReport], regions: list[str], output_path: str, delimiter: str) -> None:
@@ -213,8 +210,8 @@ def main() -> None:
     args = parse_args()
 
     # Instantiate chosen APIs
-    protein_api = EBI(timeout = args.timeout)
-    frequency_api = DBSNP(timeout = args.timeout)
+    protein_api = EBI(timeout=args.timeout)
+    frequency_api = DBSNP(timeout=args.timeout)
 
     # Check if APIs are available
     check_apis(protein_api, frequency_api)

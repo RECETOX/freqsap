@@ -8,9 +8,11 @@ def variation() -> Variation:
     """Fixture to generate a variation."""
     return Variation("rs768011218", 1)
 
+
 @pytest.fixture
 def api() -> DBSNP:
-    return DBSNP(timeout = 30)
+    """Generate API endpoint with timeout 30 seconds."""
+    return DBSNP(timeout=30)
 
 
 def test_init():

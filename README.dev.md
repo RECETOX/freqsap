@@ -32,7 +32,7 @@ There are two ways to run tests.
 The first way requires an activated virtual environment with the development tools installed:
 
 ```shell
-pytest -v
+python -m pytest -v
 ```
 
 The second is to use `tox`, which can be installed separately (e.g. with `pip install tox`), i.e. not necessarily inside the virtual environment you use for installing `freqsap`, but then builds the necessary virtual environments itself by simply running:
@@ -44,6 +44,8 @@ tox
 Testing with `tox` allows for keeping the testing environment separate from your development environment.
 The development environment will typically accumulate (old) packages during development that interfere with testing; this problem is avoided by testing with `tox`.
 
+The CI matrix tests against Python 3.10, 3.11, and 3.12 on Ubuntu, macOS, and Windows.
+
 ### Test coverage
 
 In addition to just running the tests to see if they pass, they can be used for coverage statistics, i.e. to determine how much of the package's code is actually executed during tests.
@@ -53,54 +55,79 @@ In an activated virtual environment with the development tools installed, inside
 coverage run
 ```
 
-This runs tests and stores the result in a `.coverage` file.
+This runs tests (via `python -m pytest`) and stores the result in a `.coverage` file.
 To see the results on the command line, run
 
 ```shell
 coverage report
 ```
 
-`coverage` can also generate output in HTML and other formats; see `coverage help` for more information.## Running linters locally
+`coverage` can also generate output in HTML and other formats; see `coverage help` for more information.
 
-For linting and sorting imports we will use [ruff](https://beta.ruff.rs/docs/). Running the linters requires an
+Alternatively, use `pytest-cov` directly:
+
+```shell
+python -m pytest -v --cov=src/freqsap --cov-report=term-missing
+```## Running linters locally
+
+For linting, import sorting, and formatting we use [ruff](https://docs.astral.sh/ruff/). Running the linters requires an
 activated virtual environment with the development tools installed.
 
 ```shell
-# linter
+# check for lint errors
 ruff check .
 
-# linter with automatic fixing
+# auto-fix lint errors
 ruff check . --fix
+
+# check formatting
+ruff format --check .
+
+# apply formatting
+ruff format .
 ```
 
-To fix readability of your code style you can use [yapf](https://github.com/google/yapf).## Generating the API docs
+The CI runs both `ruff check` and `ruff format --check` and will fail if either reports issues.## Generating the API docs
+
+Building the documentation requires [pandoc](https://pandoc.org/installing.html) in addition to the Python dependencies. Install it via your system package manager, e.g.:
+
+```shell
+# Debian/Ubuntu
+sudo apt install pandoc
+
+# macOS
+brew install pandoc
+```
+
+To run the full documentation build (coverage check, doctest, and HTML output) — matching what CI does:
 
 ```shell
 cd docs
-make html
+make coverage doctest html
 ```
 
-The documentation will be in `docs/_build/html`
+The HTML output will be in `docs/_build/html`.
 
-If you do not have `make` use
+You can also run each target individually:
+
+```shell
+cd docs
+
+# build HTML only
+make html
+
+# find undocumented Python objects
+make coverage
+cat _build/coverage/python.txt
+
+# test code snippets in documentation
+make doctest
+```
+
+If you do not have `make`, use `sphinx-build` directly:
 
 ```shell
 sphinx-build -b html docs docs/_build/html
-```
-
-To find undocumented Python objects run
-
-```shell
-cd docs
-make coverage
-cat _build/coverage/python.txt
-```
-
-To [test snippets](https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html) in documentation run
-
-```shell
-cd docs
-make doctest
 ```
 
 ## Versioning
@@ -108,79 +135,38 @@ make doctest
 Bumping the version across all files is done with [bump-my-version](https://github.com/callowayproject/bump-my-version), e.g.
 
 ```shell
-bump-my-version bump major  # bumps from e.g. 0.3.2 to 1.0.0
-bump-my-version bump minor  # bumps from e.g. 0.3.2 to 0.4.0
-bump-my-version bump patch  # bumps from e.g. 0.3.2 to 0.3.3
+bump-my-version bump major  # bumps from e.g. 1.1.0 to 2.0.0
+bump-my-version bump minor  # bumps from e.g. 1.1.0 to 1.2.0
+bump-my-version bump patch  # bumps from e.g. 1.1.0 to 1.1.1
 ```
+
+This updates the version string in all three tracked locations:
+
+- `src/freqsap/__init__.py` — package `__version__` attribute (also exposed via `freqsap --version`)
+- `pyproject.toml` — project metadata
+- `docs/conf.py` — Sphinx documentation
 
 ## Making a release
 
-This section describes how to make a release in 3 parts:
+This section describes how to make a release in 2 parts:
 
 1. preparation
-1. making a release on PyPI
-1. making a release on GitHub
+1. making a release on GitHub (which automatically publishes to PyPI)
 
-### (1/3) Preparation
+### (1/2) Preparation
 
-1. Update the <CHANGELOG.md> (don't forget to update links at bottom of page).
+1. Update [CHANGELOG.md](CHANGELOG.md) (don't forget to update links at the bottom of the page).
+1. Bump the version using `bump-my-version` (see [Versioning](#versioning)).
+1. Run the unit tests with `python -m pytest -v` to confirm everything passes.
+1. Push all changes to `main` and verify the [build CI](https://github.com/RECETOX/freqsap/actions/workflows/build.yml) is green.
 
-1. Make sure the [version has been updated](#versioning).
-1. Run the unit tests with `pytest -v`
+### (2/2) GitHub release → PyPI
 
-### (2/3) PyPI
+Publishing to PyPI is fully automated via the [publish workflow](https://github.com/RECETOX/freqsap/actions/workflows/publish.yml) using trusted publishing (OIDC — no API tokens required).
 
-In a new terminal:
+To trigger it:
 
-```shell
-# OPTIONAL: prepare a new directory with fresh git clone to ensure the release
-# has the state of origin/main branch
-cd $(mktemp -d freqsap.XXXXXX)
-git clone git@github.com:RECETOX/freqsap .
+1. [Create a new release on GitHub](https://github.com/RECETOX/freqsap/releases/new), using a tag that matches the bumped version (e.g. `v1.2.0`).
+1. Once the release is published, the workflow builds the distribution and uploads it to [PyPI](https://pypi.org/project/freqsap/) automatically.
 
-# make sure to have a recent version of pip and the publishing dependencies
-python -m pip install --upgrade pip
-python -m pip install .[publishing]
-
-# create the source distribution and the wheel
-python -m build
-
-# upload to test pypi instance (requires credentials)
-python -m twine upload --repository testpypi dist/*
-```
-
-Visit
-[https://test.pypi.org/project/freqsap](https://test.pypi.org/project/freqsap)
-and verify that your package was uploaded successfully. Keep the terminal open, we'll need it later.
-
-In a new terminal, without an activated virtual environment or an env directory:
-
-```shell
-cd $(mktemp -d freqsap-test.XXXXXX)
-
-# prepare a clean virtual environment and activate it
-python -m venv env
-source env/bin/activate
-
-# make sure to have a recent version of pip and setuptools
-python -m pip install --upgrade pip
-
-# install from test pypi instance:
-python -m pip -v install --no-cache-dir \
---index-url https://test.pypi.org/simple/ \
---extra-index-url https://pypi.org/simple freqsap
-```
-
-Check that the package works as it should when installed from pypitest.
-
-Then upload to pypi.org with:
-
-```shell
-# Back to the first terminal,
-# FINAL STEP: upload to PyPI (requires credentials)
-python -m twine upload dist/*
-```
-
-### (3/3) GitHub
-
-Don't forget to also make a [release on GitHub](https://github.com/RECETOX/freqsap/releases/new).
+You can also trigger the publish workflow manually from the [Actions tab](https://github.com/RECETOX/freqsap/actions/workflows/publish.yml) using the **Run workflow** button.

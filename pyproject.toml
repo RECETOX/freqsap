@@ -113,7 +113,8 @@ ignore = [
     "D107", # Missing docstring in `__init__`,
     "PT012",
     "TRY300",
-    "E501"
+    "E501",
+    "CPY001"
 ]
 pydocstyle.convention = "google"
 

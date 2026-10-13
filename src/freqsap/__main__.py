@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import csv
 import sys
+import requests
 from pathlib import Path
 from openpyxl import Workbook
 from freqsap import __version__
@@ -221,12 +222,27 @@ def main() -> None:
     protein = protein_api.get(accession)
 
     # Collect frequency reports for all variants
-    reports: list[ReferenceSNPReport] = list(
-        filter(None, [frequency_api.get(variation) for variation in protein.variations]),
-    )
+    reports: list[ReferenceSNPReport] = []
+    failed: list[str] = []
+    for variation in protein.variations:
+        try:
+            report = frequency_api.get(variation)
+        except requests.RequestException as e:
+            failed.append(str(variation))
+            print(f"WARNING: failed to retrieve {variation}: {e}", file=sys.stderr)
+            continue
+        if report is None:
+            print(f"WARNING: no frequency data for {variation}", file=sys.stderr)
+        else:
+            reports.append(report)
 
     # Write reports to output file
-    write_reports(reports, args.regions.split(","), args.output_file, args.delimiter)
+    if reports:
+        write_reports(reports, args.regions.split(","), args.output_file, args.delimiter)
+
+    if failed:
+        print(f"ERROR: output is incomplete, {len(failed)} variant(s) failed: {', '.join(failed)}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

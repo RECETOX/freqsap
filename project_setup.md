@@ -21,13 +21,17 @@ versions.
 
 ## Package management and dependencies
 
-You can use either pip or conda for installing dependencies and package management. This repository does not force you
-to use one or the other, as project requirements differ. For advice on what to use, please check [the relevant section
+This repository manages dependencies with [uv](https://docs.astral.sh/uv/): `pyproject.toml` declares the
+requirements and `uv.lock` pins the resolved versions for all supported Python versions and platforms.
+`pip` and `conda` can still be used to install the package, as project requirements differ; note that only `uv`
+resolves from `uv.lock` and is therefore the reproducible path. For advice on what to use, please check [the relevant section
 of the
 guide](https://guide.esciencecenter.nl/#/best_practices/language_guides/python?id=dependencies-and-package-management).
 
 - Runtime dependencies should be added to `pyproject.toml` in the `dependencies` list under `[project]`.
-- Development dependencies, such as for testing or documentation, should be added to `pyproject.toml` in one of the lists under `[project.optional-dependencies]`.
+- Development dependencies, such as for testing or documentation, should be added to `pyproject.toml` in the `dev` list under `[dependency-groups]` (a [PEP 735](https://peps.python.org/pep-0735/) dependency group, installed by `uv sync` and `pip install --group dev`).
+- Optional features that end users can choose should be added under `[project.optional-dependencies]`, as extras are part of the published package's interface; this repository exposes `docs` and `publishing`.
+- After changing dependencies, run `uv lock` and commit `pyproject.toml` and `uv.lock` together.
 
 ## Packaging/One command install
 

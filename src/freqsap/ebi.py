@@ -1,6 +1,7 @@
 """Module for interacting with the EBI Proteins API."""
 
 from __future__ import annotations
+
 # ruff: noqa: I001
 from typing import Generator
 import requests  # noqa: TC002

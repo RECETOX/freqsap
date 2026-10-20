@@ -73,7 +73,7 @@ def test_main_reports_failed_variants(tmp_path: Path, capsys: CaptureFixture):
     db.get.side_effect = requests.Timeout("boom")
     args = MagicMock(accession="P12345", timeout=1, regions="Global", output_file=str(tmp_path / "o"), delimiter="\t")
     with patch.object(cli, "parse_args", return_value=args), patch.object(cli, "EBI", return_value=ebi), patch.object(
-        cli, "DBSNP", return_value=db
+        cli, "DBSNP", return_value=db,
     ), pytest.raises(SystemExit) as e:
         cli.main()
     assert e.value.code == 1

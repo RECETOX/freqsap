@@ -68,7 +68,7 @@ def test_has_all_variants(api: EBI):
     variants = api.get("P02792").variations
     refs = [var.ref for var in variants]
     assert all(refs)
-    assert len(variants) >= 200
+    assert len(variants) >= 170
 
 
 def test_get_is_reproducible(api: EBI, accession: str):

@@ -12,7 +12,7 @@ def api() -> UniProt:
 
 
 @pytest.fixture(params=["P02788", "P02792", "P0DJI9"])
-def accession(request):
+def accession(request: pytest.FixtureRequest) -> str:
     """Fixture to get valid protein accession as a string."""
     return request.param
 

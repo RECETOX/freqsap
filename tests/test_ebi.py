@@ -26,7 +26,7 @@ def api() -> EBI:
 
 
 @pytest.fixture(params=["P02788", "P02792", "P0DJI9"])
-def accession(request) -> str:
+def accession(request: pytest.FixtureRequest) -> str:
     """Fixture to get a protein accession as a string."""
     return request.param
 

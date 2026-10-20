@@ -1,8 +1,10 @@
 """Module for interacting with the EBI Proteins API."""
 
 from __future__ import annotations
+# ruff: noqa: I001
 from typing import Generator
-import requests
+import requests  # noqa: TC002
+
 from freqsap.accession import Accession
 from freqsap.exceptions import AccessionNotFoundError
 from freqsap.http import get_with_retry

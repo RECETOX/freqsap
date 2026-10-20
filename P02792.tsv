@@ -1,0 +1,1375 @@
+id	position	study	population	group	size	ref_allele_na	ref_allele_freq	alt_allele_1_na	alt_allele_1_freq	alt_allele_2_na	alt_allele_2_freq
+rs139732572	1	TopMed	Global	Study-wide	264690	A	0.999981	G	0.000019		
+rs139732572	1	gnomAD v4 - Genomes	Global	Study-wide	149134	A	0.999993	G	0.000007		
+rs139732572	1	gnomAD v4 - Genomes	European	Sub	78626	A	0.99999	G	0.00001		
+rs139732572	1	gnomAD v4 - Genomes	American	Sub	15266	A	1.00000	G	0.00000		
+rs139732572	1	ExAC	Global	Study-wide	120620	A	0.999992	G	0.000008		
+rs139732572	1	ExAC	Europe	Sub	72812	A	0.99999	G	0.00001		
+rs139732572	1	ExAC	American	Sub	11554	A	1.00000	G	0.00000		
+rs139732572	1	Allele Frequency Aggregator	Total	Global	35748	A	0.99997	G	0.00003		
+rs139732572	1	Allele Frequency Aggregator	European	Sub	26414	A	0.99996	G	0.00004		
+rs139732572	1	GO Exome Sequencing Project	Global	Study-wide	13006	A	0.99992	G	0.00008		
+rs139732572	1	GO Exome Sequencing Project	European American	Sub	8600	A	0.9999	G	0.0001		
+rs139732572	1	GO Exome Sequencing Project	African American	Sub	4406	A	1.0000	G	0.0000		
+rs1291835902	2	gnomAD v4 - Exomes	Global	Study-wide	1400222	G	0.9999993	A	0.0000007		
+rs1291835902	2	gnomAD v4 - Exomes	European	Sub	1164374	G	1.0000000	A	0.0000000		
+rs1291835902	2	gnomAD v4 - Exomes	American	Sub	44722	G	1.00000	A	0.00000		
+rs1291835902	2	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1291835902	2	gnomAD v4 - Genomes	Global	Study-wide	149154	G	0.999993	T	0.000007		
+rs1291835902	2	gnomAD v4 - Genomes	European	Sub	78644	G	1.00000	T	0.00000		
+rs1291835902	2	gnomAD v4 - Genomes	American	Sub	15258	G	1.00000	T	0.00000		
+rs1291835902	2	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1291835902	2	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1291835902	2	gnomAD v4 - Exomes	Global	Study-wide	1400222	G	0.9999993	A	0.0000007		
+rs1291835902	2	gnomAD v4 - Exomes	European	Sub	1164374	G	1.0000000	A	0.0000000		
+rs1291835902	2	gnomAD v4 - Exomes	American	Sub	44722	G	1.00000	A	0.00000		
+rs1291835902	2	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1291835902	2	gnomAD v4 - Genomes	Global	Study-wide	149154	G	0.999993	T	0.000007		
+rs1291835902	2	gnomAD v4 - Genomes	European	Sub	78644	G	1.00000	T	0.00000		
+rs1291835902	2	gnomAD v4 - Genomes	American	Sub	15258	G	1.00000	T	0.00000		
+rs1291835902	2	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1291835902	2	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1291835902	2	gnomAD v4 - Exomes	Global	Study-wide	1400222	G	0.9999993	A	0.0000007		
+rs1291835902	2	gnomAD v4 - Exomes	European	Sub	1164374	G	1.0000000	A	0.0000000		
+rs1291835902	2	gnomAD v4 - Exomes	American	Sub	44722	G	1.00000	A	0.00000		
+rs1291835902	2	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1291835902	2	gnomAD v4 - Genomes	Global	Study-wide	149154	G	0.999993	T	0.000007		
+rs1291835902	2	gnomAD v4 - Genomes	European	Sub	78644	G	1.00000	T	0.00000		
+rs1291835902	2	gnomAD v4 - Genomes	American	Sub	15258	G	1.00000	T	0.00000		
+rs1291835902	2	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1291835902	2	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs768011218	4	gnomAD v4 - Exomes	Global	Study-wide	1400814	C	1.0000000	T	0.0000000		
+rs768011218	4	gnomAD v4 - Exomes	European	Sub	1164878	C	1.0000000	T	0.0000000		
+rs768011218	4	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	T	0.00000		
+rs768011218	4	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs768011218	4	ExAC	Global	Study-wide	120886	C	0.999992	G	0.000008		
+rs768011218	4	ExAC	Europe	Sub	72978	C	0.99999	G	0.00001		
+rs768011218	4	ExAC	American	Sub	11560	C	1.00000	G	0.00000		
+rs768011218	4	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	G	0.00000	 T	0.00000
+rs768011218	4	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000	 T	0.0000
+rs768011218	4	gnomAD v4 - Exomes	Global	Study-wide	1400814	C	1.0000000	T	0.0000000		
+rs768011218	4	gnomAD v4 - Exomes	European	Sub	1164878	C	1.0000000	T	0.0000000		
+rs768011218	4	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	T	0.00000		
+rs768011218	4	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs768011218	4	ExAC	Global	Study-wide	120886	C	0.999992	G	0.000008		
+rs768011218	4	ExAC	Europe	Sub	72978	C	0.99999	G	0.00001		
+rs768011218	4	ExAC	American	Sub	11560	C	1.00000	G	0.00000		
+rs768011218	4	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	G	0.00000	 T	0.00000
+rs768011218	4	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000	 T	0.0000
+rs753168179	4	gnomAD v4 - Exomes	Global	Study-wide	595416	G	0.999995	C	0.000005		
+rs753168179	4	gnomAD v4 - Exomes	European	Sub	403058	G	0.999998	C	0.000002		
+rs753168179	4	gnomAD v4 - Exomes	American	Sub	43740	G	0.99998	C	0.00002		
+rs753168179	4	ExAC	Global	Study-wide	120948	G	0.999992	C	0.000008		
+rs753168179	4	ExAC	Europe	Sub	73022	G	1.00000	C	0.00000		
+rs753168179	4	ExAC	American	Sub	11560	G	1.00000	C	0.00000		
+rs1012743580	6	gnomAD v4 - Exomes	Global	Study-wide	1401128	G	0.9999957	A	0.0000043		
+rs1012743580	6	gnomAD v4 - Exomes	European	Sub	1165128	G	0.9999949	A	0.0000051		
+rs1012743580	6	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs1012743580	6	TopMed	Global	Study-wide	264690	G	0.999989	A	0.000011		
+rs1012743580	6	gnomAD v4 - Genomes	Global	Study-wide	149130	G	0.999993	A	0.000007		
+rs1012743580	6	gnomAD v4 - Genomes	European	Sub	78646	G	0.99999	A	0.00001		
+rs1012743580	6	gnomAD v4 - Genomes	American	Sub	15258	G	1.00000	A	0.00000		
+rs1012743580	6	Allele Frequency Aggregator	Total	Global	35278	G	0.99997	A	0.00003		
+rs1012743580	6	Allele Frequency Aggregator	European	Sub	26462	G	0.99996	A	0.00004		
+rs2038441401	7	TopMed	Global	Study-wide	264690	G	0.999996	C	0.000004		
+rs2038441401	7	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	C	0.00000		
+rs2038441401	7	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	C	0.0000		
+rs1307719160	8	gnomAD v4 - Exomes	Global	Study-wide	595578	A	0.999973	T	0.000027		
+rs1307719160	8	gnomAD v4 - Exomes	European	Sub	403180	A	0.999960	T	0.000040		
+rs1307719160	8	gnomAD v4 - Exomes	American	Sub	43740	A	1.00000	T	0.00000		
+rs1307719160	8	TopMed	Global	Study-wide	264690	A	0.999996	T	0.000004		
+rs1307719160	8	gnomAD v4 - Genomes	Global	Study-wide	149150	A	0.999966	T	0.000034		
+rs1307719160	8	gnomAD v4 - Genomes	European	Sub	78648	A	0.99994	T	0.00006		
+rs1307719160	8	gnomAD v4 - Genomes	American	Sub	15268	A	1.00000	T	0.00000		
+rs1307719160	8	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	T	0.00000		
+rs1307719160	8	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	T	0.0000		
+rs1348872261	8	gnomAD v4 - Exomes	Global	Study-wide	1401290	T	0.9999979	A	0.0000021		
+rs1348872261	8	gnomAD v4 - Exomes	European	Sub	1165264	T	0.9999983	A	0.0000017		
+rs1348872261	8	gnomAD v4 - Exomes	American	Sub	44724	T	0.99998	A	0.00002		
+rs11553205	10	gnomAD v4 - Exomes	Global	Study-wide	595580	C	0.999998	T	0.000002		
+rs11553205	10	gnomAD v4 - Exomes	European	Sub	403180	C	1.000000	T	0.000000		
+rs11553205	10	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	T	0.00000		
+rs11553205	10	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs11553205	10	gnomAD v4 - Genomes	Global	Study-wide	149180	C	0.999993	G	0.000007		
+rs11553205	10	gnomAD v4 - Genomes	European	Sub	78658	C	1.00000	G	0.00000		
+rs11553205	10	gnomAD v4 - Genomes	American	Sub	15272	C	0.99993	G	0.00007		
+rs11553205	10	Allele Frequency Aggregator	Total	Global	10680	C	0.99991	G	0.00009		
+rs11553205	10	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000		
+rs11553205	10	gnomAD v4 - Exomes	Global	Study-wide	595580	C	0.999998	T	0.000002		
+rs11553205	10	gnomAD v4 - Exomes	European	Sub	403180	C	1.000000	T	0.000000		
+rs11553205	10	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	T	0.00000		
+rs11553205	10	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs11553205	10	gnomAD v4 - Genomes	Global	Study-wide	149180	C	0.999993	G	0.000007		
+rs11553205	10	gnomAD v4 - Genomes	European	Sub	78658	C	1.00000	G	0.00000		
+rs11553205	10	gnomAD v4 - Genomes	American	Sub	15272	C	0.99993	G	0.00007		
+rs11553205	10	Allele Frequency Aggregator	Total	Global	10680	C	0.99991	G	0.00009		
+rs11553205	10	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000		
+rs11553266	12	TopMed	Global	Study-wide	264690	G	0.999996	T	0.000004		
+rs11553266	12	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs11553266	12	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs2038441638	16	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs2038441638	16	gnomAD v4 - Genomes	Global	Study-wide	149152	G	0.999993	A	0.000007		
+rs2038441638	16	gnomAD v4 - Genomes	European	Sub	78652	G	0.99999	A	0.00001		
+rs2038441638	16	gnomAD v4 - Genomes	American	Sub	15258	G	1.00000	A	0.00000		
+rs2038441638	16	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	A	0.00000		
+rs2038441638	16	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	A	0.0000		
+rs1310208452	16	gnomAD v4 - Exomes	Global	Study-wide	595636	C	0.999990	T	0.000010		
+rs1310208452	16	gnomAD v4 - Exomes	European	Sub	403214	C	0.999985	T	0.000015		
+rs1310208452	16	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	T	0.00000		
+rs1310208452	16	TopMed	Global	Study-wide	264690	C	0.999992	T	0.000008		
+rs1310208452	16	gnomAD v4 - Genomes	Global	Study-wide	149188	C	0.999993	T	0.000007		
+rs1310208452	16	gnomAD v4 - Genomes	European	Sub	78662	C	0.99999	T	0.00001		
+rs1310208452	16	gnomAD v4 - Genomes	American	Sub	15264	C	1.00000	T	0.00000		
+rs1310208452	16	Allele Frequency Aggregator	Total	Global	23038	C	0.99996	T	0.00004		
+rs1310208452	16	Allele Frequency Aggregator	European	Sub	15752	C	0.99994	T	0.00006		
+rs1335371840	17	gnomAD v4 - Exomes	Global	Study-wide	1401402	G	0.9999814	A	0.0000186		
+rs1335371840	17	gnomAD v4 - Exomes	European	Sub	1165342	G	0.9999777	A	0.0000223		
+rs1335371840	17	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs1335371840	17	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs1335371840	17	gnomAD v4 - Genomes	Global	Study-wide	149114	G	0.999993	A	0.000007		
+rs1335371840	17	gnomAD v4 - Genomes	European	Sub	78626	G	0.99999	A	0.00001		
+rs1335371840	17	gnomAD v4 - Genomes	American	Sub	15266	G	1.00000	A	0.00000		
+rs1335371840	17	Allele Frequency Aggregator	Total	Global	27014	G	0.99996	A	0.00004		
+rs1335371840	17	Allele Frequency Aggregator	European	Sub	17024	G	0.99994	A	0.00006		
+rs2038441797	18	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs2038441797	18	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs2038441797	18	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs764523810	20	gnomAD v4 - Exomes	Global	Study-wide	595670	T	0.999998	C	0.000002		
+rs764523810	20	gnomAD v4 - Exomes	European	Sub	403238	T	1.000000	C	0.000000		
+rs764523810	20	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs764523810	20	ExAC	Global	Study-wide	121364	T	0.999992	C	0.000008		
+rs764523810	20	ExAC	Europe	Sub	73324	T	0.99999	C	0.00001		
+rs764523810	20	ExAC	American	Sub	11576	T	1.00000	C	0.00000		
+rs764523810	20	Allele Frequency Aggregator	Total	Global	8988	T	1.0000	C	0.0000		
+rs764523810	20	Allele Frequency Aggregator	European	Sub	6062	T	1.0000	C	0.0000		
+rs754307864	21	ExAC	Global	Study-wide	121368	T	0.999992	C	0.000008		
+rs754307864	21	ExAC	Europe	Sub	73326	T	0.99999	C	0.00001		
+rs754307864	21	ExAC	American	Sub	11576	T	1.00000	C	0.00000		
+rs754307864	21	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	C	0.00000		
+rs754307864	21	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	C	0.0000		
+rs200879715	24	gnomAD v4 - Exomes	Global	Study-wide	805608	A	0.999999	T	0.000001		
+rs200879715	24	gnomAD v4 - Exomes	European	Sub	761984	A	0.999999	T	0.000001		
+rs200879715	24	gnomAD v4 - Exomes	American	Sub	984	A	1.000	T	0.000		
+rs201971200	25	gnomAD v4 - Exomes	Global	Study-wide	1401238	C	0.9997845	T	0.0002155		
+rs201971200	25	gnomAD v4 - Exomes	European	Sub	1165184	C	0.9999494	T	0.0000506		
+rs201971200	25	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	T	0.00000		
+rs201971200	25	TopMed	Global	Study-wide	264690	C	0.999664	T	0.000336		
+rs201971200	25	ExAC	Global	Study-wide	121382	C	0.999588	T	0.000412		
+rs201971200	25	ExAC	Europe	Sub	73340	C	0.99933	T	0.00067		
+rs201971200	25	ExAC	American	Sub	11576	C	1.00000	T	0.00000		
+rs201971200	25	Allele Frequency Aggregator	Total	Global	61202	C	0.99941	G	0.00000	 T	0.00059
+rs201971200	25	Allele Frequency Aggregator	European	Sub	42902	C	0.99942	G	0.00000	 T	0.00058
+rs201971200	25	GO Exome Sequencing Project	Global	Study-wide	13006	C	0.99946	T	0.00054		
+rs201971200	25	GO Exome Sequencing Project	European American	Sub	8600	C	0.9992	T	0.0008		
+rs201971200	25	GO Exome Sequencing Project	African American	Sub	4406	C	1.0000	T	0.0000		
+rs555604730	27	gnomAD v4 - Genomes	Global	Study-wide	149280	C	0.999980	A	0.000020		
+rs555604730	27	gnomAD v4 - Genomes	European	Sub	78638	C	1.00000	A	0.00000		
+rs555604730	27	gnomAD v4 - Genomes	American	Sub	15296	C	1.00000	A	0.00000		
+rs555604730	27	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	A	0.00000		
+rs555604730	27	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	A	0.0000		
+rs555604730	27	gnomAD v4 - Genomes	Global	Study-wide	149280	C	0.999980	A	0.000020		
+rs555604730	27	gnomAD v4 - Genomes	European	Sub	78638	C	1.00000	A	0.00000		
+rs555604730	27	gnomAD v4 - Genomes	American	Sub	15296	C	1.00000	A	0.00000		
+rs555604730	27	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	A	0.00000		
+rs555604730	27	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	A	0.0000		
+rs757856988	28	ExAC	Global	Study-wide	121380	C	0.999992	T	0.000008		
+rs757856988	28	ExAC	Europe	Sub	73338	C	1.00000	T	0.00000		
+rs757856988	28	ExAC	American	Sub	11576	C	1.00000	T	0.00000		
+rs397514540	30	TopMed	Global	Study-wide	264690	C	0.999992	T	0.000008		
+rs397514540	30	gnomAD v4 - Genomes	Global	Study-wide	149180	C	0.999980	T	0.000020		
+rs397514540	30	gnomAD v4 - Genomes	European	Sub	78648	C	0.99997	T	0.00003		
+rs397514540	30	gnomAD v4 - Genomes	American	Sub	15270	C	1.00000	T	0.00000		
+rs397514540	30	ExAC	Global	Study-wide	121378	C	0.999992	T	0.000008		
+rs397514540	30	ExAC	Europe	Sub	73336	C	0.99999	T	0.00001		
+rs397514540	30	ExAC	American	Sub	11576	C	1.00000	T	0.00000		
+rs397514540	30	The PAGE Study	Global	Study-wide	78696	C	0.99997	T	0.00003		
+rs397514540	30	The PAGE Study	Mexican	Sub	10810	C	1.00000	T	0.00000		
+rs397514540	30	The PAGE Study	NativeHawaiian	Sub	4534	C	1.0000	T	0.0000		
+rs397514540	30	The PAGE Study	Cuban	Sub	4230	C	1.0000	T	0.0000		
+rs397514540	30	The PAGE Study	NativeAmerican	Sub	1260	C	1.0000	T	0.0000		
+rs397514540	30	Allele Frequency Aggregator	Total	Global	14710	C	1.00000	T	0.00000		
+rs397514540	30	Allele Frequency Aggregator	European	Sub	9768	C	1.0000	T	0.0000		
+rs397514540	30	TopMed	Global	Study-wide	264690	C	0.999992	T	0.000008		
+rs397514540	30	gnomAD v4 - Genomes	Global	Study-wide	149180	C	0.999980	T	0.000020		
+rs397514540	30	gnomAD v4 - Genomes	European	Sub	78648	C	0.99997	T	0.00003		
+rs397514540	30	gnomAD v4 - Genomes	American	Sub	15270	C	1.00000	T	0.00000		
+rs397514540	30	ExAC	Global	Study-wide	121378	C	0.999992	T	0.000008		
+rs397514540	30	ExAC	Europe	Sub	73336	C	0.99999	T	0.00001		
+rs397514540	30	ExAC	American	Sub	11576	C	1.00000	T	0.00000		
+rs397514540	30	The PAGE Study	Global	Study-wide	78696	C	0.99997	T	0.00003		
+rs397514540	30	The PAGE Study	Mexican	Sub	10810	C	1.00000	T	0.00000		
+rs397514540	30	The PAGE Study	NativeHawaiian	Sub	4534	C	1.0000	T	0.0000		
+rs397514540	30	The PAGE Study	Cuban	Sub	4230	C	1.0000	T	0.0000		
+rs397514540	30	The PAGE Study	NativeAmerican	Sub	1260	C	1.0000	T	0.0000		
+rs397514540	30	Allele Frequency Aggregator	Total	Global	14710	C	1.00000	T	0.00000		
+rs397514540	30	Allele Frequency Aggregator	European	Sub	9768	C	1.0000	T	0.0000		
+rs1555796995	31	TopMed	Global	Study-wide	264690	C	0.999996	A	0.000004		
+rs1555796995	31	Allele Frequency Aggregator	Total	Global	27022	C	0.99996	A	0.00004	 T	0.00000
+rs1555796995	31	Allele Frequency Aggregator	European	Sub	17034	C	0.99994	A	0.00006	 T	0.00000
+rs1555796994	31	gnomAD v4 - Exomes	Global	Study-wide	1400594	A	0.9999850	G	0.0000150		
+rs1555796994	31	gnomAD v4 - Exomes	European	Sub	1164580	A	0.9999820	G	0.0000180		
+rs1555796994	31	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	G	0.00000		
+rs11553192	34	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs11553192	34	gnomAD v4 - Genomes	Global	Study-wide	149192	C	0.999993	T	0.000007		
+rs11553192	34	gnomAD v4 - Genomes	European	Sub	78650	C	0.99999	T	0.00001		
+rs11553192	34	gnomAD v4 - Genomes	American	Sub	15276	C	1.00000	T	0.00000		
+rs11553192	34	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	T	0.00000		
+rs11553192	34	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	T	0.0000		
+rs1431684706	36	gnomAD v4 - Exomes	Global	Study-wide	595628	C	0.999997	G	0.000003		
+rs1431684706	36	gnomAD v4 - Exomes	European	Sub	403206	C	1.000000	G	0.000000		
+rs1431684706	36	gnomAD v4 - Exomes	American	Sub	43740	C	0.99995	G	0.00005		
+rs1431684706	36	TopMed	Global	Study-wide	264690	C	0.999992	G	0.000008		
+rs1431684706	36	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	G	0.00000		
+rs1431684706	36	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000		
+rs2038445005	38	gnomAD v4 - Exomes	Global	Study-wide	595638	T	1.000000	C	0.000000		
+rs2038445005	38	gnomAD v4 - Exomes	European	Sub	403214	T	1.000000	C	0.000000		
+rs2038445005	38	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs2038445005	38	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	C	0.00000		
+rs2038445005	38	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	C	0.0000		
+rs766113186	40	ExAC	Global	Study-wide	121142	C	0.999992	G	0.000008		
+rs766113186	40	ExAC	Europe	Sub	73326	C	1.00000	G	0.00000		
+rs766113186	40	ExAC	American	Sub	11576	C	0.99991	G	0.00009		
+rs766113186	40	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	G	0.00000		
+rs766113186	40	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000		
+rs754488244	41	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs754488244	41	gnomAD v4 - Genomes	Global	Study-wide	149194	G	0.999993	C	0.000007		
+rs754488244	41	gnomAD v4 - Genomes	European	Sub	78658	G	0.99999	C	0.00001		
+rs754488244	41	gnomAD v4 - Genomes	American	Sub	15274	G	1.00000	C	0.00000		
+rs754488244	41	ExAC	Global	Study-wide	121156	G	0.999992	C	0.000008		
+rs754488244	41	ExAC	Europe	Sub	73326	G	0.99999	C	0.00001		
+rs754488244	41	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs754488244	41	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs754488244	41	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs754488244	41	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs754488244	41	gnomAD v4 - Genomes	Global	Study-wide	149194	G	0.999993	C	0.000007		
+rs754488244	41	gnomAD v4 - Genomes	European	Sub	78658	G	0.99999	C	0.00001		
+rs754488244	41	gnomAD v4 - Genomes	American	Sub	15274	G	1.00000	C	0.00000		
+rs754488244	41	ExAC	Global	Study-wide	121156	G	0.999992	C	0.000008		
+rs754488244	41	ExAC	Europe	Sub	73326	G	0.99999	C	0.00001		
+rs754488244	41	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs754488244	41	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs754488244	41	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs1455546376	42	TopMed	Global	Study-wide	264690	A	0.999992	G	0.000008		
+rs1455546376	42	gnomAD v4 - Genomes	Global	Study-wide	149174	A	0.999993	G	0.000007		
+rs1455546376	42	gnomAD v4 - Genomes	European	Sub	78648	A	1.00000	G	0.00000		
+rs1455546376	42	gnomAD v4 - Genomes	American	Sub	15270	A	1.00000	G	0.00000		
+rs1455546376	42	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	G	0.00000		
+rs1455546376	42	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	G	0.0000		
+rs11553257	42	gnomAD v4 - Exomes	Global	Study-wide	1401440	G	0.9999979	C	0.0000021		
+rs11553257	42	gnomAD v4 - Exomes	European	Sub	1165392	G	1.0000000	C	0.0000000		
+rs11553257	42	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	Global	Study-wide	121170	G	0.999992	C	0.000008		
+rs11553257	42	ExAC	Europe	Sub	73328	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs11553257	42	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	T	0.00000		
+rs11553257	42	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	T	0.0000		
+rs11553257	42	gnomAD v4 - Exomes	Global	Study-wide	1401440	G	0.9999979	C	0.0000021		
+rs11553257	42	gnomAD v4 - Exomes	European	Sub	1165392	G	1.0000000	C	0.0000000		
+rs11553257	42	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	Global	Study-wide	121170	G	0.999992	C	0.000008		
+rs11553257	42	ExAC	Europe	Sub	73328	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs11553257	42	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	T	0.00000		
+rs11553257	42	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	T	0.0000		
+rs11553257	42	gnomAD v4 - Exomes	Global	Study-wide	1401440	G	0.9999979	C	0.0000021		
+rs11553257	42	gnomAD v4 - Exomes	European	Sub	1165392	G	1.0000000	C	0.0000000		
+rs11553257	42	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	Global	Study-wide	121170	G	0.999992	C	0.000008		
+rs11553257	42	ExAC	Europe	Sub	73328	G	1.00000	C	0.00000		
+rs11553257	42	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs11553257	42	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	T	0.00000		
+rs11553257	42	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	T	0.0000		
+rs752664261	44	gnomAD v4 - Exomes	Global	Study-wide	595650	G	0.999995	C	0.000005		
+rs752664261	44	gnomAD v4 - Exomes	European	Sub	403222	G	1.000000	C	0.000000		
+rs752664261	44	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	C	0.00000		
+rs752664261	44	TopMed	Global	Study-wide	264690	G	0.999985	C	0.000015		
+rs752664261	44	gnomAD v4 - Genomes	Global	Study-wide	149216	G	0.999987	C	0.000013		
+rs752664261	44	gnomAD v4 - Genomes	European	Sub	78662	G	1.00000	C	0.00000		
+rs752664261	44	gnomAD v4 - Genomes	American	Sub	15270	G	1.00000	C	0.00000		
+rs752664261	44	ExAC	Global	Study-wide	121182	G	0.999983	C	0.000017		
+rs752664261	44	ExAC	Europe	Sub	73322	G	0.99997	C	0.00003		
+rs752664261	44	ExAC	American	Sub	11576	G	1.00000	C	0.00000		
+rs752664261	44	Allele Frequency Aggregator	Total	Global	35410	G	0.99994	C	0.00006		
+rs752664261	44	Allele Frequency Aggregator	European	Sub	26572	G	0.99992	C	0.00008		
+rs930186818	47	gnomAD v4 - Exomes	Global	Study-wide	1401450	G	0.9999986	T	0.0000014		
+rs930186818	47	gnomAD v4 - Exomes	European	Sub	1165396	G	1.0000000	T	0.0000000		
+rs930186818	47	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	T	0.00000		
+rs930186818	47	TopMed	Global	Study-wide	264690	G	0.999985	T	0.000015		
+rs930186818	47	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs930186818	47	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs1366445313	47	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1366445313	47	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1366445313	47	1000Genomes_30X	Global	Study-wide	6404	G	0.9997	T	0.0003		
+rs1366445313	47	1000Genomes_30X	Europe	Sub	1266	G	0.9984	T	0.0016		
+rs1366445313	47	1000Genomes_30X	American	Sub	980	G	1.000	T	0.000		
+rs930186818	47	gnomAD v4 - Exomes	Global	Study-wide	1401450	G	0.9999986	T	0.0000014		
+rs930186818	47	gnomAD v4 - Exomes	European	Sub	1165396	G	1.0000000	T	0.0000000		
+rs930186818	47	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	T	0.00000		
+rs930186818	47	TopMed	Global	Study-wide	264690	G	0.999985	T	0.000015		
+rs930186818	47	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs930186818	47	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs1366445313	47	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1366445313	47	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1366445313	47	1000Genomes_30X	Global	Study-wide	6404	G	0.9997	T	0.0003		
+rs1366445313	47	1000Genomes_30X	Europe	Sub	1266	G	0.9984	T	0.0016		
+rs1366445313	47	1000Genomes_30X	American	Sub	980	G	1.000	T	0.000		
+rs2122431802	48	gnomAD v4 - Exomes	Global	Study-wide	595658	T	0.999998	A	0.000002		
+rs2122431802	48	gnomAD v4 - Exomes	European	Sub	403226	T	1.000000	A	0.000000		
+rs2122431802	48	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	A	0.00000		
+rs753728494	48	gnomAD v4 - Exomes	Global	Study-wide	595646	G	0.999998	T	0.000002		
+rs753728494	48	gnomAD v4 - Exomes	European	Sub	403218	G	0.999998	T	0.000002		
+rs753728494	48	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	T	0.00000		
+rs753728494	48	ExAC	Global	Study-wide	121238	G	0.999992	T	0.000008		
+rs753728494	48	ExAC	Europe	Sub	73320	G	0.99999	T	0.00001		
+rs753728494	48	ExAC	American	Sub	11576	G	1.00000	T	0.00000		
+rs1568612391	50	gnomAD v4 - Genomes	Global	Study-wide	149158	A	0.999993	G	0.000007		
+rs1568612391	50	gnomAD v4 - Genomes	European	Sub	78652	A	0.99999	G	0.00001		
+rs1568612391	50	gnomAD v4 - Genomes	American	Sub	15270	A	1.00000	G	0.00000		
+rs1568612391	50	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs1568612391	50	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs201319635	51	gnomAD v4 - Exomes	Global	Study-wide	595662	T	0.999997	C	0.000003		
+rs201319635	51	gnomAD v4 - Exomes	European	Sub	403230	T	1.000000	C	0.000000		
+rs201319635	51	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs201319635	51	TopMed	Global	Study-wide	264690	T	0.999996	A	0.000004		
+rs201319635	51	gnomAD v4 - Genomes	Global	Study-wide	149314	T	0.999987	C	0.000013		
+rs201319635	51	gnomAD v4 - Genomes	European	Sub	78650	T	1.00000	C	0.00000		
+rs201319635	51	gnomAD v4 - Genomes	American	Sub	15298	T	1.00000	C	0.00000		
+rs201319635	51	ExAC	Global	Study-wide	121266	T	0.999984	C	0.000016		
+rs201319635	51	ExAC	Europe	Sub	73314	T	1.00000	C	0.00000		
+rs201319635	51	ExAC	American	Sub	11574	T	1.00000	C	0.00000		
+rs201319635	51	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	A	0.00000	 C	0.00000
+rs201319635	51	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	A	0.0000	 C	0.0000
+rs201319635	51	1000Genomes_30X	Global	Study-wide	6404	T	0.9997	C	0.0003		
+rs201319635	51	1000Genomes_30X	Europe	Sub	1266	T	1.0000	C	0.0000		
+rs201319635	51	1000Genomes_30X	American	Sub	980	T	1.000	C	0.000		
+rs201319635	51	1000Genomes	Global	Study-wide	5008	T	0.9998	C	0.0002		
+rs201319635	51	1000Genomes	Europe	Sub	1006	T	1.0000	C	0.0000		
+rs201319635	51	1000Genomes	American	Sub	694	T	1.000	C	0.000		
+rs201319635	51	gnomAD v4 - Exomes	Global	Study-wide	595662	T	0.999997	C	0.000003		
+rs201319635	51	gnomAD v4 - Exomes	European	Sub	403230	T	1.000000	C	0.000000		
+rs201319635	51	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs201319635	51	TopMed	Global	Study-wide	264690	T	0.999996	A	0.000004		
+rs201319635	51	gnomAD v4 - Genomes	Global	Study-wide	149314	T	0.999987	C	0.000013		
+rs201319635	51	gnomAD v4 - Genomes	European	Sub	78650	T	1.00000	C	0.00000		
+rs201319635	51	gnomAD v4 - Genomes	American	Sub	15298	T	1.00000	C	0.00000		
+rs201319635	51	ExAC	Global	Study-wide	121266	T	0.999984	C	0.000016		
+rs201319635	51	ExAC	Europe	Sub	73314	T	1.00000	C	0.00000		
+rs201319635	51	ExAC	American	Sub	11574	T	1.00000	C	0.00000		
+rs201319635	51	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	A	0.00000	 C	0.00000
+rs201319635	51	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	A	0.0000	 C	0.0000
+rs201319635	51	1000Genomes_30X	Global	Study-wide	6404	T	0.9997	C	0.0003		
+rs201319635	51	1000Genomes_30X	Europe	Sub	1266	T	1.0000	C	0.0000		
+rs201319635	51	1000Genomes_30X	American	Sub	980	T	1.000	C	0.000		
+rs201319635	51	1000Genomes	Global	Study-wide	5008	T	0.9998	C	0.0002		
+rs201319635	51	1000Genomes	Europe	Sub	1006	T	1.0000	C	0.0000		
+rs201319635	51	1000Genomes	American	Sub	694	T	1.000	C	0.000		
+rs543242420	52	TopMed	Global	Study-wide	264690	T	0.999951	G	0.000049		
+rs543242420	52	gnomAD v4 - Genomes	Global	Study-wide	149300	T	0.999940	G	0.000060		
+rs543242420	52	gnomAD v4 - Genomes	European	Sub	78656	T	0.99989	G	0.00011		
+rs543242420	52	gnomAD v4 - Genomes	American	Sub	15296	T	1.00000	G	0.00000		
+rs543242420	52	ExAC	Global	Study-wide	121272	T	0.999959	G	0.000041		
+rs543242420	52	ExAC	Europe	Sub	73312	T	0.99993	G	0.00007		
+rs543242420	52	ExAC	American	Sub	11574	T	1.00000	G	0.00000		
+rs543242420	52	Allele Frequency Aggregator	Total	Global	30412	T	0.99980	G	0.00020		
+rs543242420	52	Allele Frequency Aggregator	European	Sub	19780	T	0.99980	G	0.00020		
+rs543242420	52	1000Genomes_30X	Global	Study-wide	6404	T	0.9998	G	0.0002		
+rs543242420	52	1000Genomes_30X	Europe	Sub	1266	T	0.9992	G	0.0008		
+rs543242420	52	1000Genomes_30X	American	Sub	980	T	1.000	G	0.000		
+rs543242420	52	1000Genomes	Global	Study-wide	5008	T	0.9998	G	0.0002		
+rs543242420	52	1000Genomes	Europe	Sub	1006	T	0.9990	G	0.0010		
+rs543242420	52	1000Genomes	American	Sub	694	T	1.000	G	0.000		
+rs1222336749	53	gnomAD v4 - Exomes	Global	Study-wide	1401458	G	0.9999971	T	0.0000029		
+rs1222336749	53	gnomAD v4 - Exomes	European	Sub	1165396	G	0.9999966	T	0.0000034		
+rs1222336749	53	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	T	0.00000		
+rs1222336749	53	TopMed	Global	Study-wide	264690	G	0.999992	T	0.000008		
+rs1222336749	53	gnomAD v4 - Genomes	Global	Study-wide	149164	G	0.999993	T	0.000007		
+rs1222336749	53	gnomAD v4 - Genomes	European	Sub	78648	G	1.00000	T	0.00000		
+rs1222336749	53	gnomAD v4 - Genomes	American	Sub	15274	G	1.00000	T	0.00000		
+rs1222336749	53	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs1222336749	53	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs1206340393	54	gnomAD v4 - Exomes	Global	Study-wide	1401448	G	0.9999979	A	0.0000021		
+rs1206340393	54	gnomAD v4 - Exomes	European	Sub	1165394	G	0.9999974	A	0.0000026		
+rs1206340393	54	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs1206340393	54	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1206340393	54	gnomAD v4 - Genomes	Global	Study-wide	149202	G	0.999993	A	0.000007		
+rs1206340393	54	gnomAD v4 - Genomes	European	Sub	78658	G	0.99999	A	0.00001		
+rs1206340393	54	gnomAD v4 - Genomes	American	Sub	15272	G	1.00000	A	0.00000		
+rs1206340393	54	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1206340393	54	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1206340393	54	gnomAD v4 - Exomes	Global	Study-wide	1401448	G	0.9999979	A	0.0000021		
+rs1206340393	54	gnomAD v4 - Exomes	European	Sub	1165394	G	0.9999974	A	0.0000026		
+rs1206340393	54	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs1206340393	54	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1206340393	54	gnomAD v4 - Genomes	Global	Study-wide	149202	G	0.999993	A	0.000007		
+rs1206340393	54	gnomAD v4 - Genomes	European	Sub	78658	G	0.99999	A	0.00001		
+rs1206340393	54	gnomAD v4 - Genomes	American	Sub	15272	G	1.00000	A	0.00000		
+rs1206340393	54	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000	 T	0.00000
+rs1206340393	54	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000	 T	0.0000
+rs1266509389	55	gnomAD v4 - Exomes	Global	Study-wide	1401470	T	0.9999993	G	0.0000007		
+rs1266509389	55	gnomAD v4 - Exomes	European	Sub	1165406	T	1.0000000	G	0.0000000		
+rs1266509389	55	gnomAD v4 - Exomes	American	Sub	44724	T	1.00000	G	0.00000		
+rs1266509389	55	TopMed	Global	Study-wide	264690	T	0.999996	C	0.000004		
+rs1266509389	55	Allele Frequency Aggregator	Total	Global	14050	T	0.99993	C	0.00007		
+rs1266509389	55	Allele Frequency Aggregator	European	Sub	9690	T	1.0000	C	0.0000		
+rs529012958	56	gnomAD v4 - Exomes	Global	Study-wide	1401466	G	0.9999986	A	0.0000014		
+rs529012958	56	gnomAD v4 - Exomes	European	Sub	1165402	G	0.9999991	A	0.0000009		
+rs529012958	56	gnomAD v4 - Exomes	American	Sub	44724	G	0.99998	A	0.00002		
+rs529012958	56	gnomAD v4 - Genomes	Global	Study-wide	149318	G	0.999993	A	0.000007		
+rs529012958	56	gnomAD v4 - Genomes	European	Sub	78662	G	1.00000	A	0.00000		
+rs529012958	56	gnomAD v4 - Genomes	American	Sub	15294	G	0.99993	A	0.00007		
+rs529012958	56	ExAC	Global	Study-wide	121260	G	0.999992	A	0.000008		
+rs529012958	56	ExAC	Europe	Sub	73260	G	1.00000	A	0.00000		
+rs529012958	56	ExAC	American	Sub	11560	G	0.99991	A	0.00009		
+rs529012958	56	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	A	0.0002		
+rs529012958	56	1000Genomes_30X	Europe	Sub	1266	G	1.0000	A	0.0000		
+rs529012958	56	1000Genomes_30X	American	Sub	980	G	0.999	A	0.001		
+rs529012958	56	1000Genomes	Global	Study-wide	5008	G	0.9998	A	0.0002		
+rs529012958	56	1000Genomes	Europe	Sub	1006	G	1.0000	A	0.0000		
+rs529012958	56	1000Genomes	American	Sub	694	G	0.999	A	0.001		
+rs201241191	57	gnomAD v4 - Exomes	Global	Study-wide	1401456	G	0.9999065	A	0.0000935		
+rs201241191	57	gnomAD v4 - Exomes	European	Sub	1165396	G	0.9999803	A	0.0000197		
+rs201241191	57	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs201241191	57	TopMed	Global	Study-wide	264690	G	0.999841	A	0.000159		
+rs201241191	57	gnomAD v4 - Genomes	Global	Study-wide	149220	G	0.999839	A	0.000161		
+rs201241191	57	gnomAD v4 - Genomes	European	Sub	78670	G	0.99996	A	0.00004		
+rs201241191	57	gnomAD v4 - Genomes	American	Sub	15274	G	1.00000	A	0.00000		
+rs201241191	57	ExAC	Global	Study-wide	121238	G	0.999827	A	0.000173		
+rs201241191	57	ExAC	Europe	Sub	73254	G	0.99971	A	0.00029		
+rs201241191	57	ExAC	American	Sub	11560	G	1.00000	A	0.00000		
+rs201241191	57	Allele Frequency Aggregator	Total	Global	44416	G	0.99962	A	0.00038		
+rs201241191	57	Allele Frequency Aggregator	European	Sub	32646	G	0.99960	A	0.00040		
+rs201241191	57	GO Exome Sequencing Project	Global	Study-wide	13006	G	0.99985	A	0.00015		
+rs201241191	57	GO Exome Sequencing Project	European American	Sub	8600	G	0.9998	A	0.0002		
+rs201241191	57	GO Exome Sequencing Project	African American	Sub	4406	G	1.0000	A	0.0000		
+rs773435099	58	gnomAD v4 - Genomes	Global	Study-wide	149228	G	0.999973	A	0.000027		
+rs773435099	58	gnomAD v4 - Genomes	European	Sub	78674	G	0.99996	A	0.00004		
+rs773435099	58	gnomAD v4 - Genomes	American	Sub	15274	G	0.99993	A	0.00007		
+rs773435099	58	ExAC	Global	Study-wide	121226	G	0.999992	A	0.000008		
+rs773435099	58	ExAC	Europe	Sub	73240	G	0.99999	A	0.00001		
+rs773435099	58	ExAC	American	Sub	11558	G	1.00000	A	0.00000		
+rs773435099	58	Allele Frequency Aggregator	Total	Global	23036	G	0.99996	A	0.00004	 C	0.00000
+rs773435099	58	Allele Frequency Aggregator	European	Sub	15750	G	0.99994	A	0.00006	 C	0.00000
+rs773435099	58	gnomAD v4 - Genomes	Global	Study-wide	149228	G	0.999973	A	0.000027		
+rs773435099	58	gnomAD v4 - Genomes	European	Sub	78674	G	0.99996	A	0.00004		
+rs773435099	58	gnomAD v4 - Genomes	American	Sub	15274	G	0.99993	A	0.00007		
+rs773435099	58	ExAC	Global	Study-wide	121226	G	0.999992	A	0.000008		
+rs773435099	58	ExAC	Europe	Sub	73240	G	0.99999	A	0.00001		
+rs773435099	58	ExAC	American	Sub	11558	G	1.00000	A	0.00000		
+rs773435099	58	Allele Frequency Aggregator	Total	Global	23036	G	0.99996	A	0.00004	 C	0.00000
+rs773435099	58	Allele Frequency Aggregator	European	Sub	15750	G	0.99994	A	0.00006	 C	0.00000
+rs773435099	58	gnomAD v4 - Genomes	Global	Study-wide	149228	G	0.999973	A	0.000027		
+rs773435099	58	gnomAD v4 - Genomes	European	Sub	78674	G	0.99996	A	0.00004		
+rs773435099	58	gnomAD v4 - Genomes	American	Sub	15274	G	0.99993	A	0.00007		
+rs773435099	58	ExAC	Global	Study-wide	121226	G	0.999992	A	0.000008		
+rs773435099	58	ExAC	Europe	Sub	73240	G	0.99999	A	0.00001		
+rs773435099	58	ExAC	American	Sub	11558	G	1.00000	A	0.00000		
+rs773435099	58	Allele Frequency Aggregator	Total	Global	23036	G	0.99996	A	0.00004	 C	0.00000
+rs773435099	58	Allele Frequency Aggregator	European	Sub	15750	G	0.99994	A	0.00006	 C	0.00000
+rs763439334	58	gnomAD v4 - Exomes	Global	Study-wide	1401468	A	0.9999936	T	0.0000064		
+rs763439334	58	gnomAD v4 - Exomes	European	Sub	1165402	A	0.9999923	T	0.0000077		
+rs763439334	58	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	T	0.00000		
+rs763439334	58	TopMed	Global	Study-wide	264690	A	0.999989	T	0.000011		
+rs763439334	58	gnomAD v4 - Genomes	Global	Study-wide	149218	A	0.999973	T	0.000027		
+rs763439334	58	gnomAD v4 - Genomes	European	Sub	78666	A	0.99996	T	0.00004		
+rs763439334	58	gnomAD v4 - Genomes	American	Sub	15274	A	0.99993	T	0.00007		
+rs763439334	58	ExAC	Global	Study-wide	121220	A	0.999992	T	0.000008		
+rs763439334	58	ExAC	Europe	Sub	73234	A	0.99999	T	0.00001		
+rs763439334	58	ExAC	American	Sub	11560	A	1.00000	T	0.00000		
+rs763439334	58	Allele Frequency Aggregator	Total	Global	23038	A	0.99991	T	0.00009		
+rs763439334	58	Allele Frequency Aggregator	European	Sub	15752	A	0.99987	T	0.00013		
+rs1367669561	59	TopMed	Global	Study-wide	264690	A	0.999996	C	0.000004		
+rs1367669561	59	gnomAD v4 - Genomes	Global	Study-wide	149150	A	0.999993	C	0.000007		
+rs1367669561	59	gnomAD v4 - Genomes	European	Sub	78642	A	1.00000	C	0.00000		
+rs1367669561	59	gnomAD v4 - Genomes	American	Sub	15268	A	1.00000	C	0.00000		
+rs1367669561	59	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	C	0.00000		
+rs1367669561	59	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	C	0.0000		
+rs2038446533	60	gnomAD v4 - Exomes	Global	Study-wide	805798	C	0.999999	T	0.000001		
+rs2038446533	60	gnomAD v4 - Exomes	European	Sub	762166	C	0.999999	T	0.000001		
+rs2038446533	60	gnomAD v4 - Exomes	American	Sub	984	C	1.000	T	0.000		
+rs2038446533	60	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs2038446533	60	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	T	0.00000		
+rs2038446533	60	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	T	0.0000		
+rs2038446561	61	gnomAD v4 - Exomes	Global	Study-wide	595650	G	0.999995	A	0.000005		
+rs2038446561	61	gnomAD v4 - Exomes	European	Sub	403220	G	1.000000	A	0.000000		
+rs2038446561	61	gnomAD v4 - Exomes	American	Sub	43738	G	1.00000	A	0.00000		
+rs1348866467	63	gnomAD v4 - Exomes	Global	Study-wide	595642	C	0.999998	A	0.000002		
+rs1348866467	63	gnomAD v4 - Exomes	European	Sub	403212	C	1.000000	A	0.000000		
+rs1348866467	63	gnomAD v4 - Exomes	American	Sub	43738	C	0.99998	A	0.00002		
+rs1348866467	63	TopMed	Global	Study-wide	264690	C	0.999996	A	0.000004		
+rs1348866467	63	Allele Frequency Aggregator	Total	Global	30404	C	0.99997	A	0.00003		
+rs1348866467	63	Allele Frequency Aggregator	European	Sub	19772	C	1.00000	A	0.00000		
+rs11553225	64	gnomAD v4 - Exomes	Global	Study-wide	1401434	G	0.9999943	A	0.0000057		
+rs11553225	64	gnomAD v4 - Exomes	European	Sub	1165388	G	1.0000000	A	0.0000000		
+rs11553225	64	gnomAD v4 - Exomes	American	Sub	44720	G	1.00000	A	0.00000		
+rs11553225	64	TopMed	Global	Study-wide	264690	G	0.999996	C	0.000004		
+rs11553225	64	gnomAD v4 - Genomes	Global	Study-wide	149218	G	0.999993	C	0.000007		
+rs11553225	64	gnomAD v4 - Genomes	European	Sub	78660	G	0.99999	C	0.00001		
+rs11553225	64	gnomAD v4 - Genomes	American	Sub	15280	G	1.00000	C	0.00000		
+rs11553225	64	ExAC	Global	Study-wide	121098	G	0.999992	C	0.000008		
+rs11553225	64	ExAC	Europe	Sub	73156	G	0.99999	C	0.00001		
+rs11553225	64	ExAC	American	Sub	11544	G	1.00000	C	0.00000		
+rs11553225	64	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	C	0.00000		
+rs11553225	64	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	C	0.0000		
+rs11553225	64	GO Exome Sequencing Project	Global	Study-wide	13006	G	0.99992	C	0.00008		
+rs11553225	64	GO Exome Sequencing Project	European American	Sub	8600	G	0.9999	C	0.0001		
+rs11553225	64	GO Exome Sequencing Project	African American	Sub	4406	G	1.0000	C	0.0000		
+rs11553225	64	gnomAD v4 - Exomes	Global	Study-wide	1401434	G	0.9999943	A	0.0000057		
+rs11553225	64	gnomAD v4 - Exomes	European	Sub	1165388	G	1.0000000	A	0.0000000		
+rs11553225	64	gnomAD v4 - Exomes	American	Sub	44720	G	1.00000	A	0.00000		
+rs11553225	64	TopMed	Global	Study-wide	264690	G	0.999996	C	0.000004		
+rs11553225	64	gnomAD v4 - Genomes	Global	Study-wide	149218	G	0.999993	C	0.000007		
+rs11553225	64	gnomAD v4 - Genomes	European	Sub	78660	G	0.99999	C	0.00001		
+rs11553225	64	gnomAD v4 - Genomes	American	Sub	15280	G	1.00000	C	0.00000		
+rs11553225	64	ExAC	Global	Study-wide	121098	G	0.999992	C	0.000008		
+rs11553225	64	ExAC	Europe	Sub	73156	G	0.99999	C	0.00001		
+rs11553225	64	ExAC	American	Sub	11544	G	1.00000	C	0.00000		
+rs11553225	64	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	C	0.00000		
+rs11553225	64	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	C	0.0000		
+rs11553225	64	GO Exome Sequencing Project	Global	Study-wide	13006	G	0.99992	C	0.00008		
+rs11553225	64	GO Exome Sequencing Project	European American	Sub	8600	G	0.9999	C	0.0001		
+rs11553225	64	GO Exome Sequencing Project	African American	Sub	4406	G	1.0000	C	0.0000		
+rs774004322	65	gnomAD v4 - Exomes	Global	Study-wide	1401454	C	0.9999979	A	0.0000021		
+rs774004322	65	gnomAD v4 - Exomes	European	Sub	1165394	C	0.9999974	A	0.0000026		
+rs774004322	65	gnomAD v4 - Exomes	American	Sub	44722	C	1.00000	A	0.00000		
+rs774004322	65	ExAC	Global	Study-wide	121082	C	0.999992	T	0.000008		
+rs774004322	65	ExAC	Europe	Sub	73144	C	1.00000	T	0.00000		
+rs774004322	65	ExAC	American	Sub	11540	C	0.99991	T	0.00009		
+rs774004322	65	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	T	0.00000		
+rs774004322	65	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	T	0.0000		
+rs766983397	68	gnomAD v4 - Exomes	Global	Study-wide	1401464	A	0.9999964	C	0.0000036		
+rs766983397	68	gnomAD v4 - Exomes	European	Sub	1165404	A	0.9999966	C	0.0000034		
+rs766983397	68	gnomAD v4 - Exomes	American	Sub	44722	A	1.00000	C	0.00000		
+rs766983397	68	ExAC	Global	Study-wide	121002	A	0.999992	C	0.000008		
+rs766983397	68	ExAC	Europe	Sub	73076	A	1.00000	C	0.00000		
+rs766983397	68	ExAC	American	Sub	11528	A	1.00000	C	0.00000		
+rs1131691701	69	gnomAD v4 - Exomes	Global	Study-wide	595646	G	0.999995	A	0.000005		
+rs1131691701	69	gnomAD v4 - Exomes	European	Sub	403216	G	0.999993	A	0.000007		
+rs1131691701	69	gnomAD v4 - Exomes	American	Sub	43738	G	1.00000	A	0.00000		
+rs1131691701	69	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1131691701	69	gnomAD v4 - Genomes	Global	Study-wide	149208	G	0.999993	A	0.000007		
+rs1131691701	69	gnomAD v4 - Genomes	European	Sub	78656	G	0.99999	A	0.00001		
+rs1131691701	69	gnomAD v4 - Genomes	American	Sub	15282	G	1.00000	A	0.00000		
+rs1131691701	69	Allele Frequency Aggregator	Total	Global	19668	G	0.99995	A	0.00005		
+rs1131691701	69	Allele Frequency Aggregator	European	Sub	13024	G	1.00000	A	0.00000		
+rs752255404	69	ExAC	Global	Study-wide	120904	A	0.999992	T	0.000008		
+rs752255404	69	ExAC	Europe	Sub	73018	A	0.99999	T	0.00001		
+rs752255404	69	ExAC	American	Sub	11522	A	1.00000	T	0.00000		
+rs1162189833	70	gnomAD v4 - Exomes	Global	Study-wide	595646	C	0.999998	G	0.000002		
+rs1162189833	70	gnomAD v4 - Exomes	European	Sub	403218	C	0.999998	G	0.000002		
+rs1162189833	70	gnomAD v4 - Exomes	American	Sub	43738	C	1.00000	G	0.00000		
+rs1162189833	70	TopMed	Global	Study-wide	264690	C	0.999992	G	0.000008		
+rs1162189833	70	Allele Frequency Aggregator	Total	Global	14050	C	0.99993	G	0.00007		
+rs1162189833	70	Allele Frequency Aggregator	European	Sub	9690	C	0.9999	G	0.0001		
+rs1162189833	70	gnomAD v4 - Exomes	Global	Study-wide	595646	C	0.999998	G	0.000002		
+rs1162189833	70	gnomAD v4 - Exomes	European	Sub	403218	C	0.999998	G	0.000002		
+rs1162189833	70	gnomAD v4 - Exomes	American	Sub	43738	C	1.00000	G	0.00000		
+rs1162189833	70	TopMed	Global	Study-wide	264690	C	0.999992	G	0.000008		
+rs1162189833	70	Allele Frequency Aggregator	Total	Global	14050	C	0.99993	G	0.00007		
+rs1162189833	70	Allele Frequency Aggregator	European	Sub	9690	C	0.9999	G	0.0001		
+rs373294865	71	ExAC	Global	Study-wide	120578	C	0.999992	G	0.000008		
+rs373294865	71	ExAC	Europe	Sub	72820	C	0.99999	G	0.00001		
+rs373294865	71	ExAC	American	Sub	11480	C	1.00000	G	0.00000		
+rs373294865	71	GO Exome Sequencing Project	Global	Study-wide	13006	C	0.99992	G	0.00008		
+rs373294865	71	GO Exome Sequencing Project	European American	Sub	8600	C	0.9999	G	0.0001		
+rs373294865	71	GO Exome Sequencing Project	African American	Sub	4406	C	1.0000	G	0.0000		
+rs540928309	71	gnomAD v4 - Genomes	Global	Study-wide	149216	A	0.999993	G	0.000007		
+rs540928309	71	gnomAD v4 - Genomes	European	Sub	78630	A	1.00000	G	0.00000		
+rs540928309	71	gnomAD v4 - Genomes	American	Sub	15282	A	1.00000	G	0.00000		
+rs540928309	71	ExAC	Global	Study-wide	120640	A	0.999992	G	0.000008		
+rs540928309	71	ExAC	Europe	Sub	72858	A	1.00000	G	0.00000		
+rs540928309	71	ExAC	American	Sub	11486	A	1.00000	G	0.00000		
+rs540928309	71	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs540928309	71	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs540928309	71	1000Genomes_30X	Global	Study-wide	6404	A	0.9995	G	0.0005		
+rs540928309	71	1000Genomes_30X	Europe	Sub	1266	A	1.0000	G	0.0000		
+rs540928309	71	1000Genomes_30X	American	Sub	980	A	1.000	G	0.000		
+rs540928309	71	1000Genomes	Global	Study-wide	5008	A	0.9998	G	0.0002		
+rs540928309	71	1000Genomes	Europe	Sub	1006	A	1.0000	G	0.0000		
+rs540928309	71	1000Genomes	American	Sub	694	A	1.000	G	0.000		
+rs2038447016	72	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs2038447016	72	gnomAD v4 - Genomes	Global	Study-wide	149206	C	0.999993	T	0.000007		
+rs2038447016	72	gnomAD v4 - Genomes	European	Sub	78668	C	1.00000	T	0.00000		
+rs2038447016	72	gnomAD v4 - Genomes	American	Sub	15272	C	1.00000	T	0.00000		
+rs2038447016	72	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	T	0.00000		
+rs2038447016	72	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	T	0.0000		
+rs780377448	76	ExAC	Global	Study-wide	119410	G	0.999992	C	0.000008		
+rs780377448	76	ExAC	Europe	Sub	72086	G	0.99999	C	0.00001		
+rs780377448	76	ExAC	American	Sub	11318	G	1.00000	C	0.00000		
+rs2038447187	76	TopMed	Global	Study-wide	264690	C	0.999996	A	0.000004		
+rs2038447187	76	gnomAD v4 - Genomes	Global	Study-wide	149184	C	0.999993	A	0.000007		
+rs2038447187	76	gnomAD v4 - Genomes	European	Sub	78648	C	0.99999	A	0.00001		
+rs2038447187	76	gnomAD v4 - Genomes	American	Sub	15280	C	1.00000	A	0.00000		
+rs2038447187	76	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	A	0.00000		
+rs2038447187	76	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	A	0.0000		
+rs2038447313	77	gnomAD v4 - Exomes	Global	Study-wide	805804	C	1.000000	T	0.000000		
+rs2038447313	77	gnomAD v4 - Exomes	European	Sub	762172	C	1.000000	T	0.000000		
+rs2038447313	77	gnomAD v4 - Exomes	American	Sub	984	C	1.000	T	0.000		
+rs2038447313	77	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs2038447313	77	Allele Frequency Aggregator	Total	Global	11862	C	1.00000	A	0.00000	 G	0.00000
+rs2038447313	77	Allele Frequency Aggregator	European	Sub	7618	C	1.0000	A	0.0000	 G	0.0000
+rs2038447313	77	gnomAD v4 - Exomes	Global	Study-wide	805804	C	1.000000	T	0.000000		
+rs2038447313	77	gnomAD v4 - Exomes	European	Sub	762172	C	1.000000	T	0.000000		
+rs2038447313	77	gnomAD v4 - Exomes	American	Sub	984	C	1.000	T	0.000		
+rs2038447313	77	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs2038447313	77	Allele Frequency Aggregator	Total	Global	11862	C	1.00000	A	0.00000	 G	0.00000
+rs2038447313	77	Allele Frequency Aggregator	European	Sub	7618	C	1.0000	A	0.0000	 G	0.0000
+rs1252724609	77	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs1252724609	77	gnomAD v4 - Genomes	Global	Study-wide	149202	G	0.999993	A	0.000007		
+rs1252724609	77	gnomAD v4 - Genomes	European	Sub	78658	G	1.00000	A	0.00000		
+rs1252724609	77	gnomAD v4 - Genomes	American	Sub	15278	G	1.00000	A	0.00000		
+rs1252724609	77	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1252724609	77	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs1252724609	77	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs1252724609	77	gnomAD v4 - Genomes	Global	Study-wide	149202	G	0.999993	A	0.000007		
+rs1252724609	77	gnomAD v4 - Genomes	European	Sub	78658	G	1.00000	A	0.00000		
+rs1252724609	77	gnomAD v4 - Genomes	American	Sub	15278	G	1.00000	A	0.00000		
+rs1252724609	77	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1252724609	77	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs751857518	78	ExAC	Global	Study-wide	118694	C	0.999992	T	0.000008		
+rs751857518	78	ExAC	Europe	Sub	71662	C	0.99999	T	0.00001		
+rs751857518	78	ExAC	American	Sub	11234	C	1.00000	T	0.00000		
+rs751857518	78	Allele Frequency Aggregator	Total	Global	10678	C	1.00000	G	0.00000	 T	0.00000
+rs751857518	78	Allele Frequency Aggregator	European	Sub	6960	C	1.0000	G	0.0000	 T	0.0000
+rs751857518	78	ExAC	Global	Study-wide	118694	C	0.999992	T	0.000008		
+rs751857518	78	ExAC	Europe	Sub	71662	C	0.99999	T	0.00001		
+rs751857518	78	ExAC	American	Sub	11234	C	1.00000	T	0.00000		
+rs751857518	78	Allele Frequency Aggregator	Total	Global	10678	C	1.00000	G	0.00000	 T	0.00000
+rs751857518	78	Allele Frequency Aggregator	European	Sub	6960	C	1.0000	G	0.0000	 T	0.0000
+rs184528142	79	gnomAD v4 - Genomes	Global	Study-wide	149320	C	0.999987	G	0.000013		
+rs184528142	79	gnomAD v4 - Genomes	European	Sub	78658	C	1.00000	G	0.00000		
+rs184528142	79	gnomAD v4 - Genomes	American	Sub	15302	C	1.00000	G	0.00000		
+rs184528142	79	ExAC	Global	Study-wide	117704	C	0.999983	G	0.000017		
+rs184528142	79	ExAC	Europe	Sub	71088	C	1.00000	G	0.00000		
+rs184528142	79	ExAC	American	Sub	11078	C	1.00000	G	0.00000		
+rs184528142	79	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	A	0.00000	 G	0.00000
+rs184528142	79	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	A	0.0000	 G	0.0000
+rs184528142	79	1000Genomes_30X	Global	Study-wide	6404	C	0.9998	G	0.0002		
+rs184528142	79	1000Genomes_30X	Europe	Sub	1266	C	1.0000	G	0.0000		
+rs184528142	79	1000Genomes_30X	American	Sub	980	C	1.000	G	0.000		
+rs184528142	79	1000Genomes	Global	Study-wide	5008	C	0.9998	G	0.0002		
+rs184528142	79	1000Genomes	Europe	Sub	1006	C	1.0000	G	0.0000		
+rs184528142	79	1000Genomes	American	Sub	694	C	1.000	G	0.000		
+rs1473736493	80	gnomAD v4 - Exomes	Global	Study-wide	1401378	G	0.9999993	T	0.0000007		
+rs1473736493	80	gnomAD v4 - Exomes	European	Sub	1165348	G	1.0000000	T	0.0000000		
+rs1473736493	80	gnomAD v4 - Exomes	American	Sub	44710	G	1.00000	T	0.00000		
+rs1473736493	80	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1473736493	80	gnomAD v4 - Genomes	Global	Study-wide	149226	G	0.999993	A	0.000007		
+rs1473736493	80	gnomAD v4 - Genomes	European	Sub	78668	G	0.99999	A	0.00001		
+rs1473736493	80	gnomAD v4 - Genomes	American	Sub	15278	G	1.00000	A	0.00000		
+rs1473736493	80	Allele Frequency Aggregator	Total	Global	19668	G	0.99995	A	0.00000	 T	0.00005
+rs1473736493	80	Allele Frequency Aggregator	European	Sub	13024	G	0.99992	A	0.00000	 T	0.00008
+rs551467958	81	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs551467958	81	ExAC	Global	Study-wide	116658	G	0.999991	T	0.000009		
+rs551467958	81	ExAC	Europe	Sub	70506	G	1.00000	T	0.00000		
+rs551467958	81	ExAC	American	Sub	10898	G	1.00000	T	0.00000		
+rs551467958	81	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs551467958	81	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs551467958	81	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	T	0.0002		
+rs551467958	81	1000Genomes_30X	Europe	Sub	1266	G	1.0000	T	0.0000		
+rs551467958	81	1000Genomes_30X	American	Sub	980	G	1.000	T	0.000		
+rs551467958	81	1000Genomes	Global	Study-wide	5008	G	0.9998	T	0.0002		
+rs551467958	81	1000Genomes	Europe	Sub	1006	G	1.0000	T	0.0000		
+rs551467958	81	1000Genomes	American	Sub	694	G	1.000	T	0.000		
+rs551467958	81	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs551467958	81	ExAC	Global	Study-wide	116658	G	0.999991	T	0.000009		
+rs551467958	81	ExAC	Europe	Sub	70506	G	1.00000	T	0.00000		
+rs551467958	81	ExAC	American	Sub	10898	G	1.00000	T	0.00000		
+rs551467958	81	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs551467958	81	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs551467958	81	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	T	0.0002		
+rs551467958	81	1000Genomes_30X	Europe	Sub	1266	G	1.0000	T	0.0000		
+rs551467958	81	1000Genomes_30X	American	Sub	980	G	1.000	T	0.000		
+rs551467958	81	1000Genomes	Global	Study-wide	5008	G	0.9998	T	0.0002		
+rs551467958	81	1000Genomes	Europe	Sub	1006	G	1.0000	T	0.0000		
+rs551467958	81	1000Genomes	American	Sub	694	G	1.000	T	0.000		
+rs770196454	83	gnomAD v4 - Exomes	Global	Study-wide	1401338	A	0.9999986	G	0.0000014		
+rs770196454	83	gnomAD v4 - Exomes	European	Sub	1165326	A	0.9999983	G	0.0000017		
+rs770196454	83	gnomAD v4 - Exomes	American	Sub	44704	A	1.00000	G	0.00000		
+rs770196454	83	ExAC	Global	Study-wide	114612	A	0.999991	G	0.000009		
+rs770196454	83	ExAC	Europe	Sub	69292	A	0.99999	G	0.00001		
+rs770196454	83	ExAC	American	Sub	10622	A	1.00000	G	0.00000		
+rs768238316	84	TopMed	Global	Study-wide	264690	A	0.999992	C	0.000008		
+rs768238316	84	gnomAD v4 - Genomes	Global	Study-wide	149168	A	0.999980	C	0.000020		
+rs768238316	84	gnomAD v4 - Genomes	European	Sub	78644	A	1.00000	C	0.00000		
+rs768238316	84	gnomAD v4 - Genomes	American	Sub	15270	A	1.00000	C	0.00000		
+rs768238316	84	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	C	0.00000		
+rs768238316	84	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	C	0.0000		
+rs768238316	84	TopMed	Global	Study-wide	264690	A	0.999992	C	0.000008		
+rs768238316	84	gnomAD v4 - Genomes	Global	Study-wide	149168	A	0.999980	C	0.000020		
+rs768238316	84	gnomAD v4 - Genomes	European	Sub	78644	A	1.00000	C	0.00000		
+rs768238316	84	gnomAD v4 - Genomes	American	Sub	15270	A	1.00000	C	0.00000		
+rs768238316	84	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	C	0.00000		
+rs768238316	84	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	C	0.0000		
+rs747723534	85	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs747723534	85	ExAC	Global	Study-wide	120630	C	0.999992	T	0.000008		
+rs747723534	85	ExAC	Europe	Sub	72836	C	1.00000	T	0.00000		
+rs747723534	85	ExAC	American	Sub	11566	C	0.99991	T	0.00009		
+rs747723534	85	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	T	0.00000		
+rs747723534	85	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	T	0.0000		
+rs769785934	85	gnomAD v4 - Exomes	Global	Study-wide	1401416	C	0.9999929	T	0.0000071		
+rs769785934	85	gnomAD v4 - Exomes	European	Sub	1165366	C	0.9999923	T	0.0000077		
+rs769785934	85	gnomAD v4 - Exomes	American	Sub	44722	C	1.00000	T	0.00000		
+rs769785934	85	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs769785934	85	gnomAD v4 - Genomes	Global	Study-wide	149112	C	0.999993	T	0.000007		
+rs769785934	85	gnomAD v4 - Genomes	European	Sub	78616	C	0.99999	T	0.00001		
+rs769785934	85	gnomAD v4 - Genomes	American	Sub	15274	C	1.00000	T	0.00000		
+rs769785934	85	ExAC	Global	Study-wide	120654	C	0.999992	T	0.000008		
+rs769785934	85	ExAC	Europe	Sub	72848	C	0.99999	T	0.00001		
+rs769785934	85	ExAC	American	Sub	11568	C	1.00000	T	0.00000		
+rs769785934	85	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	T	0.00000		
+rs769785934	85	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	T	0.0000		
+rs747723534	85	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs747723534	85	ExAC	Global	Study-wide	120630	C	0.999992	T	0.000008		
+rs747723534	85	ExAC	Europe	Sub	72836	C	1.00000	T	0.00000		
+rs747723534	85	ExAC	American	Sub	11566	C	0.99991	T	0.00009		
+rs747723534	85	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	T	0.00000		
+rs747723534	85	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	T	0.0000		
+rs773293832	86	gnomAD v4 - Exomes	Global	Study-wide	595620	G	0.999998	C	0.000002		
+rs773293832	86	gnomAD v4 - Exomes	European	Sub	403196	G	1.000000	C	0.000000		
+rs773293832	86	gnomAD v4 - Exomes	American	Sub	43740	G	0.99998	C	0.00002		
+rs773293832	86	ExAC	Global	Study-wide	120692	G	0.999992	C	0.000008		
+rs773293832	86	ExAC	Europe	Sub	72872	G	1.00000	C	0.00000		
+rs773293832	86	ExAC	American	Sub	11568	G	0.99991	C	0.00009		
+rs1444213051	87	TopMed	Global	Study-wide	264690	G	0.999996	T	0.000004		
+rs1444213051	87	gnomAD v4 - Genomes	Global	Study-wide	149110	G	0.999993	T	0.000007		
+rs1444213051	87	gnomAD v4 - Genomes	European	Sub	78614	G	0.99999	T	0.00001		
+rs1444213051	87	gnomAD v4 - Genomes	American	Sub	15266	G	1.00000	T	0.00000		
+rs1444213051	87	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs1444213051	87	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs762786833	87	gnomAD v4 - Exomes	Global	Study-wide	1401448	A	0.9999986	C	0.0000014		
+rs762786833	87	gnomAD v4 - Exomes	European	Sub	1165382	A	0.9999983	C	0.0000017		
+rs762786833	87	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	C	0.00000		
+rs762786833	87	TopMed	Global	Study-wide	264690	A	0.999996	C	0.000004		
+rs762786833	87	ExAC	Global	Study-wide	120766	A	0.999992	C	0.000008		
+rs762786833	87	ExAC	Europe	Sub	72914	A	0.99999	C	0.00001		
+rs762786833	87	ExAC	American	Sub	11568	A	1.00000	C	0.00000		
+rs762786833	87	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	C	0.00000		
+rs762786833	87	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	C	0.0000		
+rs559631027	89	gnomAD v4 - Genomes	Global	Study-wide	149198	G	0.999993	A	0.000007		
+rs559631027	89	gnomAD v4 - Genomes	European	Sub	78616	G	1.00000	A	0.00000		
+rs559631027	89	gnomAD v4 - Genomes	American	Sub	15280	G	1.00000	A	0.00000		
+rs559631027	89	ExAC	Global	Study-wide	120848	G	0.999992	A	0.000008		
+rs559631027	89	ExAC	Europe	Sub	72950	G	1.00000	A	0.00000		
+rs559631027	89	ExAC	American	Sub	11568	G	1.00000	A	0.00000		
+rs559631027	89	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	A	0.0002		
+rs559631027	89	1000Genomes_30X	Europe	Sub	1266	G	1.0000	A	0.0000		
+rs559631027	89	1000Genomes_30X	American	Sub	980	G	1.000	A	0.000		
+rs559631027	89	1000Genomes	Global	Study-wide	5008	G	0.9998	A	0.0002		
+rs559631027	89	1000Genomes	Europe	Sub	1006	G	1.0000	A	0.0000		
+rs559631027	89	1000Genomes	American	Sub	694	G	1.000	A	0.000		
+rs774064711	90	gnomAD v4 - Exomes	Global	Study-wide	595636	G	0.999998	C	0.000002		
+rs774064711	90	gnomAD v4 - Exomes	European	Sub	403208	G	1.000000	C	0.000000		
+rs774064711	90	gnomAD v4 - Exomes	American	Sub	43740	G	0.99998	C	0.00002		
+rs774064711	90	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs774064711	90	gnomAD v4 - Genomes	Global	Study-wide	149056	G	0.999993	A	0.000007		
+rs774064711	90	gnomAD v4 - Genomes	European	Sub	78592	G	1.00000	A	0.00000		
+rs774064711	90	gnomAD v4 - Genomes	American	Sub	15260	G	1.00000	A	0.00000		
+rs774064711	90	ExAC	Global	Study-wide	120932	G	0.999992	A	0.000008		
+rs774064711	90	ExAC	Europe	Sub	73002	G	1.00000	A	0.00000		
+rs774064711	90	ExAC	American	Sub	11570	G	1.00000	A	0.00000		
+rs774064711	90	Allele Frequency Aggregator	Total	Global	101832	G	1.000000	A	0.000000		
+rs774064711	90	Allele Frequency Aggregator	European	Sub	90766	G	1.00000	A	0.00000		
+rs774064711	90	The PAGE Study	Global	Study-wide	78702	G	1.00000	A	0.00000		
+rs774064711	90	The PAGE Study	Mexican	Sub	10810	G	1.00000	A	0.00000		
+rs774064711	90	The PAGE Study	NativeHawaiian	Sub	4534	G	1.0000	A	0.0000		
+rs774064711	90	The PAGE Study	Cuban	Sub	4230	G	1.0000	A	0.0000		
+rs774064711	90	The PAGE Study	NativeAmerican	Sub	1260	G	1.0000	A	0.0000		
+rs760939157	91	gnomAD v4 - Exomes	Global	Study-wide	595658	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	European	Sub	403224	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	T	0.00000		
+rs760939157	91	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs760939157	91	ExAC	Global	Study-wide	120980	G	0.999992	C	0.000008		
+rs760939157	91	ExAC	Europe	Sub	73042	G	0.99999	C	0.00001		
+rs760939157	91	ExAC	American	Sub	11570	G	1.00000	C	0.00000		
+rs760939157	91	Allele Frequency Aggregator	Total	Global	32062	G	0.99997	A	0.00000	 T	0.00003
+rs760939157	91	Allele Frequency Aggregator	European	Sub	23860	G	1.00000	A	0.00000	 T	0.00000
+rs1288770255	91	gnomAD v4 - Exomes	Global	Study-wide	595642	G	0.999998	A	0.000002		
+rs1288770255	91	gnomAD v4 - Exomes	European	Sub	403214	G	0.999998	A	0.000002		
+rs1288770255	91	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	A	0.00000		
+rs1288770255	91	Allele Frequency Aggregator	Total	Global	16332	G	0.99994	A	0.00006		
+rs1288770255	91	Allele Frequency Aggregator	European	Sub	12080	G	0.99992	A	0.00008		
+rs760939157	91	gnomAD v4 - Exomes	Global	Study-wide	595658	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	European	Sub	403224	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	T	0.00000		
+rs760939157	91	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs760939157	91	ExAC	Global	Study-wide	120980	G	0.999992	C	0.000008		
+rs760939157	91	ExAC	Europe	Sub	73042	G	0.99999	C	0.00001		
+rs760939157	91	ExAC	American	Sub	11570	G	1.00000	C	0.00000		
+rs760939157	91	Allele Frequency Aggregator	Total	Global	32062	G	0.99997	A	0.00000	 T	0.00003
+rs760939157	91	Allele Frequency Aggregator	European	Sub	23860	G	1.00000	A	0.00000	 T	0.00000
+rs1288770255	91	gnomAD v4 - Exomes	Global	Study-wide	595642	G	0.999998	A	0.000002		
+rs1288770255	91	gnomAD v4 - Exomes	European	Sub	403214	G	0.999998	A	0.000002		
+rs1288770255	91	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	A	0.00000		
+rs1288770255	91	Allele Frequency Aggregator	Total	Global	16332	G	0.99994	A	0.00006		
+rs1288770255	91	Allele Frequency Aggregator	European	Sub	12080	G	0.99992	A	0.00008		
+rs760939157	91	gnomAD v4 - Exomes	Global	Study-wide	595658	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	European	Sub	403224	G	0.999998	T	0.000002		
+rs760939157	91	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	T	0.00000		
+rs760939157	91	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs760939157	91	ExAC	Global	Study-wide	120980	G	0.999992	C	0.000008		
+rs760939157	91	ExAC	Europe	Sub	73042	G	0.99999	C	0.00001		
+rs760939157	91	ExAC	American	Sub	11570	G	1.00000	C	0.00000		
+rs760939157	91	Allele Frequency Aggregator	Total	Global	32062	G	0.99997	A	0.00000	 T	0.00003
+rs760939157	91	Allele Frequency Aggregator	European	Sub	23860	G	1.00000	A	0.00000	 T	0.00000
+rs3210196	93	gnomAD v4 - Exomes	Global	Study-wide	1401454	A	0.9999964	G	0.0000036		
+rs3210196	93	gnomAD v4 - Exomes	European	Sub	1165388	A	0.9999957	G	0.0000043		
+rs3210196	93	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	G	0.00000		
+rs3210196	93	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs3210196	93	gnomAD v4 - Genomes	Global	Study-wide	148944	A	0.999993	G	0.000007		
+rs3210196	93	gnomAD v4 - Genomes	European	Sub	78540	A	0.99999	G	0.00001		
+rs3210196	93	gnomAD v4 - Genomes	American	Sub	15250	A	1.00000	G	0.00000		
+rs3210196	93	ExAC	Global	Study-wide	120924	A	0.999992	G	0.000008		
+rs3210196	93	ExAC	Europe	Sub	72996	A	0.99999	G	0.00001		
+rs3210196	93	ExAC	American	Sub	11570	A	1.00000	G	0.00000		
+rs3210196	93	Allele Frequency Aggregator	Total	Global	11862	A	0.99992	G	0.00008		
+rs3210196	93	Allele Frequency Aggregator	European	Sub	7618	A	0.9999	G	0.0001		
+rs3210196	93	gnomAD v4 - Exomes	Global	Study-wide	1401454	A	0.9999964	G	0.0000036		
+rs3210196	93	gnomAD v4 - Exomes	European	Sub	1165388	A	0.9999957	G	0.0000043		
+rs3210196	93	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	G	0.00000		
+rs3210196	93	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs3210196	93	gnomAD v4 - Genomes	Global	Study-wide	148944	A	0.999993	G	0.000007		
+rs3210196	93	gnomAD v4 - Genomes	European	Sub	78540	A	0.99999	G	0.00001		
+rs3210196	93	gnomAD v4 - Genomes	American	Sub	15250	A	1.00000	G	0.00000		
+rs3210196	93	ExAC	Global	Study-wide	120924	A	0.999992	G	0.000008		
+rs3210196	93	ExAC	Europe	Sub	72996	A	0.99999	G	0.00001		
+rs3210196	93	ExAC	American	Sub	11570	A	1.00000	G	0.00000		
+rs3210196	93	Allele Frequency Aggregator	Total	Global	11862	A	0.99992	G	0.00008		
+rs3210196	93	Allele Frequency Aggregator	European	Sub	7618	A	0.9999	G	0.0001		
+rs753890871	94	gnomAD v4 - Exomes	Global	Study-wide	1401472	C	0.9999979	T	0.0000021		
+rs753890871	94	gnomAD v4 - Exomes	European	Sub	1165406	C	0.9999983	T	0.0000017		
+rs753890871	94	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	T	0.00000		
+rs753890871	94	ExAC	Global	Study-wide	121082	C	0.999992	T	0.000008		
+rs753890871	94	ExAC	Europe	Sub	73104	C	0.99999	T	0.00001		
+rs753890871	94	ExAC	American	Sub	11572	C	1.00000	T	0.00000		
+rs753890871	94	gnomAD v4 - Exomes	Global	Study-wide	1401472	C	0.9999979	T	0.0000021		
+rs753890871	94	gnomAD v4 - Exomes	European	Sub	1165406	C	0.9999983	T	0.0000017		
+rs753890871	94	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	T	0.00000		
+rs753890871	94	ExAC	Global	Study-wide	121082	C	0.999992	T	0.000008		
+rs753890871	94	ExAC	Europe	Sub	73104	C	0.99999	T	0.00001		
+rs753890871	94	ExAC	American	Sub	11572	C	1.00000	T	0.00000		
+rs887582485	94	TopMed	Global	Study-wide	264690	C	0.999992	A	0.000008		
+rs887582485	94	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	A	0.00000		
+rs887582485	94	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	A	0.0000		
+rs761898357	95	ExAC	Global	Study-wide	121112	C	0.999992	T	0.000008		
+rs761898357	95	ExAC	Europe	Sub	73122	C	0.99999	T	0.00001		
+rs761898357	95	ExAC	American	Sub	11574	C	1.00000	T	0.00000		
+rs1208731960	95	gnomAD v4 - Exomes	Global	Study-wide	595660	G	0.999997	A	0.000003		
+rs1208731960	95	gnomAD v4 - Exomes	European	Sub	403232	G	1.000000	A	0.000000		
+rs1208731960	95	gnomAD v4 - Exomes	American	Sub	43740	G	0.99995	A	0.00005		
+rs1208731960	95	gnomAD v4 - Exomes	Global	Study-wide	595660	G	0.999997	A	0.000003		
+rs1208731960	95	gnomAD v4 - Exomes	European	Sub	403232	G	1.000000	A	0.000000		
+rs1208731960	95	gnomAD v4 - Exomes	American	Sub	43740	G	0.99995	A	0.00005		
+rs1208731960	95	gnomAD v4 - Exomes	Global	Study-wide	595660	G	0.999997	A	0.000003		
+rs1208731960	95	gnomAD v4 - Exomes	European	Sub	403232	G	1.000000	A	0.000000		
+rs1208731960	95	gnomAD v4 - Exomes	American	Sub	43740	G	0.99995	A	0.00005		
+rs104894685	96	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs104894685	96	gnomAD v4 - Genomes	Global	Study-wide	149110	G	0.999987	A	0.000013		
+rs104894685	96	gnomAD v4 - Genomes	European	Sub	78616	G	0.99997	A	0.00003		
+rs104894685	96	gnomAD v4 - Genomes	American	Sub	15272	G	1.00000	A	0.00000		
+rs104894685	96	The PAGE Study	Global	Study-wide	78640	G	0.99997	A	0.00003		
+rs104894685	96	The PAGE Study	Mexican	Sub	10810	G	1.00000	A	0.00000		
+rs104894685	96	The PAGE Study	NativeHawaiian	Sub	4528	G	1.0000	A	0.0000		
+rs104894685	96	The PAGE Study	Cuban	Sub	4230	G	1.0000	A	0.0000		
+rs104894685	96	The PAGE Study	NativeAmerican	Sub	1260	G	1.0000	A	0.0000		
+rs104894685	96	Allele Frequency Aggregator	Total	Global	27700	G	0.99996	A	0.00004		
+rs104894685	96	Allele Frequency Aggregator	European	Sub	17130	G	0.99994	A	0.00006		
+rs2513695776	97	gnomAD v4 - Exomes	Global	Study-wide	805812	T	0.999999	C	0.000001		
+rs2513695776	97	gnomAD v4 - Exomes	European	Sub	762180	T	0.999999	C	0.000001		
+rs2513695776	97	gnomAD v4 - Exomes	American	Sub	984	T	1.000	C	0.000		
+rs2038454027	97	gnomAD v4 - Exomes	Global	Study-wide	1401472	A	0.9999964	G	0.0000036		
+rs2038454027	97	gnomAD v4 - Exomes	European	Sub	1165406	A	0.9999957	G	0.0000043		
+rs2038454027	97	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	G	0.00000		
+rs2038454027	97	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs2038454027	97	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs2038454027	97	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs1303233188	98	gnomAD v4 - Exomes	Global	Study-wide	1401472	A	0.9999986	T	0.0000014		
+rs1303233188	98	gnomAD v4 - Exomes	European	Sub	1165406	A	0.9999983	T	0.0000017		
+rs1303233188	98	gnomAD v4 - Exomes	American	Sub	44724	A	1.00000	T	0.00000		
+rs1303233188	98	gnomAD v4 - Genomes	Global	Study-wide	149126	A	0.999993	G	0.000007		
+rs1303233188	98	gnomAD v4 - Genomes	European	Sub	78626	A	0.99999	G	0.00001		
+rs1303233188	98	gnomAD v4 - Genomes	American	Sub	15274	A	1.00000	G	0.00000		
+rs1303233188	98	Allele Frequency Aggregator	Total	Global	4470	A	0.9998	G	0.0002		
+rs1303233188	98	Allele Frequency Aggregator	European	Sub	4462	A	0.9998	G	0.0002		
+rs1452171047	99	TopMed	Global	Study-wide	264690	C	0.999996	G	0.000004		
+rs1452171047	99	gnomAD v4 - Genomes	Global	Study-wide	149200	C	0.999993	G	0.000007		
+rs1452171047	99	gnomAD v4 - Genomes	European	Sub	78644	C	0.99999	G	0.00001		
+rs1452171047	99	gnomAD v4 - Genomes	American	Sub	15284	C	1.00000	G	0.00000		
+rs1452171047	99	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	G	0.00000		
+rs1452171047	99	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	G	0.0000		
+rs1291717409	100	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs1291717409	100	gnomAD v4 - Genomes	Global	Study-wide	149152	C	0.999993	T	0.000007		
+rs1291717409	100	gnomAD v4 - Genomes	European	Sub	78636	C	1.00000	T	0.00000		
+rs1291717409	100	gnomAD v4 - Genomes	American	Sub	15278	C	1.00000	T	0.00000		
+rs1291717409	100	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	T	0.00000		
+rs1291717409	100	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	T	0.0000		
+rs750964137	101	gnomAD v4 - Exomes	Global	Study-wide	595662	T	0.999987	C	0.000013		
+rs750964137	101	gnomAD v4 - Exomes	European	Sub	403232	T	0.999980	C	0.000020		
+rs750964137	101	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs750964137	101	TopMed	Global	Study-wide	264690	T	0.999989	C	0.000011		
+rs750964137	101	ExAC	Global	Study-wide	121162	T	0.999992	C	0.000008		
+rs750964137	101	ExAC	Europe	Sub	73158	T	0.99999	C	0.00001		
+rs750964137	101	ExAC	American	Sub	11568	T	1.00000	C	0.00000		
+rs750964137	101	Allele Frequency Aggregator	Total	Global	39400	T	0.99995	C	0.00005		
+rs750964137	101	Allele Frequency Aggregator	European	Sub	25842	T	0.99996	C	0.00004		
+rs1471895081	103	gnomAD v4 - Genomes	Global	Study-wide	149154	T	0.999993	C	0.000007		
+rs1471895081	103	gnomAD v4 - Genomes	European	Sub	78624	T	0.99999	C	0.00001		
+rs1471895081	103	gnomAD v4 - Genomes	American	Sub	15276	T	1.00000	C	0.00000		
+rs1471895081	103	gnomAD v4 - Genomes	Global	Study-wide	149154	T	0.999993	C	0.000007		
+rs1471895081	103	gnomAD v4 - Genomes	European	Sub	78624	T	0.99999	C	0.00001		
+rs1471895081	103	gnomAD v4 - Genomes	American	Sub	15276	T	1.00000	C	0.00000		
+rs199869995	104	TopMed	Global	Study-wide	264690	G	0.999996	T	0.000004		
+rs199869995	104	gnomAD v4 - Genomes	Global	Study-wide	149244	G	0.999993	C	0.000007		
+rs199869995	104	gnomAD v4 - Genomes	European	Sub	78620	G	1.00000	C	0.00000		
+rs199869995	104	gnomAD v4 - Genomes	American	Sub	15294	G	1.00000	C	0.00000		
+rs199869995	104	ExAC	Global	Study-wide	121170	G	0.999975	T	0.000025		
+rs199869995	104	ExAC	Europe	Sub	73166	G	0.99997	T	0.00003		
+rs199869995	104	ExAC	American	Sub	11568	G	1.00000	T	0.00000		
+rs199869995	104	Allele Frequency Aggregator	Total	Global	44898	G	0.99993	T	0.00007		
+rs199869995	104	Allele Frequency Aggregator	European	Sub	32650	G	0.99994	T	0.00006		
+rs199869995	104	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	C	0.0002		
+rs199869995	104	1000Genomes_30X	Europe	Sub	1266	G	1.0000	C	0.0000		
+rs199869995	104	1000Genomes_30X	American	Sub	980	G	1.000	C	0.000		
+rs199869995	104	1000Genomes	Global	Study-wide	5008	G	0.9998	C	0.0002		
+rs199869995	104	1000Genomes	Europe	Sub	1006	G	1.0000	C	0.0000		
+rs199869995	104	1000Genomes	American	Sub	694	G	1.000	C	0.000		
+rs2038454487	104	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs2038454487	104	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs2038454487	104	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs199869995	104	TopMed	Global	Study-wide	264690	G	0.999996	T	0.000004		
+rs199869995	104	gnomAD v4 - Genomes	Global	Study-wide	149244	G	0.999993	C	0.000007		
+rs199869995	104	gnomAD v4 - Genomes	European	Sub	78620	G	1.00000	C	0.00000		
+rs199869995	104	gnomAD v4 - Genomes	American	Sub	15294	G	1.00000	C	0.00000		
+rs199869995	104	ExAC	Global	Study-wide	121170	G	0.999975	T	0.000025		
+rs199869995	104	ExAC	Europe	Sub	73166	G	0.99997	T	0.00003		
+rs199869995	104	ExAC	American	Sub	11568	G	1.00000	T	0.00000		
+rs199869995	104	Allele Frequency Aggregator	Total	Global	44898	G	0.99993	T	0.00007		
+rs199869995	104	Allele Frequency Aggregator	European	Sub	32650	G	0.99994	T	0.00006		
+rs199869995	104	1000Genomes_30X	Global	Study-wide	6404	G	0.9998	C	0.0002		
+rs199869995	104	1000Genomes_30X	Europe	Sub	1266	G	1.0000	C	0.0000		
+rs199869995	104	1000Genomes_30X	American	Sub	980	G	1.000	C	0.000		
+rs199869995	104	1000Genomes	Global	Study-wide	5008	G	0.9998	C	0.0002		
+rs199869995	104	1000Genomes	Europe	Sub	1006	G	1.0000	C	0.0000		
+rs199869995	104	1000Genomes	American	Sub	694	G	1.000	C	0.000		
+rs1430695183	109	gnomAD v4 - Exomes	Global	Study-wide	1401480	C	0.9999986	G	0.0000014		
+rs1430695183	109	gnomAD v4 - Exomes	European	Sub	1165416	C	0.9999991	G	0.0000009		
+rs1430695183	109	gnomAD v4 - Exomes	American	Sub	44724	C	1.00000	G	0.00000		
+rs1430695183	109	Allele Frequency Aggregator	Total	Global	21382	C	0.99995	G	0.00005		
+rs1430695183	109	Allele Frequency Aggregator	European	Sub	16898	C	0.99994	G	0.00006		
+rs111736650	111	gnomAD v4 - Exomes	Global	Study-wide	1401478	T	0.9999922	A	0.0000078		
+rs111736650	111	gnomAD v4 - Exomes	European	Sub	1165412	T	0.9999966	A	0.0000034		
+rs111736650	111	gnomAD v4 - Exomes	American	Sub	44724	T	1.00000	A	0.00000		
+rs111736650	111	TopMed	Global	Study-wide	264690	T	0.999996	C	0.000004		
+rs111736650	111	gnomAD v4 - Genomes	Global	Study-wide	149224	T	0.999987	A	0.000013		
+rs111736650	111	gnomAD v4 - Genomes	European	Sub	78616	T	0.99999	A	0.00001		
+rs111736650	111	gnomAD v4 - Genomes	American	Sub	15296	T	1.00000	A	0.00000		
+rs111736650	111	ExAC	Global	Study-wide	121132	T	0.999967	A	0.000033		
+rs111736650	111	ExAC	Europe	Sub	73124	T	0.99997	A	0.00003		
+rs111736650	111	ExAC	American	Sub	11570	T	1.00000	A	0.00000		
+rs111736650	111	Allele Frequency Aggregator	Total	Global	36586	T	0.99997	C	0.00000	 G	0.00003
+rs111736650	111	Allele Frequency Aggregator	European	Sub	26596	T	0.99996	C	0.00000	 G	0.00004
+rs111736650	111	Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	T	0.998	A	0.002		
+rs111736650	111	gnomAD v4 - Exomes	Global	Study-wide	1401478	T	0.9999922	A	0.0000078		
+rs111736650	111	gnomAD v4 - Exomes	European	Sub	1165412	T	0.9999966	A	0.0000034		
+rs111736650	111	gnomAD v4 - Exomes	American	Sub	44724	T	1.00000	A	0.00000		
+rs111736650	111	TopMed	Global	Study-wide	264690	T	0.999996	C	0.000004		
+rs111736650	111	gnomAD v4 - Genomes	Global	Study-wide	149224	T	0.999987	A	0.000013		
+rs111736650	111	gnomAD v4 - Genomes	European	Sub	78616	T	0.99999	A	0.00001		
+rs111736650	111	gnomAD v4 - Genomes	American	Sub	15296	T	1.00000	A	0.00000		
+rs111736650	111	ExAC	Global	Study-wide	121132	T	0.999967	A	0.000033		
+rs111736650	111	ExAC	Europe	Sub	73124	T	0.99997	A	0.00003		
+rs111736650	111	ExAC	American	Sub	11570	T	1.00000	A	0.00000		
+rs111736650	111	Allele Frequency Aggregator	Total	Global	36586	T	0.99997	C	0.00000	 G	0.00003
+rs111736650	111	Allele Frequency Aggregator	European	Sub	26596	T	0.99996	C	0.00000	 G	0.00004
+rs111736650	111	Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	T	0.998	A	0.002		
+rs111736650	111	gnomAD v4 - Exomes	Global	Study-wide	1401478	T	0.9999922	A	0.0000078		
+rs111736650	111	gnomAD v4 - Exomes	European	Sub	1165412	T	0.9999966	A	0.0000034		
+rs111736650	111	gnomAD v4 - Exomes	American	Sub	44724	T	1.00000	A	0.00000		
+rs111736650	111	TopMed	Global	Study-wide	264690	T	0.999996	C	0.000004		
+rs111736650	111	gnomAD v4 - Genomes	Global	Study-wide	149224	T	0.999987	A	0.000013		
+rs111736650	111	gnomAD v4 - Genomes	European	Sub	78616	T	0.99999	A	0.00001		
+rs111736650	111	gnomAD v4 - Genomes	American	Sub	15296	T	1.00000	A	0.00000		
+rs111736650	111	ExAC	Global	Study-wide	121132	T	0.999967	A	0.000033		
+rs111736650	111	ExAC	Europe	Sub	73124	T	0.99997	A	0.00003		
+rs111736650	111	ExAC	American	Sub	11570	T	1.00000	A	0.00000		
+rs111736650	111	Allele Frequency Aggregator	Total	Global	36586	T	0.99997	C	0.00000	 G	0.00003
+rs111736650	111	Allele Frequency Aggregator	European	Sub	26596	T	0.99996	C	0.00000	 G	0.00004
+rs111736650	111	Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	T	0.998	A	0.002		
+rs1389589066	112	gnomAD v4 - Exomes	Global	Study-wide	595672	T	0.999995	C	0.000005		
+rs1389589066	112	gnomAD v4 - Exomes	European	Sub	403238	T	0.999993	C	0.000007		
+rs1389589066	112	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs1349713226	112	gnomAD v4 - Exomes	Global	Study-wide	595670	T	0.999998	G	0.000002		
+rs1349713226	112	gnomAD v4 - Exomes	European	Sub	403236	T	1.000000	G	0.000000		
+rs1349713226	112	gnomAD v4 - Exomes	American	Sub	43740	T	0.99998	G	0.00002		
+rs2038455068	120	gnomAD v4 - Exomes	Global	Study-wide	595656	G	0.999998	A	0.000002		
+rs2038455068	120	gnomAD v4 - Exomes	European	Sub	403224	G	0.999998	A	0.000002		
+rs2038455068	120	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	A	0.00000		
+rs2038455068	120	gnomAD v4 - Genomes	Global	Study-wide	149094	G	0.999993	A	0.000007		
+rs2038455068	120	gnomAD v4 - Genomes	European	Sub	78624	G	1.00000	A	0.00000		
+rs2038455068	120	gnomAD v4 - Genomes	American	Sub	15258	G	0.99993	A	0.00007		
+rs2038455068	120	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	A	0.00000		
+rs2038455068	120	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	A	0.0000		
+rs11553210	120	gnomAD v4 - Genomes	Global	Study-wide	149196	C	0.999993	T	0.000007		
+rs11553210	120	gnomAD v4 - Genomes	European	Sub	78658	C	0.99999	T	0.00001		
+rs11553210	120	gnomAD v4 - Genomes	American	Sub	15280	C	1.00000	T	0.00000		
+rs747603164	121	gnomAD v4 - Exomes	Global	Study-wide	1401468	C	0.9999872	T	0.0000128		
+rs747603164	121	gnomAD v4 - Exomes	European	Sub	1165412	C	0.9999888	T	0.0000112		
+rs747603164	121	gnomAD v4 - Exomes	American	Sub	44724	C	0.99996	T	0.00004		
+rs747603164	121	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs747603164	121	gnomAD v4 - Genomes	Global	Study-wide	149124	C	0.999993	T	0.000007		
+rs747603164	121	gnomAD v4 - Genomes	European	Sub	78628	C	0.99999	T	0.00001		
+rs747603164	121	gnomAD v4 - Genomes	American	Sub	15280	C	1.00000	T	0.00000		
+rs747603164	121	ExAC	Global	Study-wide	121120	C	0.999983	T	0.000017		
+rs747603164	121	ExAC	Europe	Sub	73100	C	1.00000	T	0.00000		
+rs747603164	121	ExAC	American	Sub	11572	C	0.99991	T	0.00009		
+rs747603164	121	Allele Frequency Aggregator	Total	Global	48424	C	0.99992	T	0.00008		
+rs747603164	121	Allele Frequency Aggregator	European	Sub	33950	C	0.99988	T	0.00012		
+rs769449169	121	gnomAD v4 - Exomes	Global	Study-wide	1401472	G	0.9999929	A	0.0000071		
+rs769449169	121	gnomAD v4 - Exomes	European	Sub	1165406	G	0.9999931	A	0.0000069		
+rs769449169	121	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs769449169	121	gnomAD v4 - Genomes	Global	Study-wide	149030	G	0.999993	A	0.000007		
+rs769449169	121	gnomAD v4 - Genomes	European	Sub	78582	G	0.99999	A	0.00001		
+rs769449169	121	gnomAD v4 - Genomes	American	Sub	15256	G	1.00000	A	0.00000		
+rs769449169	121	ExAC	Global	Study-wide	121116	G	0.999983	A	0.000017		
+rs769449169	121	ExAC	Europe	Sub	73098	G	0.99997	A	0.00003		
+rs769449169	121	ExAC	American	Sub	11572	G	1.00000	A	0.00000		
+rs769449169	121	Allele Frequency Aggregator	Total	Global	39400	G	0.99992	A	0.00008	 T	0.00000
+rs769449169	121	Allele Frequency Aggregator	European	Sub	25842	G	0.99988	A	0.00012	 T	0.00000
+rs769449169	121	gnomAD v4 - Exomes	Global	Study-wide	1401472	G	0.9999929	A	0.0000071		
+rs769449169	121	gnomAD v4 - Exomes	European	Sub	1165406	G	0.9999931	A	0.0000069		
+rs769449169	121	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs769449169	121	gnomAD v4 - Genomes	Global	Study-wide	149030	G	0.999993	A	0.000007		
+rs769449169	121	gnomAD v4 - Genomes	European	Sub	78582	G	0.99999	A	0.00001		
+rs769449169	121	gnomAD v4 - Genomes	American	Sub	15256	G	1.00000	A	0.00000		
+rs769449169	121	ExAC	Global	Study-wide	121116	G	0.999983	A	0.000017		
+rs769449169	121	ExAC	Europe	Sub	73098	G	0.99997	A	0.00003		
+rs769449169	121	ExAC	American	Sub	11572	G	1.00000	A	0.00000		
+rs769449169	121	Allele Frequency Aggregator	Total	Global	39400	G	0.99992	A	0.00008	 T	0.00000
+rs769449169	121	Allele Frequency Aggregator	European	Sub	25842	G	0.99988	A	0.00012	 T	0.00000
+rs1555797129	124	TopMed	Global	Study-wide	264690	(C)5	0.999996	delC	0.000004		
+rs1555797129	124	Allele Frequency Aggregator	Total	Global	10680	(C)5	1.00000	delC	0.00000		
+rs1555797129	124	Allele Frequency Aggregator	European	Sub	6962	(C)5	1.0000	delC	0.0000		
+rs775308103	126	gnomAD v4 - Genomes	Global	Study-wide	149162	C	0.999993	G	0.000007		
+rs775308103	126	gnomAD v4 - Genomes	European	Sub	78654	C	1.00000	G	0.00000		
+rs775308103	126	gnomAD v4 - Genomes	American	Sub	15262	C	1.00000	G	0.00000		
+rs775308103	126	ExAC	Global	Study-wide	121090	C	0.999967	G	0.000033		
+rs775308103	126	ExAC	Europe	Sub	73320	C	1.00000	G	0.00000		
+rs775308103	126	ExAC	American	Sub	11578	C	1.00000	G	0.00000		
+rs775308103	126	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	G	0.00000		
+rs775308103	126	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	G	0.0000		
+rs2038458875	127	gnomAD v4 - Exomes	Global	Study-wide	1401454	TGTG	0.9999993	delTG	0.0000007		
+rs2038458875	127	gnomAD v4 - Exomes	European	Sub	1165394	TGTG	1.0000000	delTG	0.0000000		
+rs2038458875	127	gnomAD v4 - Exomes	American	Sub	44724	TGTG	1.00000	delTG	0.00000		
+rs2038458875	127	TopMed	Global	Study-wide	264690	TGTG	0.999996	delTG	0.000004		
+rs2038458875	127	Allele Frequency Aggregator	Total	Global	10680	TGTG	1.00000	delTG	0.00000		
+rs2038458875	127	Allele Frequency Aggregator	European	Sub	6962	TGTG	1.0000	delTG	0.0000		
+rs2122435637	127	gnomAD v4 - Exomes	Global	Study-wide	595668	T	0.999998	C	0.000002		
+rs2122435637	127	gnomAD v4 - Exomes	European	Sub	403240	T	0.999998	C	0.000002		
+rs2122435637	127	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	C	0.00000		
+rs748352246	127	gnomAD v4 - Exomes	Global	Study-wide	805782	G	0.999996	A	0.000004		
+rs748352246	127	gnomAD v4 - Exomes	European	Sub	762150	G	0.999996	A	0.000004		
+rs748352246	127	gnomAD v4 - Exomes	American	Sub	984	G	1.000	A	0.000		
+rs748352246	127	ExAC	Global	Study-wide	121116	G	0.999992	A	0.000008		
+rs748352246	127	ExAC	Europe	Sub	73316	G	0.99999	A	0.00001		
+rs748352246	127	ExAC	American	Sub	11578	G	1.00000	A	0.00000		
+rs1319330052	128	TopMed	Global	Study-wide	264690	C	0.999996	A	0.000004		
+rs1319330052	128	Allele Frequency Aggregator	Total	Global	10680	C	1.00000	A	0.00000		
+rs1319330052	128	Allele Frequency Aggregator	European	Sub	6962	C	1.0000	A	0.0000		
+rs1302402364	131	gnomAD v4 - Exomes	Global	Study-wide	595668	G	0.999995	T	0.000005		
+rs1302402364	131	gnomAD v4 - Exomes	European	Sub	403246	G	0.999998	T	0.000002		
+rs1302402364	131	gnomAD v4 - Exomes	American	Sub	43740	G	0.99995	T	0.00005		
+rs1281534200	132	Allele Frequency Aggregator	Total	Global	4470	C	0.9998	T	0.0002		
+rs1281534200	132	Allele Frequency Aggregator	European	Sub	4462	C	0.9998	T	0.0002		
+rs762943867	133	TopMed	Global	Study-wide	264690	C	0.999985	A	0.000015		
+rs762943867	133	gnomAD v4 - Genomes	Global	Study-wide	149186	C	0.999980	A	0.000020		
+rs762943867	133	gnomAD v4 - Genomes	European	Sub	78660	C	1.00000	A	0.00000		
+rs762943867	133	gnomAD v4 - Genomes	American	Sub	15266	C	1.00000	A	0.00000		
+rs762943867	133	Allele Frequency Aggregator	Total	Global	51794	C	0.99996	A	0.00002	 T	0.00002
+rs762943867	133	Allele Frequency Aggregator	European	Sub	36678	C	0.99997	A	0.00000	 T	0.00003
+rs774740467	134	TopMed	Global	Study-wide	264690	C	0.999996	T	0.000004		
+rs774740467	134	ExAC	Global	Study-wide	121274	C	0.999984	T	0.000016		
+rs774740467	134	ExAC	Europe	Sub	73318	C	1.00000	T	0.00000		
+rs774740467	134	ExAC	American	Sub	11578	C	0.99983	T	0.00017		
+rs774740467	134	Allele Frequency Aggregator	Total	Global	14050	C	1.00000	T	0.00000		
+rs774740467	134	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	T	0.0000		
+rs981387168	134	gnomAD v4 - Exomes	Global	Study-wide	595670	T	0.999998	G	0.000002		
+rs981387168	134	gnomAD v4 - Exomes	European	Sub	403242	T	0.999998	G	0.000002		
+rs981387168	134	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	G	0.00000		
+rs981387168	134	TopMed	Global	Study-wide	264690	T	0.999996	G	0.000004		
+rs981387168	134	gnomAD v4 - Genomes	Global	Study-wide	149142	T	0.999993	G	0.000007		
+rs981387168	134	gnomAD v4 - Genomes	European	Sub	78646	T	0.99999	G	0.00001		
+rs981387168	134	gnomAD v4 - Genomes	American	Sub	15268	T	1.00000	G	0.00000		
+rs981387168	134	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	G	0.00000		
+rs981387168	134	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	G	0.0000		
+rs981387168	134	gnomAD v4 - Exomes	Global	Study-wide	595670	T	0.999998	G	0.000002		
+rs981387168	134	gnomAD v4 - Exomes	European	Sub	403242	T	0.999998	G	0.000002		
+rs981387168	134	gnomAD v4 - Exomes	American	Sub	43740	T	1.00000	G	0.00000		
+rs981387168	134	TopMed	Global	Study-wide	264690	T	0.999996	G	0.000004		
+rs981387168	134	gnomAD v4 - Genomes	Global	Study-wide	149142	T	0.999993	G	0.000007		
+rs981387168	134	gnomAD v4 - Genomes	European	Sub	78646	T	0.99999	G	0.00001		
+rs981387168	134	gnomAD v4 - Genomes	American	Sub	15268	T	1.00000	G	0.00000		
+rs981387168	134	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	G	0.00000		
+rs981387168	134	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	G	0.0000		
+rs2038459418	136	gnomAD v4 - Genomes	Global	Study-wide	149014	A	0.999993	G	0.000007		
+rs2038459418	136	gnomAD v4 - Genomes	European	Sub	78596	A	1.00000	G	0.00000		
+rs2038459418	136	gnomAD v4 - Genomes	American	Sub	15252	A	1.00000	G	0.00000		
+rs2038459418	136	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs2038459418	136	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs1303587807	136	TopMed	Global	Study-wide	264690	G	0.999996	C	0.000004		
+rs1303587807	136	Allele Frequency Aggregator	Total	Global	11862	G	1.00000	C	0.00000		
+rs1303587807	136	Allele Frequency Aggregator	European	Sub	7618	G	1.0000	C	0.0000		
+rs759903976	137	gnomAD v4 - Exomes	Global	Study-wide	1401146	G	0.9999879	A	0.0000121		
+rs759903976	137	gnomAD v4 - Exomes	European	Sub	1165096	G	0.9999854	A	0.0000146		
+rs759903976	137	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs759903976	137	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs759903976	137	ExAC	Global	Study-wide	121308	G	0.999992	A	0.000008		
+rs759903976	137	ExAC	Europe	Sub	73314	G	0.99999	A	0.00001		
+rs759903976	137	ExAC	American	Sub	11578	G	1.00000	A	0.00000		
+rs759903976	137	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	A	0.00000		
+rs759903976	137	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	A	0.0000		
+rs2038459575	139	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs2038459575	139	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	A	0.00000		
+rs2038459575	139	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	A	0.0000		
+rs1208167570	141	gnomAD v4 - Exomes	Global	Study-wide	595642	C	0.999998	T	0.000002		
+rs1208167570	141	gnomAD v4 - Exomes	European	Sub	403244	C	0.999998	T	0.000002		
+rs1208167570	141	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	T	0.00000		
+rs1208167570	141	Allele Frequency Aggregator	Total	Global	21382	C	0.99995	T	0.00005		
+rs1208167570	141	Allele Frequency Aggregator	European	Sub	16898	C	0.99994	T	0.00006		
+rs530889896	142	gnomAD v4 - Genomes	Global	Study-wide	149206	T	0.999993	C	0.000007		
+rs530889896	142	gnomAD v4 - Genomes	European	Sub	78622	T	1.00000	C	0.00000		
+rs530889896	142	gnomAD v4 - Genomes	American	Sub	15284	T	1.00000	C	0.00000		
+rs530889896	142	ExAC	Global	Study-wide	121326	T	0.999992	C	0.000008		
+rs530889896	142	ExAC	Europe	Sub	73310	T	1.00000	C	0.00000		
+rs530889896	142	ExAC	American	Sub	11578	T	1.00000	C	0.00000		
+rs530889896	142	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	C	0.00000		
+rs530889896	142	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	C	0.0000		
+rs530889896	142	1000Genomes_30X	Global	Study-wide	6404	T	0.9998	C	0.0002		
+rs530889896	142	1000Genomes_30X	Europe	Sub	1266	T	1.0000	C	0.0000		
+rs530889896	142	1000Genomes_30X	American	Sub	980	T	1.000	C	0.000		
+rs530889896	142	1000Genomes	Global	Study-wide	5008	T	0.9998	C	0.0002		
+rs530889896	142	1000Genomes	Europe	Sub	1006	T	1.0000	C	0.0000		
+rs530889896	142	1000Genomes	American	Sub	694	T	1.000	C	0.000		
+rs1038871067	145	gnomAD v4 - Exomes	Global	Study-wide	595614	A	0.999998	G	0.000002		
+rs1038871067	145	gnomAD v4 - Exomes	European	Sub	403248	A	0.999998	G	0.000002		
+rs1038871067	145	gnomAD v4 - Exomes	American	Sub	43740	A	1.00000	G	0.00000		
+rs1038871067	145	TopMed	Global	Study-wide	264690	A	0.999985	G	0.000015		
+rs1038871067	145	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	G	0.00000		
+rs1038871067	145	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	G	0.0000		
+rs1038871067	145	gnomAD v4 - Exomes	Global	Study-wide	595614	A	0.999998	G	0.000002		
+rs1038871067	145	gnomAD v4 - Exomes	European	Sub	403248	A	0.999998	G	0.000002		
+rs1038871067	145	gnomAD v4 - Exomes	American	Sub	43740	A	1.00000	G	0.00000		
+rs1038871067	145	TopMed	Global	Study-wide	264690	A	0.999985	G	0.000015		
+rs1038871067	145	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	G	0.00000		
+rs1038871067	145	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	G	0.0000		
+rs111962558	146	gnomAD v4 - Exomes	Global	Study-wide	1401320	G	0.9999679	A	0.0000321		
+rs111962558	146	gnomAD v4 - Exomes	European	Sub	1165350	G	0.9999622	A	0.0000378		
+rs111962558	146	gnomAD v4 - Exomes	American	Sub	44724	G	0.99998	A	0.00002		
+rs111962558	146	TopMed	Global	Study-wide	264690	G	0.999962	A	0.000038		
+rs111962558	146	gnomAD v4 - Genomes	Global	Study-wide	149092	G	0.999953	A	0.000047		
+rs111962558	146	gnomAD v4 - Genomes	European	Sub	78634	G	0.99994	A	0.00006		
+rs111962558	146	gnomAD v4 - Genomes	American	Sub	15252	G	0.99987	A	0.00013		
+rs111962558	146	ExAC	Global	Study-wide	121330	G	0.999959	A	0.000041		
+rs111962558	146	ExAC	Europe	Sub	73304	G	0.99993	A	0.00007		
+rs111962558	146	ExAC	American	Sub	11578	G	1.00000	A	0.00000		
+rs111962558	146	Allele Frequency Aggregator	Total	Global	51790	G	0.99992	A	0.00008		
+rs111962558	146	Allele Frequency Aggregator	European	Sub	36674	G	0.99989	A	0.00011		
+rs111962558	146	GO Exome Sequencing Project	Global	Study-wide	13006	G	0.99992	A	0.00008		
+rs111962558	146	GO Exome Sequencing Project	European American	Sub	8600	G	0.9999	A	0.0001		
+rs111962558	146	GO Exome Sequencing Project	African American	Sub	4406	G	1.0000	A	0.0000		
+rs111962558	146	UK 10K study - Twins	TWIN COHORT	Study-wide	3708	G	0.9997	A	0.0003		
+rs111962558	146	Medical Genome Project healthy controls from Spanish population	Spanish controls	Study-wide	534	G	0.998	A	0.002		
+rs1469208931	150	gnomAD v4 - Exomes	Global	Study-wide	805740	A	0.999998	G	0.000002		
+rs1469208931	150	gnomAD v4 - Exomes	European	Sub	762110	A	0.999997	G	0.000003		
+rs1469208931	150	gnomAD v4 - Exomes	American	Sub	984	A	1.000	G	0.000		
+rs1469208931	150	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs1469208931	150	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	G	0.00000		
+rs1469208931	150	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	G	0.0000		
+rs755825625	150	gnomAD v4 - Exomes	Global	Study-wide	595542	C	0.999998	A	0.000002		
+rs755825625	150	gnomAD v4 - Exomes	European	Sub	403244	C	1.000000	A	0.000000		
+rs755825625	150	gnomAD v4 - Exomes	American	Sub	43740	C	0.99998	A	0.00002		
+rs755825625	150	ExAC	Global	Study-wide	121324	C	0.999992	A	0.000008		
+rs755825625	150	ExAC	Europe	Sub	73302	C	1.00000	A	0.00000		
+rs755825625	150	ExAC	American	Sub	11578	C	0.99991	A	0.00009		
+rs1414030081	152	gnomAD v4 - Exomes	Global	Study-wide	1401296	T	0.9999979	G	0.0000021		
+rs1414030081	152	gnomAD v4 - Exomes	European	Sub	1165382	T	1.0000000	G	0.0000000		
+rs1414030081	152	gnomAD v4 - Exomes	American	Sub	44724	T	1.00000	G	0.00000		
+rs1414030081	152	Allele Frequency Aggregator	Total	Global	10680	T	1.00000	G	0.00000		
+rs1414030081	152	Allele Frequency Aggregator	European	Sub	6962	T	1.0000	G	0.0000		
+rs1412560866	153	TopMed	Global	Study-wide	264690	A	0.999996	G	0.000004		
+rs1412560866	153	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	G	0.00000		
+rs1412560866	153	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	G	0.0000		
+rs11553214	153	gnomAD v4 - Exomes	Global	Study-wide	595532	C	0.999998	T	0.000002		
+rs11553214	153	gnomAD v4 - Exomes	European	Sub	403248	C	1.000000	T	0.000000		
+rs11553214	153	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	T	0.00000		
+rs11553214	153	ExAC	Global	Study-wide	121320	C	0.999992	T	0.000008		
+rs11553214	153	ExAC	Europe	Sub	73300	C	1.00000	T	0.00000		
+rs11553214	153	ExAC	American	Sub	11578	C	1.00000	T	0.00000		
+rs1249571281	154	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1249571281	154	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1249571281	154	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs1417014574	154	TopMed	Global	Study-wide	264690	A	0.999996	T	0.000004		
+rs1417014574	154	Allele Frequency Aggregator	Total	Global	14050	A	1.00000	T	0.00000		
+rs1417014574	154	Allele Frequency Aggregator	European	Sub	9690	A	1.0000	T	0.0000		
+rs1484067921	156	TopMed	Global	Study-wide	264690	G	0.999996	A	0.000004		
+rs1484067921	156	gnomAD v4 - Genomes	Global	Study-wide	149104	G	0.999993	A	0.000007		
+rs1484067921	156	gnomAD v4 - Genomes	European	Sub	78630	G	0.99999	A	0.00001		
+rs1484067921	156	gnomAD v4 - Genomes	American	Sub	15262	G	1.00000	A	0.00000		
+rs1484067921	156	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1484067921	156	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs151265703	156	gnomAD v4 - Exomes	Global	Study-wide	1401282	G	0.9999101	A	0.0000899		
+rs151265703	156	gnomAD v4 - Exomes	European	Sub	1165404	G	0.9998927	A	0.0001073		
+rs151265703	156	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	A	0.00000		
+rs151265703	156	gnomAD v4 - Genomes	Global	Study-wide	149072	G	0.999980	A	0.000020		
+rs151265703	156	gnomAD v4 - Genomes	European	Sub	78610	G	0.99997	A	0.00003		
+rs151265703	156	gnomAD v4 - Genomes	American	Sub	15260	G	1.00000	A	0.00000		
+rs151265703	156	ExAC	Global	Study-wide	121306	G	0.999984	A	0.000016		
+rs151265703	156	ExAC	Europe	Sub	73284	G	0.99997	A	0.00003		
+rs151265703	156	ExAC	American	Sub	11578	G	1.00000	A	0.00000		
+rs151265703	156	Allele Frequency Aggregator	Total	Global	51790	G	0.99990	A	0.00010		
+rs151265703	156	Allele Frequency Aggregator	European	Sub	36674	G	0.99989	A	0.00011		
+rs151265703	156	GO Exome Sequencing Project	Global	Study-wide	13006	G	0.99992	A	0.00008		
+rs151265703	156	GO Exome Sequencing Project	European American	Sub	8600	G	1.0000	A	0.0000		
+rs151265703	156	GO Exome Sequencing Project	African American	Sub	4406	G	0.9998	A	0.0002		
+rs778872543	157	gnomAD v4 - Exomes	Global	Study-wide	595482	G	0.999993	T	0.000007		
+rs778872543	157	gnomAD v4 - Exomes	European	Sub	403244	G	0.999990	T	0.000010		
+rs778872543	157	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	T	0.00000		
+rs778872543	157	ExAC	Global	Study-wide	121296	G	0.999992	T	0.000008		
+rs778872543	157	ExAC	Europe	Sub	73278	G	0.99999	T	0.00001		
+rs778872543	157	ExAC	American	Sub	11578	G	1.00000	T	0.00000		
+rs1366471952	158	gnomAD v4 - Exomes	Global	Study-wide	595450	C	0.999998	G	0.000002		
+rs1366471952	158	gnomAD v4 - Exomes	European	Sub	403248	C	0.999998	G	0.000002		
+rs1366471952	158	gnomAD v4 - Exomes	American	Sub	43740	C	1.00000	G	0.00000		
+rs374486686	158	gnomAD v4 - Exomes	Global	Study-wide	1401218	C	0.9999864	T	0.0000136		
+rs374486686	158	gnomAD v4 - Exomes	European	Sub	1165412	C	0.9999897	T	0.0000103		
+rs374486686	158	gnomAD v4 - Exomes	American	Sub	44724	C	0.99987	T	0.00013		
+rs374486686	158	TopMed	Global	Study-wide	264690	C	0.999985	T	0.000015		
+rs374486686	158	gnomAD v4 - Genomes	Global	Study-wide	149060	C	0.999987	T	0.000013		
+rs374486686	158	gnomAD v4 - Genomes	European	Sub	78618	C	0.99997	T	0.00003		
+rs374486686	158	gnomAD v4 - Genomes	American	Sub	15256	C	1.00000	T	0.00000		
+rs374486686	158	ExAC	Global	Study-wide	121286	C	0.999967	T	0.000033		
+rs374486686	158	ExAC	Europe	Sub	73272	C	0.99999	T	0.00001		
+rs374486686	158	ExAC	American	Sub	11578	C	0.99974	T	0.00026		
+rs374486686	158	Allele Frequency Aggregator	Total	Global	15150	C	0.99980	T	0.00020		
+rs374486686	158	Allele Frequency Aggregator	European	Sub	11424	C	0.99974	T	0.00026		
+rs374486686	158	GO Exome Sequencing Project	Global	Study-wide	13006	C	0.99992	T	0.00008		
+rs374486686	158	GO Exome Sequencing Project	European American	Sub	8600	C	0.9999	T	0.0001		
+rs374486686	158	GO Exome Sequencing Project	African American	Sub	4406	C	1.0000	T	0.0000		
+rs779807848	159	gnomAD v4 - Exomes	Global	Study-wide	595428	G	0.999998	A	0.000002		
+rs779807848	159	gnomAD v4 - Exomes	European	Sub	403248	G	1.000000	A	0.000000		
+rs779807848	159	gnomAD v4 - Exomes	American	Sub	43740	G	1.00000	A	0.00000		
+rs779807848	159	ExAC	Global	Study-wide	121284	G	0.999992	A	0.000008		
+rs779807848	159	ExAC	Europe	Sub	73270	G	1.00000	A	0.00000		
+rs779807848	159	ExAC	American	Sub	11578	G	1.00000	A	0.00000		
+rs2038460827	163	gnomAD v4 - Exomes	Global	Study-wide	805812	G	0.999998	A	0.000002		
+rs2038460827	163	gnomAD v4 - Exomes	European	Sub	762180	G	0.999997	A	0.000003		
+rs2038460827	163	gnomAD v4 - Exomes	American	Sub	984	G	1.000	A	0.000		
+rs2038460827	163	gnomAD v4 - Genomes	Global	Study-wide	149112	G	0.999993	A	0.000007		
+rs2038460827	163	gnomAD v4 - Genomes	European	Sub	78644	G	1.00000	A	0.00000		
+rs2038460827	163	gnomAD v4 - Genomes	American	Sub	15260	G	0.99993	A	0.00007		
+rs2038460827	163	Allele Frequency Aggregator	Total	Global	10680	G	1.00000	A	0.00000		
+rs2038460827	163	Allele Frequency Aggregator	European	Sub	6962	G	1.0000	A	0.0000		
+rs770946603	164	gnomAD v4 - Exomes	Global	Study-wide	1401044	G	0.9999900	T	0.0000100		
+rs770946603	164	gnomAD v4 - Exomes	European	Sub	1165400	G	0.9999880	T	0.0000120		
+rs770946603	164	gnomAD v4 - Exomes	American	Sub	44722	G	1.00000	T	0.00000		
+rs770946603	164	TopMed	Global	Study-wide	264690	G	0.999992	T	0.000008		
+rs770946603	164	gnomAD v4 - Genomes	Global	Study-wide	149134	G	0.999993	T	0.000007		
+rs770946603	164	gnomAD v4 - Genomes	European	Sub	78640	G	0.99999	T	0.00001		
+rs770946603	164	gnomAD v4 - Genomes	American	Sub	15256	G	1.00000	T	0.00000		
+rs770946603	164	ExAC	Global	Study-wide	121258	G	0.999992	T	0.000008		
+rs770946603	164	ExAC	Europe	Sub	73250	G	0.99999	T	0.00001		
+rs770946603	164	ExAC	American	Sub	11578	G	1.00000	T	0.00000		
+rs770946603	164	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	T	0.00000		
+rs770946603	164	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	T	0.0000		
+rs368634782	164	ExAC	Global	Study-wide	121266	A	0.999992	T	0.000008		
+rs368634782	164	ExAC	Europe	Sub	73256	A	0.99999	T	0.00001		
+rs368634782	164	ExAC	American	Sub	11578	A	1.00000	T	0.00000		
+rs368634782	164	GO Exome Sequencing Project	Global	Study-wide	13006	A	0.99992	T	0.00008		
+rs368634782	164	GO Exome Sequencing Project	European American	Sub	8600	A	0.9999	T	0.0001		
+rs368634782	164	GO Exome Sequencing Project	African American	Sub	4406	A	1.0000	T	0.0000		
+rs368634782	164	ExAC	Global	Study-wide	121266	A	0.999992	T	0.000008		
+rs368634782	164	ExAC	Europe	Sub	73256	A	0.99999	T	0.00001		
+rs368634782	164	ExAC	American	Sub	11578	A	1.00000	T	0.00000		
+rs368634782	164	GO Exome Sequencing Project	Global	Study-wide	13006	A	0.99992	T	0.00008		
+rs368634782	164	GO Exome Sequencing Project	European American	Sub	8600	A	0.9999	T	0.0001		
+rs368634782	164	GO Exome Sequencing Project	African American	Sub	4406	A	1.0000	T	0.0000		
+rs774529369	166	gnomAD v4 - Exomes	Global	Study-wide	595192	C	0.999998	T	0.000002		
+rs774529369	166	gnomAD v4 - Exomes	European	Sub	403226	C	1.000000	T	0.000000		
+rs774529369	166	gnomAD v4 - Exomes	American	Sub	43738	C	0.99998	T	0.00002		
+rs774529369	166	ExAC	Global	Study-wide	121254	C	0.999992	T	0.000008		
+rs774529369	166	ExAC	Europe	Sub	73250	C	1.00000	T	0.00000		
+rs774529369	166	ExAC	American	Sub	11578	C	0.99991	T	0.00009		
+rs768204975	168	gnomAD v4 - Exomes	Global	Study-wide	1400912	G	0.9999986	C	0.0000014		
+rs768204975	168	gnomAD v4 - Exomes	European	Sub	1165382	G	0.9999991	C	0.0000009		
+rs768204975	168	gnomAD v4 - Exomes	American	Sub	44722	G	0.99998	C	0.00002		
+rs768204975	168	ExAC	Global	Study-wide	121224	G	0.999992	C	0.000008		
+rs768204975	168	ExAC	Europe	Sub	73234	G	1.00000	C	0.00000		
+rs768204975	168	ExAC	American	Sub	11578	G	0.99991	C	0.00009		
+rs2038461242	168	TopMed	Global	Study-wide	264690	A	0.999996	C	0.000004		
+rs2038461242	168	Allele Frequency Aggregator	Total	Global	10680	A	0.99991	C	0.00009		
+rs2038461242	168	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	C	0.0000		
+rs768204975	168	gnomAD v4 - Exomes	Global	Study-wide	1400912	G	0.9999986	C	0.0000014		
+rs768204975	168	gnomAD v4 - Exomes	European	Sub	1165382	G	0.9999991	C	0.0000009		
+rs768204975	168	gnomAD v4 - Exomes	American	Sub	44722	G	0.99998	C	0.00002		
+rs768204975	168	ExAC	Global	Study-wide	121224	G	0.999992	C	0.000008		
+rs768204975	168	ExAC	Europe	Sub	73234	G	1.00000	C	0.00000		
+rs768204975	168	ExAC	American	Sub	11578	G	0.99991	C	0.00009		
+rs768204975	168	gnomAD v4 - Exomes	Global	Study-wide	1400912	G	0.9999986	C	0.0000014		
+rs768204975	168	gnomAD v4 - Exomes	European	Sub	1165382	G	0.9999991	C	0.0000009		
+rs768204975	168	gnomAD v4 - Exomes	American	Sub	44722	G	0.99998	C	0.00002		
+rs768204975	168	ExAC	Global	Study-wide	121224	G	0.999992	C	0.000008		
+rs768204975	168	ExAC	Europe	Sub	73234	G	1.00000	C	0.00000		
+rs768204975	168	ExAC	American	Sub	11578	G	0.99991	C	0.00009		
+rs1313974438	169	gnomAD v4 - Exomes	Global	Study-wide	1400824	G	0.9999993	C	0.0000007		
+rs1313974438	169	gnomAD v4 - Exomes	European	Sub	1165366	G	0.9999991	C	0.0000009		
+rs1313974438	169	gnomAD v4 - Exomes	American	Sub	44724	G	1.00000	C	0.00000		
+rs1313974438	169	TopMed	Global	Study-wide	264690	G	0.999985	C	0.000015		
+rs1313974438	169	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	C	0.00000		
+rs1313974438	169	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	C	0.0000		
+rs766011614	172	gnomAD v4 - Exomes	Global	Study-wide	1400624	CTCTC	0.9999979	delTC	0.0000021		
+rs766011614	172	gnomAD v4 - Exomes	European	Sub	1165318	CTCTC	0.9999974	delTC	0.0000026		
+rs766011614	172	gnomAD v4 - Exomes	American	Sub	44724	CTCTC	1.00000	delTC	0.00000		
+rs766011614	172	gnomAD v4 - Genomes	Global	Study-wide	148978	CTCTC	0.999993	delTC	0.000007		
+rs766011614	172	gnomAD v4 - Genomes	European	Sub	78568	CTCTC	1.00000	delTC	0.00000		
+rs766011614	172	gnomAD v4 - Genomes	American	Sub	15248	CTCTC	1.00000	delTC	0.00000		
+rs766011614	172	ExAC	Global	Study-wide	121130	CTCTC	0.999992	delTC	0.000008		
+rs766011614	172	ExAC	Europe	Sub	73160	CTCTC	0.99999	delTC	0.00001		
+rs766011614	172	ExAC	American	Sub	11576	CTCTC	1.00000	delTC	0.00000		
+rs766011614	172	Allele Frequency Aggregator	Total	Global	10680	CTCTC	1.00000	delTC	0.00000		
+rs766011614	172	Allele Frequency Aggregator	European	Sub	6962	CTCTC	1.0000	delTC	0.0000		
+rs1417236918	173	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	G	0.00000		
+rs1417236918	173	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	G	0.0000		
+rs1803578	174	gnomAD v4 - Exomes	Global	Study-wide	1400372	C	0.9999722	T	0.0000278		
+rs1803578	174	gnomAD v4 - Exomes	European	Sub	1165214	C	0.9999991	T	0.0000009		
+rs1803578	174	gnomAD v4 - Exomes	American	Sub	44724	C	0.99982	T	0.00018		
+rs1803578	174	TopMed	Global	Study-wide	264690	C	0.999577	T	0.000423		
+rs1803578	174	gnomAD v4 - Genomes	Global	Study-wide	149288	C	0.999618	T	0.000382		
+rs1803578	174	gnomAD v4 - Genomes	European	Sub	78652	C	1.00000	T	0.00000		
+rs1803578	174	gnomAD v4 - Genomes	American	Sub	15290	C	0.99895	T	0.00105		
+rs1803578	174	ExAC	Global	Study-wide	121034	C	0.999934	T	0.000066		
+rs1803578	174	ExAC	Europe	Sub	73100	C	1.00000	T	0.00000		
+rs1803578	174	ExAC	American	Sub	11568	C	0.99991	T	0.00009		
+rs1803578	174	Allele Frequency Aggregator	Total	Global	14048	C	1.00000	T	0.00000		
+rs1803578	174	Allele Frequency Aggregator	European	Sub	9690	C	1.0000	T	0.0000		
+rs1803578	174	GO Exome Sequencing Project	Global	Study-wide	13006	C	0.99985	T	0.00015		
+rs1803578	174	GO Exome Sequencing Project	European American	Sub	8600	C	1.0000	T	0.0000		
+rs1803578	174	GO Exome Sequencing Project	African American	Sub	4406	C	0.9995	T	0.0005		
+rs1803578	174	1000Genomes_30X	Global	Study-wide	6404	C	0.9998	T	0.0002		
+rs1803578	174	1000Genomes_30X	Europe	Sub	1266	C	1.0000	T	0.0000		
+rs1803578	174	1000Genomes_30X	American	Sub	980	C	1.000	T	0.000		
+rs1803578	174	1000Genomes	Global	Study-wide	5008	C	0.9998	T	0.0002		
+rs1803578	174	1000Genomes	Europe	Sub	1006	C	1.0000	T	0.0000		
+rs1803578	174	1000Genomes	American	Sub	694	C	1.000	T	0.000		
+rs2038461782	175	TopMed	Global	Study-wide	264690	A	0.999992	C	0.000008		
+rs2038461782	175	Allele Frequency Aggregator	Total	Global	10680	A	1.00000	C	0.00000		
+rs2038461782	175	Allele Frequency Aggregator	European	Sub	6962	A	1.0000	C	0.0000		
+rs1422409524	175	gnomAD v4 - Exomes	Global	Study-wide	1400336	G	0.9999957	A	0.0000043		
+rs1422409524	175	gnomAD v4 - Exomes	European	Sub	1165310	G	0.9999957	A	0.0000043		
+rs1422409524	175	gnomAD v4 - Exomes	American	Sub	44724	G	0.99998	A	0.00002		
+rs1422409524	175	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs1422409524	175	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1422409524	175	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		
+rs1422409524	175	gnomAD v4 - Exomes	Global	Study-wide	1400336	G	0.9999957	A	0.0000043		
+rs1422409524	175	gnomAD v4 - Exomes	European	Sub	1165310	G	0.9999957	A	0.0000043		
+rs1422409524	175	gnomAD v4 - Exomes	American	Sub	44724	G	0.99998	A	0.00002		
+rs1422409524	175	TopMed	Global	Study-wide	264690	G	0.999992	A	0.000008		
+rs1422409524	175	Allele Frequency Aggregator	Total	Global	14050	G	1.00000	A	0.00000		
+rs1422409524	175	Allele Frequency Aggregator	European	Sub	9690	G	1.0000	A	0.0000		

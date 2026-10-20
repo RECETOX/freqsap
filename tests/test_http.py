@@ -1,8 +1,16 @@
-# ruff: noqa: PLR2004
-from unittest.mock import MagicMock
-from unittest.mock import patch
+# ruff: noqa: PLR2004,I001
+from pathlib import Path
+
 import pytest
 import requests
+
+
+from _pytest.capture import CaptureFixture
+from unittest.mock import MagicMock
+from unittest.mock import patch
+from freqsap import __main__ as cli
+from freqsap.protein import Protein
+from freqsap.variation import Variation
 from freqsap.ebi import _get_variants
 from freqsap.http import get_with_retry
 
@@ -29,12 +37,10 @@ def test_retries_connection_error():
 
 def test_raises_when_retries_exhausted():
     """Persistent failures are raised rather than silently dropped."""
-    with patch("freqsap.http.requests.get", side_effect=[_response(503)] * 3):
-        with pytest.raises(requests.HTTPError):
-            get_with_retry("http://x", retries=2, backoff=0)
-    with patch("freqsap.http.requests.get", side_effect=requests.Timeout()):
-        with pytest.raises(requests.Timeout):
-            get_with_retry("http://x", retries=1, backoff=0)
+    with patch("freqsap.http.requests.get", side_effect=[_response(503)] * 3), pytest.raises(requests.HTTPError):
+        get_with_retry("http://x", retries=2, backoff=0)
+    with patch("freqsap.http.requests.get", side_effect=requests.Timeout()), pytest.raises(requests.Timeout):
+        get_with_retry("http://x", retries=1, backoff=0)
 
 
 def test_not_found_is_not_retried():
@@ -56,12 +62,8 @@ def test_variants_are_deduplicated_and_sorted():
     assert [v.ref for v in _get_variants(a)] == ["rs1", "rs2"]
 
 
-def test_main_reports_failed_variants(tmp_path, capsys):
+def test_main_reports_failed_variants(tmp_path: Path, capsys: CaptureFixture):
     """The CLI exits non-zero and names variants whose retrieval failed."""
-    from freqsap import __main__ as cli
-    from freqsap.protein import Protein
-    from freqsap.variation import Variation
-
     protein = Protein("P1", [Variation("rs1", 1), Variation("rs2", 2)])
     ebi = MagicMock()
     ebi.available.return_value = True
@@ -70,12 +72,10 @@ def test_main_reports_failed_variants(tmp_path, capsys):
     db.available.return_value = True
     db.get.side_effect = requests.Timeout("boom")
     args = MagicMock(accession="P12345", timeout=1, regions="Global", output_file=str(tmp_path / "o"), delimiter="\t")
-    with (
-        patch.object(cli, "parse_args", return_value=args),
-        patch.object(cli, "EBI", return_value=ebi),
-        patch.object(cli, "DBSNP", return_value=db),
-        pytest.raises(SystemExit) as e,
-    ):
+    with patch.object(cli, "parse_args", return_value=args), \
+         patch.object(cli, "EBI", return_value=ebi), \
+         patch.object(cli, "DBSNP", return_value=db), \
+         pytest.raises(SystemExit) as e:
         cli.main()
     assert e.value.code == 1
     assert "rs1, rs2" in capsys.readouterr().err

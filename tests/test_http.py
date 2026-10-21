@@ -5,7 +5,6 @@ import pytest
 import requests
 
 
-from _pytest.capture import CaptureFixture
 from unittest.mock import MagicMock
 from unittest.mock import patch
 from freqsap import __main__ as cli
@@ -62,7 +61,7 @@ def test_variants_are_deduplicated_and_sorted():
     assert [v.ref for v in _get_variants(a)] == ["rs1", "rs2"]
 
 
-def test_main_reports_failed_variants(tmp_path: Path, capsys: CaptureFixture):
+def test_main_reports_failed_variants(tmp_path: Path, caplog: pytest.LogCaptureFixture):
     """The CLI exits non-zero and names variants whose retrieval failed."""
     protein = Protein("P1", [Variation("rs1", 1), Variation("rs2", 2)])
     ebi = MagicMock()
@@ -79,4 +78,4 @@ def test_main_reports_failed_variants(tmp_path: Path, capsys: CaptureFixture):
     ), pytest.raises(SystemExit) as e:
         cli.main()
     assert e.value.code == 1
-    assert "rs1, rs2" in capsys.readouterr().err
+    assert "rs1, rs2" in caplog.text

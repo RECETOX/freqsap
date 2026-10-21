@@ -34,19 +34,6 @@ requires-python = ">=3.8"
 version = "1.1.1"
 
 [project.optional-dependencies]
-dev = [
-    "build",  # build is not only used in publishing (below), but also in the template's test suite
-    "bump-my-version",
-    "coverage [toml]",
-    "pytest",
-    "pytest-cov",
-    "ruff",
-    "sphinx",
-    "sphinx_rtd_theme",
-    "sphinx-autoapi",
-    "tox",
-    "myst_parser",
-]
 docs = [
     "sphinx",
     "sphinx_rtd_theme",
@@ -68,6 +55,25 @@ ReadTheDocs = "https://freqsap.readthedocs.io"
 [project.scripts]
 freqsap = "freqsap.__main__:main"
 
+# Development dependencies are declared as a PEP 735 dependency group (not a
+# `[project.optional-dependencies]` extra): `uv sync` installs the `dev` group by
+# default, so `uv run pytest` / `uv run ruff` work out of the box. Extras are part of
+# the published package's public interface, development tools are not.
+[dependency-groups]
+dev = [
+    "build",  # lets `python -m build` be checked locally; CI builds with `uv build`
+    "bump-my-version",
+    "coverage [toml]",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinx-autoapi",
+    "tox",
+    "myst_parser",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
@@ -84,7 +90,7 @@ envlist = py38,py39,py310,py311,py312
 skip_missing_interpreters = true
 [testenv]
 commands = pytest
-extras = dev
+dependency_groups = dev
 """
 
 [tool.ruff]

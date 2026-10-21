@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 import re
-import requests
 from freqsap.allele import Allele
+from freqsap.http import get_with_retry
 from freqsap.interfaces import VariantFrequencyAPI
 from freqsap.report import ReferenceSNPReport
 from freqsap.study import Study
@@ -29,10 +29,17 @@ class DBSNP(VariantFrequencyAPI):
             variation (Variation): Variation for which to get the report.
 
         Returns:
-            ReferenceSNPReport | None: Report if it is found on dbSNP, otherwise None.
+            ReferenceSNPReport | None: Report if it is found on dbSNP, None if dbSNP has no frequency data.
+
+        Raises:
+            requests.RequestException: If the request keeps failing after retries.
         """
+        http_not_found = 404
         freq_url = f"https://www.ncbi.nlm.nih.gov/snp/{variation}/download/frequency"
-        r = requests.get(freq_url, headers={"Accept": "application/json"}, timeout=self._timeout)
+        r = get_with_retry(freq_url, headers={"Accept": "application/json"}, timeout=self._timeout)
+        if r.status_code == http_not_found:
+            return None
+        r.raise_for_status()
 
         sections = [re.split(r"\n+", x.strip()) for x in re.split(r"#Frequency Data Table", r.text)]
 

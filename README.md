@@ -29,12 +29,20 @@ Install from PyPI:
 python -m pip install freqsap
 ```
 
+Or, with [uv](https://docs.astral.sh/uv/), into an isolated environment that puts the `freqsap`
+command on your `PATH`:
+
+```console
+uv tool install freqsap
+```
+
 Install from GitHub repository:
 
 ```console
 git clone git@github.com:RECETOX/freqsap.git
 cd freqsap
-python -m pip install .
+uv venv
+uv pip install .
 ```
 
 ## Command line usage

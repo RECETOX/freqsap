@@ -5,10 +5,14 @@ and their population frequencies from various databases.
 """
 
 from __future__ import annotations
+
+# ruff: noqa: I001
 import argparse
 import csv
-import sys
+import logging
 from pathlib import Path
+import requests
+import sys
 from openpyxl import Workbook
 from freqsap import __version__
 from freqsap.accession import Accession
@@ -18,6 +22,8 @@ from freqsap.interfaces import ProteinVariantAPI
 from freqsap.interfaces import VariantFrequencyAPI
 from freqsap.report import PopulationFilter
 from freqsap.report import ReferenceSNPReport
+
+logger = logging.getLogger(__name__)
 
 
 def parse_args() -> argparse.Namespace:
@@ -221,12 +227,27 @@ def main() -> None:
     protein = protein_api.get(accession)
 
     # Collect frequency reports for all variants
-    reports: list[ReferenceSNPReport] = list(
-        filter(None, [frequency_api.get(variation) for variation in protein.variations]),
-    )
+    reports: list[ReferenceSNPReport] = []
+    failed: list[str] = []
+    for variation in protein.variations:
+        try:
+            report = frequency_api.get(variation)
+        except requests.RequestException as e:
+            failed.append(str(variation))
+            logger.warning("failed to retrieve %s: %s", variation, e)
+            continue
+        if report is None:
+            logger.warning("no frequency data for %s", variation)
+        else:
+            reports.append(report)
 
     # Write reports to output file
-    write_reports(reports, args.regions.split(","), args.output_file, args.delimiter)
+    if reports:
+        write_reports(reports, args.regions.split(","), args.output_file, args.delimiter)
+
+    if failed:
+        logger.error("output is incomplete, %d variant(s) failed: %s", len(failed), ", ".join(failed))
+        sys.exit(1)
 
 
 if __name__ == "__main__":

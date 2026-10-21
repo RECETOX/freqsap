@@ -25,10 +25,10 @@ def api() -> EBI:
     return EBI()
 
 
-@pytest.fixture
-def accession() -> str:
+@pytest.fixture(params=["P02788", "P02792", "P0DJI9"])
+def accession(request: pytest.FixtureRequest) -> str:
     """Fixture to get a protein accession as a string."""
-    return "P02788"
+    return request.param
 
 
 def test_can_create():
@@ -68,4 +68,11 @@ def test_has_all_variants(api: EBI):
     variants = api.get("P02792").variations
     refs = [var.ref for var in variants]
     assert all(refs)
-    assert len(variants) >= 200
+    assert len(variants) >= 170
+
+
+def test_get_is_reproducible(api: EBI, accession: str):
+    """Test whether repeated requests for the same accession return the same variants."""
+    first = api.get(accession).variations
+    second = api.get(accession).variations
+    assert [repr(v) for v in first] == [repr(v) for v in second]

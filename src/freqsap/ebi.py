@@ -1,10 +1,14 @@
 """Module for interacting with the EBI Proteins API."""
 
 from __future__ import annotations
+
+# ruff: noqa: I001
 from typing import Generator
-import requests
+import requests  # noqa: TC002
+
 from freqsap.accession import Accession
 from freqsap.exceptions import AccessionNotFoundError
+from freqsap.http import get_with_retry
 from freqsap.interfaces import ProteinVariantAPI
 from freqsap.protein import Protein
 from freqsap.variation import Variation
@@ -30,7 +34,7 @@ class EBI(ProteinVariantAPI):
         Returns:
             requests.Response: Response returned by the server.
         """
-        return requests.get(url, headers=self._headers, timeout=self._timeout)
+        return get_with_retry(url, headers=self._headers, timeout=self._timeout)
 
     def available(self) -> bool:
         """Check whether the service is available.
@@ -98,9 +102,13 @@ def _get_variants(response: dict) -> Generator[Variation]:
         response (dict): JSON response from EBI API containing protein features.
 
     Yields:
-        Variation: Each variation found with a valid dbSNP reference ID.
+        Variation: Each distinct variation with a valid dbSNP reference ID, sorted by
+            position and reference ID so the result is independent of response order.
     """
     variants = list(filter(lambda x: x.get("type") == "VARIANT", response["features"]))
+    unique: set[tuple[int, str]] = set()
     for var in variants:
-        if ref := _get_dbsnp_id(var["xrefs"]):
-            yield Variation(ref, var["begin"])
+        if ref := _get_dbsnp_id(var.get("xrefs", [])):
+            unique.add((int(var["begin"]), ref))
+    for position, ref in sorted(unique):
+        yield Variation(ref, position)
